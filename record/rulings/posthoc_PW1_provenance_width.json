@@ -1,0 +1,223 @@
+{
+  "analysis": "PW-1 provenance-width separation",
+  "status": "POST-HOC — data already observed; not a chain entry",
+  "frozen_utc": "2026-07-30T14:19:20Z",
+  "not_a_chain_entry": true,
+  "archive_placement": "ARCHIVE_MANIFEST.md, under a heading separate from the five pre-registrations. NOT added to the chain table.",
+  "git_commit_at_stamp": "cffad08e313bcfa58c10e540050a55d9b5d49712",
+  "confirmation": {
+    "confirmed_by": "review, PW1_Freeze_Confirmation_2026-07-30.md",
+    "conditions": [
+      "2.1 family-2 qualifier in section 7 covering every label",
+      "2.2 standing finding recorded as PROC-1 with a forward gate",
+      "2.3 W_index_token arithmetic closing the denominator question",
+      "2.4 family_secondary fully specified"
+    ],
+    "all_applied_before_stamp": true,
+    "no_reconfirmation_required": true
+  },
+  "source_document": "posthoc_PW1_freeze_TEXT_FOR_CONFIRMATION.md",
+  "source_document_sha256": "098bf15c97e809e6df5e81ec372bff3dfce189306e34ecc2087cefed9f16c1a8",
+  "freeze_text_verbatim": "\n################################################################################\n# 0. SCOPE OF THE EXPOSURE  (work order A8 of the previous round; §3.8)\n################################################################################\n\nscope_of_exposure\n    \"Range inheritance requires a two-stage pipeline: format, then re-chunk. It therefore exists\n     ONLY in fmt256, C4 and C5. C0/C1/C2 have width exactly 1.0000 by construction — the naive\n     chunker's source_ranges IS the substring's own span (naive.py:41). C3, the formatter's own\n     marker-cut pipeline, shows no NET inflation at corpus level: claimed 367,656 vs 367,729\n     characters of sentence surface (Track A), 1,416,168 vs 1,416,240 (Track B).\n\n     Consequently: parity with contextual retrieval, the margin over semantic chunking, and all\n     four ablations are untouched by this finding. This is a bounded methods correction, not a\n     threat to the programme.\"\n\n################################################################################\n# 1. IDENTITY AND INTEGRITY\n################################################################################\n\nstatus              \"POST-HOC — data already observed; not a chain entry\"\nfrozen_utc          2026-07-30T14:19:20Z\nnot_a_chain_entry   true\narchive_placement   \"ARCHIVE_MANIFEST.md, under a heading separate from the five\n                     pre-registrations. NOT added to the chain table.\"\n\nintegrity_property\n    \"The subset definitions, arms, metric, families and interpretation rule are frozen before any\n     outcome under them is computed. NOT that the data were unseen. Weaker than the chain's\n     property and labelled as such.\"\n\npre_stamp_classifications_are_legitimate          # work order A6\n    \"Six cells are classified under branch 1 in §5 before this file is sealed. This is\n     legitimate and not a post-hoc selection: every branch-1 input is a PRE-EXISTING PUBLISHED\n     quantity — delta_full, its CI, and its raw p — which this freeze FIXES rather than computes.\n     No PW-1-computed quantity enters any branch-1 classification. The only new arithmetic is\n     Holm within the declared PW-1 family, which is a deterministic function of the published\n     raw p-values and of the family sizes declared in §4, both fixed here before any arm runs.\"\n\ndisclosure\n    \"This analysis is post-hoc: the retrieval data it re-scores were observed before it was\n     designed.\n\n     Step 0 was computed under an earlier version of the instructions and its results changed the\n     arm definitions before any arm was run. Step 0a measured the absorption channel at 3.27%\n     (Track A) and 0.20% (Track B) of sentence surface; step 0c measured a chunk-to-segment\n     inheritance channel accounting for 97.35% / 99.83% of the excess. The originally specified\n     arm removed only absorption. The scoring ladder was widened to four levels and S2 made\n     primary in response to those measurements.\n\n     Step 0's own figures were themselves corrected three times before the stamp: a rule-based\n     dedup proxy had been reported as the formatter's absorbed surface; a helper merged ranges\n     across document boundaries and under-counted Track A by 2.1x; and a corpus-level union of\n     'excess' was briefly reported, which measures nothing because a sentence that is excess for\n     one chunk is own text for the next. All three are fixed, the corrected figures are in §2,\n     and the erroneous ones are recorded in PW1-F2 rather than deleted.\n\n     Step 0 quantities are properties of the corpora and the gold set, not of any retrieval\n     outcome, and no p-value, delta or classification had been computed on any arm when these\n     definitions were settled.\"\n\n################################################################################\n# 2. WIDTH STATISTICS — FIVE NAMED QUANTITIES  (work order A4, A4b)\n################################################################################\n\nwidth_statistics_are_FIVE_not_one          # work order A4 + A4b\n    \"Any statement of the form 'the width is 2.3x' must name which quantity it refers to. On\n     these corpora they span 2.11 to 3.09. All five, with formulas — numerator is always claimed\n     surface, i.e. the union of a unit's source_ranges in original-document characters:\n\n       W_unit         sum(claimed) / n_units                      MECHANISM-MATCHED (see below)\n       W_index_char   sum(claimed) / sum(len(unit.text))\n       W_index_token  sum(claimed) / sum(count_tokens(unit.text))\n       W_index_mean   mean over units of (claimed_u / len(text_u))     a mean of ratios\n       W_cover        sum(claimed) / sum(tight)  ==  1/(1 - excess_share)\"\n\nwidth_measured\n    Track A   orig256:  W_unit 1588.4  W_index_char 1.0000  W_index_token 6.8877\n                        W_index_mean 1.0000  W_cover 1.0000\n              fmt256:   W_unit 3568.1  W_index_char 2.3182  W_index_token 15.9662\n                        W_index_mean 3.0935  W_cover 2.2781      ranges per unit 51.39\n    Track B   orig256:  W_unit 1334.7  W_index_char 1.0000  W_index_token 5.3434\n                        W_index_mean 1.0000  W_cover 1.0000\n              fmt256:   W_unit 3137.1  W_index_char 2.3574  W_index_token 12.5845\n                        W_index_mean 2.4793  W_cover 2.1119      ranges per unit 25.49\n\n    ratio of ratios (fmt / orig)\n              Track A   W_unit 2.2463   W_index_char 2.3182   W_index_token 2.3181\n                        W_index_mean 3.0935   W_cover 2.2781\n              Track B   W_unit 2.3504   W_index_char 2.3574   W_index_token 2.3551\n                        W_index_mean 2.4793   W_cover 2.1119\n\n    \"orig256 is exactly 1.0000 on every ratio-form statistic by construction, so each ratio of\n     ratios equals the fmt256 value itself.\"\n\nwhich_statistic_matches_the_section_11_mechanism          # work order A4b\n    \"NEITHER of the two candidates offered. The answer is W_unit, and it was not among them.\n\n     Section 11's mechanism is per-retrieved-unit: retrieval returns k units and each unit's\n     claimed ranges are tested against gold independently, so a unit's chance of overlapping gold\n     scales with the surface IT claims — an ABSOLUTE quantity, not a ratio to its own length. The\n     mechanism-matched statistic is therefore W_unit, and its ratio is 2.2463 (Track A) / 2.3504\n     (Track B).\n\n     W_index_char is a close PROXY for it, and legitimately so: the size-matched control holds\n     indexed length nearly equal across arms by construction — own chars per unit 1588.4 vs\n     1539.2 on Track A (3.10%) and 1334.7 vs 1330.7 on Track B (0.30%) — so dividing by own size\n     changes little. Within 3.2% of W_unit on Track A and 0.3% on Track B. Section 11's own\n     phrase 'per indexed token ... of the same length' is this proxy stated in words.\n\n     W_index_mean (3.0935 on Track A) is NOT the mechanism and would OVERSTATE it. It is a mean of\n     ratios, and 1/own_size is convex, so it is dominated by tiny trailing chunks that inherit a\n     whole segment's ranges while holding almost no text of their own. Measured: the top decile of\n     fmt256 Track A units by claimed/own has a mean ratio of 10.75 on units averaging 212\n     characters — 0.12x the median unit's 1,750. Those units are not preferentially retrieved, so\n     up-weighting them does not describe a retrieval-time bias.\n\n     So the review's concern is inverted: quoting 2.32 does not understate the finding. 2.32 is\n     within a few percent of the mechanism-matched 2.25, and 3.09 would overstate it. This is the\n     THIRD instance of the mean-of-ratios pathology in this programme, after v1.5's\n     blurb_to_child_ratio (which inverted across child sizes for the same reason) and the\n     briefly-reported corpus union of excess in PW1-F2.\"\n\npw1_f1_refers_to          # confirmation 2.3\n    \"W_index_char — 2.3182 (Track A) / 2.3574 (Track B).\n\n     THE DENOMINATOR DOES NOT MOVE THE FINDING, and this closes by arithmetic rather than by\n     rationale. Section 11's mechanism is stated per indexed TOKEN. W_index_token's ratio of\n     ratios is 15.9662/6.8877 = 2.3181 (Track A) and 12.5845/5.3434 = 2.3551 (Track B), against\n     W_index_char's 2.3182 and 2.3574 — the same figure to four significant digits on Track A\n     and three on Track B. The mechanism-matched W_unit is 2.2463 / 2.3504, within 3.2% and 0.3%.\n     ALL THREE AGGREGATE FORMS GIVE THE SAME ANSWER, so PW1-F1's use of W_index_char is\n     mechanism-faithful and not a selection among five numbers.\n\n     W_index_mean (3.0935) is the sole outlier and is never used for a headline figure: it is a\n     mean of ratios rather than an aggregate, dominated by tiny trailing chunks that are not\n     preferentially retrieved. See `which_statistic_matches_the_section_11_mechanism`.\n\n     RECORD NOTE: this field was silently dropped by a span-replacement while folding in A4b and\n     re-inserted here. It was caught by an assertion in the next patch, not by review or by\n     reading. Recorded because PW1-F2's principle applies to a restored field as much as to a\n     corrected number, and because it is a fourth instance of the same class as template A2 — a\n     cheap edit destroying content it was not aimed at.\"\n\nsurface_decomposition\n    \"Width is a PER-UNIT property, so the decomposition is per chunk:\n       Track A  claimed 838,499   tight 368,066   excess 470,433 = 56.10% of claimed\n       Track B  claimed 3,369,209 tight 1,595,310 excess 1,773,899 = 52.65% of claimed\n     Of that excess, inheritance is 97.35% (Track A) / 99.83% (Track B).\n\n     `excess` has NO meaningful corpus-level union — a sentence that is excess for one chunk is\n     own text for the next, so unioning it reaches 96.6% of the corpus and measures nothing.\n     `absorbed` IS a corpus-level surface: 12,019 chars = 3.27% of sentence surface (Track A),\n     2,887 = 0.20% (Track B), unioned per document.\"\n\n################################################################################\n# 3. THE SCORING LADDER\n################################################################################\n\nscoring_S0   \"own + absorbed + inherited — CLAIMED. The published scoring. Supplies delta_full.\"\nscoring_S1   \"own + inherited — minus-absorbed. SECONDARY, reported in full so the 3.27%/0.20%\n              absorption figure carries a result rather than remaining a descriptive.\"\nscoring_S2   \"own + absorbed — minus-inherited. **PRIMARY.** Implements the ruler the paper's\n              methods describe: absorbed ranges retained as de-duplication credit, inheritance\n              removed.\"\nscoring_S3   \"own only — minus-both. SECONDARY, the conservative floor.\"\n\narm_semantics\n    \"Stripping ABSORBED ranges is a stress test: the unit genuinely represents that content, so\n     S1 and S3 bias against the formatted arm. Stripping INHERITED ranges is CORRECTION: the\n     chunk does not contain that text at all. S2 is therefore NOT a hostile floor, and a\n     NOT SEPARATED result under S2 means the effect survives removal of a defect — a stronger\n     statement than surviving a handicap. Only S3 is a hostile floor.\"\n\nre_scoring_scope\n    \"S1/S2/S3 re-score the FORMATTED arm only. The unformatted arm's width is exactly 1.0000, so\n     tight == claimed and there is nothing to strip. delta_corrected is therefore\n     formatted-corrected minus unformatted-as-published. This is what makes the arms a correction\n     of an asymmetry rather than a symmetric handicap.\"\n\narm_1_clean_gold\n    \"DESCRIPTIVE ONLY. Retention measured at step 0: narrow D 36.4% (A) / 96.7% (B); wide D 1.1%\n     (A) / 0.0% (B). Below the frozen 60% gate on both tracks under the governing wide D, and on\n     Track A even under the narrow one. Does NOT run inferentially. Counts and descriptive deltas\n     are reported. The threshold is NOT lowered — it was set before the count was known and that\n     is its entire value.\"\n\n################################################################################\n# 4. FAMILIES\n################################################################################\n\nfamily_1_primary\n    \"Size-matched control: naive-256 on ORIGINAL vs FORMATTED text, recall@5.\n     4 cells = {all-MiniLM-L6-v2, BAAI/bge-base-en-v1.5} x {Track A, Track B}.\n     Holm over the 4 cells as ONE family, per scoring.\"\n\nfamily_2_primary\n    \"Composition: C4 vs C0 on Track A, recall@5, both stacks. 2 cells.\n     Holm over the 2 cells as ONE family, per scoring.\n     Promoted because the composition result is the paper's practical headline and family 1 does\n     not test it. Scoreable by exact re-score of persisted ranked lists — no embedding, no\n     retrieval.\"\n\nfamily_2_outcome_is_CONDITIONAL          # work order A3b - governs every family-2 label\n    \"Family 2 measures whether the OBSERVED composition difference depends on inherited ranges.\n     It does NOT, and cannot, establish the C4 > C0 claim.\n\n     Per PW1-F3, that claim fails the programme's own frozen criterion independently of this\n     analysis: criteria.prose_rule in the v1.1 pre-registration requires a significant pairwise\n     test, and C4_vs_C0 on Track A has a stored Holm-adjusted p of 0.10250 within its declared\n     six-member family. So there is no established composition claim for family 2 to vindicate.\n\n     THEREFORE: every family-2 label in the results document carries this prefix. In particular, a\n     family-2 result of SEPARATED must NOT be reported as validating the composition claim - it\n     would mean only that an observed difference which does not clear the programme's significance\n     bar is nonetheless not an artifact of the ruler. Those are different statements and the\n     second is much weaker.\n\n     Family 2 is RETAINED. Two reasons, recorded here so the decision cannot later be read as\n     convenience. (1) The ruler question is worth answering for the composition comparison whether\n     or not the comparison clears significance: an observed difference that survives correction is\n     a different object from one that does not, and the paper will have to say which it has.\n     (2) Removing a family two revisions after promoting it, because a finding made it\n     inconvenient, is precisely the move this discipline exists to prevent.\"\n\nfamily_secondary          # confirmation 2.4 - now fully specified, not declared-but-empty\n    \"C4 vs C0 on Track B, recall@5, both stacks. 2 cells. Holm over the 2 cells as ONE family,\n     per scoring. Reported separately from the two primary families and never merged with them.\n     The family_2_outcome_is_CONDITIONAL clause applies to it as well.\n\n     BOTH CELLS ARE NOT APPLICABLE under branch 1, determined from published numbers before any\n     arm ran (see section 5). This family is therefore DESCRIPTIVE IN EFFECT, on the template of\n     arm_1_clean_gold: its r and CI are reported, it contributes to no headline, and it enters no\n     inferential claim. It is specified in full rather than dropped because a declared family with\n     no frozen inputs is the one thing a freeze cannot contain.\"\n\ndescriptive_companion_cells          # work order A9\n    \"Cells that are NOT APPLICABLE under branch 1 are still re-scored and their r and CI reported\n     DESCRIPTIVELY, clearly marked as not entering any inferential family and not contributing to\n     any headline. This is specified because family 2 has n = 1 applicable cell: with a single\n     inferential cell, a corroborating direction on the record is worth having. It applies to\n     family 2's bge/Track A cell and family 1's MiniLM/Track B cell.\"\n\n################################################################################\n# 5. BRANCH-1 SIGNIFICANCE, AND THE CELLS IT CLASSIFIES  (work order A2)\n################################################################################\n\nbranch_1_significance = \"Holm within the declared PW-1 family\"\n\nbranch_1_significance_rationale\n    \"Applied to BOTH families. The published `p_holm` values must NOT be used: they are Holm over\n     each run's own six-member pairwise family\n     {C3_vs_C2, C3_vs_C1, C3_vs_C0, C5_vs_C2, C4_vs_C0, C5_vs_C3},\n     verified by recomputation — raw 0.02050 x 5 = 0.10250 and 0.09309 x 3 = 0.27927. That is a\n     multiplicity imported from outside PW-1 and declared nowhere in it. Family 1's published\n     p_holm happens already to be Holm within family 1 (raw 0.0001/0.0002/0.0135/0.3423 x\n     (4,3,2,1) reproduces 0.0004/0.0006/0.027/0.3423 exactly); family 2's is not. That\n     inconsistency was the real defect, and raw-versus-adjusted was downstream of it.\"\n\ncriterion_agreement_and_the_one_cell_where_it_BINDS\n    \"Raw p < 0.05, CI-excludes-zero, and Holm-within-family AGREE ON ALL SIX CELLS of the two\n     PRIMARY families. Verified cell by cell. So for every cell that can reach a headline, the\n     choice of criterion changes nothing.\n\n     It DOES bind on one cell, and specifying the secondary family (confirmation 2.4) is what\n     surfaced it: bge / Track B in the secondary family has a CI of [+0.0067, +0.0933], which\n     EXCLUDES zero, against p_raw 0.06739 and p_holm_within 0.13478, which do NOT clear. The\n     three criteria disagree. branch_1_significance governs: Holm within the declared PW-1\n     family, giving NOT APPLICABLE.\n\n     Recorded rather than smoothed, because it is the fourth data point on the theme PROC-1\n     documents: a criteria field naming two procedures produces a cell where they disagree, and\n     the only defence is to have named ONE in advance. Here one was named in advance, and the\n     disagreement resolves without a judgement call. That is the rule working.\"\n\nboundary_rule\n    \"A CI whose bound is exactly 0.0000 does NOT exclude zero. Stated before computing because\n     family 2's bge/Track A published CI is [+0.0000, +0.0909].\"\n\nbranch_1_classifications          # fixed by this freeze; see pre_stamp_classifications_are_legitimate\n    family 1:\n      MiniLM / Track A   delta_full +0.1534  CI [+0.0795,+0.2273]  p_raw 0.00020  p_holm 0.00060  APPLICABLE\n      MiniLM / Track B   delta_full +0.0267  CI [-0.0133,+0.0667]  p_raw 0.34227  p_holm 0.34227  NOT APPLICABLE\n      bge    / Track A   delta_full +0.1477  CI [+0.0795,+0.2159]  p_raw 0.00010  p_holm 0.00040  APPLICABLE\n      bge    / Track B   delta_full +0.0667  CI [+0.0200,+0.1133]  p_raw 0.01350  p_holm 0.02700  APPLICABLE\n    family 2:\n      MiniLM / Track A   delta_full +0.0568  CI [+0.0170,+0.1023]  p_raw 0.02050  p_holm 0.04100  APPLICABLE\n      bge    / Track A   delta_full +0.0455  CI [+0.0000,+0.0909]  p_raw 0.09309  p_holm 0.09309  NOT APPLICABLE\n\n    secondary family (C4 vs C0, Track B):\n      MiniLM / Track B   delta_full +0.0333  CI [-0.0067,+0.0733]  p_raw 0.17868  p_holm 0.17868  NOT APPLICABLE\n      bge    / Track B   delta_full +0.0467  CI [+0.0067,+0.0933]  p_raw 0.06739  p_holm 0.13478  NOT APPLICABLE\n      published levels: MiniLM B C0 0.3867 / C4 0.4200; bge B C0 0.3533 / C4 0.4000\n\n    \"Family 1 has THREE applicable cells. Family 2 has ONE. The secondary family has NONE.\n     Frozen in that knowledge.\"\n\n################################################################################\n# 6. STATISTICS\n################################################################################\n\nmethod   \"Exact sign-flip enumeration over the 2**K assignments of the K discordant pairs\n          (== McNemar exact). K reported for every cell. p_mc_10k retained beside it. Paired\n          deltas with 95% CIs. p to six significant figures.\"\nholm     \"Per family, per scoring, as defined in §4. Never imported from a published run.\"\n\n################################################################################\n# 7. THE RATIO AND THE INTERPRETATION RULE\n################################################################################\n\nratio        r = delta_S2 / delta_full        (primary; sign retained, so a sign flip gives\n                                               r < 0 and lands in NOT SEPARATED)\n             r is also reported for S1 and S3 and is descriptive there.\n\ndelta_full   \"The PUBLISHED point estimate for the cell. NOT a value recomputed in the same pass\n              that computes the numerator — that would make r unfalsifiable. Guard 1 requires the\n              reproduction to match the published digit; if it does not, the analysis stops.\"\n\nr_upper_bound_is_a_HALT          # work order A7\n    \"r <= 1.0 is a HALT, not a reported value, at the same tier as NC-A and NC-B. Removing ranges\n     can only turn a hit into a miss, never the reverse, and the unformatted arm has nothing to\n     strip, so delta_S2 <= delta_full BY CONSTRUCTION. r > 1 is a defect in the scoring — ranges\n     being added rather than removed, or a mismatched cell pairing — not a finding about the\n     corpus. Asserted in code: src/pw1/interpret.py::retention_ratio raises RatioExceedsOne, and\n     the classifier cannot be used to bypass it. Demonstrated failing in\n     tests/test_pw1_interpret.py. A structural invariant checked only by a human reading a table\n     is not checked. Float slack is 1e-9 and is not a tolerance for real overshoot.\"\n\ninterpretation_rule    evaluated in this order, FIRST MATCH WINS:\n  1 NOT APPLICABLE       delta_full not significant per branch_1_significance. Report r\n                         descriptively and stop; contributes nothing to the headline.\n  2 UNDERPOWERED         the S2 95% CI contains BOTH zero AND delta_full. Report the CI and K;\n                         make no separation claim for the cell.\n  3 NOT SEPARATED        r < 0.25, OR the S2 CI contains zero.\n  4 SEPARATED            r >= 0.75 AND the cell remains significant after Holm within the S2\n                         family.\n  5 PARTIALLY SEPARATED  everything else (in practice 0.25 <= r < 0.75, or r >= 0.75 with\n                         significance lost).\n\nthresholds_note\n    \"0.75 and 0.25 are conventional round numbers chosen without reference to any observed value.\n     There is no principled basis on which to prefer 0.7 or 0.8, and inventing one after the fact\n     would be worse than admitting the choice is conventional.\"\n\naggregation\n    \"Per family: the headline classification is the LEAST FAVOURABLE label among cells that are\n     applicable and powered, ordered NOT SEPARATED < PARTIALLY SEPARATED < SEPARATED. If no cell\n     in a family is both applicable and powered, that family's headline is UNDERPOWERED. The two\n     primary families are reported SEPARATELY and are NEVER merged into a single headline. All\n     cells are reported individually regardless. Implemented in src/pw1/interpret.py::aggregate.\"\n\nfamily_2_labels_carry_a_qualifier          # confirmation 2.1 - a REPORTING rule, so it lives here\n    \"Every family-2 classification, whatever it is, is reported with the qualifier that the\n     contrast being tested is one the v1.1 pre-registration's prose_rule does not license as a\n     'beats' claim (PW1-F3). Family 2 measures whether the OBSERVED composition difference\n     depends on inherited ranges. It cannot establish the C4 > C0 claim, and a SEPARATED result\n     in particular must not be reported, abstracted, or summarised as vindicating it.\n\n     SEPARATED is the dangerous direction, not NOT SEPARATED. NOT SEPARATED is self-limiting and\n     nobody misreads it. SEPARATED, absent this qualifier, reads as vindication of a claim\n     PW1-F3 has established is not licensed in the first place. A surviving effect is not an\n     established claim. The same qualifier applies to the secondary family.\"\n\none_shot_rule\n    \"Run once, reported whatever it says. No tuning of the subset definition, k, scoring, or\n     family after seeing a result.\"\n\n################################################################################\n# 8. GUARDS AND HALT CONDITIONS\n################################################################################\n\nguard_1\n    \"Reproduce every published level EXACTLY before computing anything new.\n     Family 1: 0.5682/0.7216 (MiniLM A), 0.3533/0.3800 (MiniLM B), 0.6080/0.7557 (bge A),\n               0.3600/0.4267 (bge B).\n     Family 2: C0 0.7841 / C4 0.8409 (MiniLM A), C0 0.7898 / C4 0.8352 (bge A).\n     State per family whether reproduction was by re-score of persisted ranked lists or by re-run\n     under seed 1337 / candidate_pool 50 / k_rrf 60.\"\n\nguard_1_order\n    \"MiniLM / Track A FIRST, alone, before NC-A/NC-B and before anything else. It is the single\n     point of failure for both families: family 1's only applicable MiniLM cell and family 2's\n     only applicable cell full stop. If it does not reproduce, nothing downstream is worth\n     computing.\"\n\nguard_1_escalation\n    \"If reproduce-before-compute fails to regenerate a published number, that is a PAPER-LEVEL\n     escalation, not a PW-1 blocker. STOP and report. Do NOT attempt repairs inside a frozen\n     analysis.\"\n\nat_risk_guard_1          # work order A8, refined per the Part-A check section 6\n    \"GUARD 1'S INPUTS WERE CHALLENGED BY REVIEW AND CLEARED. Both the challenge and the clearing\n     are recorded, not only the outcome - PW1-F2's own principle, that a corrected number with no\n     record of the correction is indistinguishable from a number that was always right, applies to\n     a cleared risk as much as to a wrong figure. A future reader should be able to see that these\n     inputs were contested, not merely asserted clean.\n\n     RAISED: by review, in the 2026-07-30 work order A8, as two at-risk items that could make\n     guard 1 fail. Written there as statements of fact.\n     CHECKED: against this repository rather than transcribed, because a frozen file must not carry\n     a claim the repository contradicts.\n     RESOLVED: both. Review has since accepted both corrections and identified the cause of each as\n     an incomplete read on its own part.\n\n     (1) 'No located artifact set reproduces the paper's published Track B condition table\n         (C0 0.387, C1 0.367, C2 0.387, C3 0.387, C4 0.420, C5 0.413).'\n         RESOLVED — it reproduces exactly, in the archive rather than in a working directory:\n         rag-formatter-results.zip, results.json, run-20260724-135411, all-MiniLM-L6-v2, Track B:\n         C0 0.3867 / C1 0.3667 / C2 0.3867 / C3 0.3867 / C4 0.4200 / C5 0.4133.\n         That bundle is chain entry 1 in ARCHIVE_MANIFEST.md — the published v1.0/v1.1 run. The\n         four working results* directories contain no MiniLM Track B condition run, which is what\n         the search found. There is no `harness/` directory in this repository.\n         The observation that §2.1's Track B baselines are the bge values, and therefore say\n         nothing about whether the MiniLM Track B numbers exist on disk, is correct and accepted.\n\n     (2) 'Two MiniLM Track A runs disagree on the C3-nosize ablation: 0.733 vs 0.6989.'\n         NOT REPRODUCIBLE HERE — no artifact in this repository reports 0.733 for any ablation.\n         C3-nosize Track A is 0.6989 in all three located sources: working results/,\n         rag-formatter-results.zip, and rag_formatter_work_and_results_2026-07-28.zip. The only\n         0.7330 present is in BUNDLE_MANIFEST.md and is the v1.4 parent-dilution control's\n         parent-scored C2 recall@5 against child-scored 0.4318 — the +0.301 inflation figure, a\n         different quantity from a different experiment.\n\n     RESOLUTION MECHANISM, item 1: locating run-20260724-135411 inside rag-formatter-results.zip.\n     The earlier read had recorded that bundle as Track A only; it contains both tracks.\n     RESOLUTION MECHANISM, item 2: tracing 0.7330 to BUNDLE_MANIFEST.md line 90, in the table\n     headed 'Parent-dilution trap - quantified', row  | C2 | 0.4318 | 0.7330 | +0.301 |  - v1.4's\n     parent-scored C2 recall@5 against child-scored 0.4318. Two quantities that were never the\n     same number were compared.\n\n     Neither blocks the stamp. Both remain listed as guard-1 inputs so that if guard 1 does fail\n     on either, the failure is read against this record rather than as a new discovery. Guard 1 is\n     correspondingly LESS exposed than the work order implied.\"\n\nguard_2_negative_controls\n    \"NC-A and NC-B, both shipped in tests/, both extended to cover S2 explicitly because S2 is\n     the primary scoring and neither control was originally written with it in view:\n\n       NC-A  gold falls ONLY inside an absorbed range:\n             S0 hit | S1 MISS | S2 HIT | S3 MISS\n       NC-B  gold falls ONLY inside an inherited range:\n             S0 hit | S1 HIT  | S2 MISS | S3 MISS\n\n     NC-B is what separates 'the tight arm is implemented' from 'asserted'. Its S1 expectation is\n     a HIT: if S1 misses there, S1 is over-stripping and its numbers are wrong. NC-A's S2\n     expectation is likewise a HIT. If either control misbehaves, STOP — nothing downstream would\n     mean anything.\"\n\nguard_3   \"scripts/ and tests/ for this analysis ship in the bundle.\"\n\nguard_4_rebuild_fidelity\n    \"The rebuild asserts against production per document: identical chunk count, unit_id, text,\n     and claimed ranges. Passed on 45 + 60 documents, 235 + 1,074 chunks. Additionally,\n     `top_hit_provenance` in the persisted per-query rows records the ranges the published run\n     actually scored with, and the rebuild's claimed set is checked against it per query.\"\n\nhalt_conditions          # the complete frozen list\n    \"1. Either negative control misbehaves (guard 2).\n     2. Any published level fails to reproduce (guard 1) -> paper-level escalation.\n     3. r > 1.0 for any cell (A7) -> scoring defect.\n     4. The rebuild disagrees with production on any document (guard 4).\n     In every case: stop, report, attempt no repair inside the frozen analysis.\"\n\n################################################################################\n# 9. FINDINGS RECORDED BEFORE ANY ARM RUNS\n################################################################################\n\nPW1-F1          # amended per work order A5\n    \"(a) WRONG CHANNEL, AND WRONG STAGE. The paper's §11 attributes provenance width to absorbed\n     duplicate ranges. The formatter's own merging accounts for 3.27% (Track A) / 0.20%\n     (Track B) of sentence surface; chunk-to-segment inheritance accounts for 97.35% / 99.83% of\n     the excess, at W_index_char 2.3182 / 2.3574. So the channel named in print is real but\n     minor, and the dominant channel is introduced at a different STAGE — the re-chunking of\n     formatted text, not the formatting.\n\n     (b) THE METHODS DESCRIPTION DOES NOT MATCH THE IMPLEMENTATION. The methods passage states\n     that every unit 'carries the character ranges of the original document it derives from'. A\n     re-chunked formatted unit carries ranges of text in SIBLING segments it does not derive from\n     — 97.35% of its excess surface on Track A.\n\n     (c) THIS IS A REPRODUCIBILITY GAP, NOT ONLY A THREAT TO VALIDITY. A reader implementing the\n     paper's own description of the ruler would not reproduce the published numbers for any\n     two-stage condition.\n\n     Holds whatever the arms return. The §11 and methods rewrite waits.\"\n\nPW1-F2\n    \"STEP 0's OWN FIGURES WERE WRONG THREE TIMES, all caught before the stamp. A rule-based dedup\n     proxy was reported as the formatter's absorbed surface (12,591 vs the actual 12,019 on\n     Track A); a helper merged ranges across document boundaries, under-counting Track A by 2.1x\n     (5,600 vs 12,019); and a corpus-level union of 'excess' was briefly reported, a quantity that\n     measures nothing. The first two were found by chasing a reviewer's observation that two\n     reported figures could not both be right; the third by asking what the corrected figure meant.\n     Recorded because a corrected number with no record of the correction is indistinguishable\n     from a number that was always right.\"\n\nPROC-1          # confirmation 2.2 / work order A3c - a STANDING finding, not PW-1-specific\n    \"TEMPLATE RULE A5 IS NOT BEING APPLIED AT AUTHORING TIME. Three independent violations:\n\n       v1.1  criteria.prose_rule       'CI excluding 0 after Holm'        two procedures\n       v1.3  criteria had no harm branch                                  not exhaustive\n       v1.5  significant_definition    'paired CI excludes 0 after Holm'  two procedures, and they\n                                                                         disagreed on two cells\n\n     Three independent violations is not three mistakes; it is evidence that a rule stated only as\n     prose does not get applied when a file is being sealed. A GATE has therefore been added to the\n     template as rule A5b: before any freeze, walk every field that could gate a decision and\n     confirm field by field that it names ONE quantity and ONE procedure and that its branches are\n     exhaustive and disjoint - and write that confirmation into the frozen file as a field of its\n     own, so its absence is visible.\n\n     v1.1's instance was found by auditing the archive for an unrelated purpose, TWO AMENDMENTS\n     after the paper went to internal circulation. An authoring-time gate would have caught it\n     before it was ever quoted.\n\n     Worth one line in the eventual write-up: reference 8 claims the archive is checkable in one\n     place. The archive was checked, and checking it produced a finding against the paper. That is\n     the archive working as advertised.\"\n\na5b_authoring_gate_applied_to_THIS_file          # PROC-1's gate, self-applied\n    \"Every decision-gating field in this file was walked against A5 before stamping:\n       branch_1_significance   ONE quantity (p), ONE procedure (Holm within the declared PW-1\n                               family). Named explicitly; the published p_holm is excluded BY NAME\n                               so it cannot be substituted.\n       interpretation_rule     ONE quantity (r) plus significance; five branches in a fixed order,\n                               first match wins; exhaustive and disjoint by construction of the\n                               bands and the ordering. Sweep-tested in tests/test_pw1_interpret.py.\n       boundary_rule           the one ambiguous case (a CI bound of exactly 0.0000) is resolved in\n                               advance, in one direction, in code.\n       aggregation             ONE ordering, least-favourable wins; the no-applicable-cell case is\n                               named rather than left undefined.\n       r_upper_bound           a HALT, not a criterion - no branch depends on it.\n     No field in this file names two procedures. Recorded so its absence would be visible.\"\n\nPW1-F3          # work order A3 — the STRONG form, and from a stronger source than the prose\n    \"THE PRACTICAL HEADLINE IS NOT SUPPORTED BY THE PAPER'S OWN DECLARED PROCEDURE.\n\n     A3 asked which multiplicity family the paper declares. The white paper file is not present\n     in this repository, so the prose could not be inspected. The governing declaration is\n     stronger evidence than the prose would have been, and it IS present: the v1.1\n     pre-registration, frozen 2026-07-24T13:33:49Z and archived in rag-formatter-results.zip,\n     states as `criteria.prose_rule`:\n\n         'any \"beats\" claim must be backed by a significant pairwise test\n          (CI excluding 0 after Holm) — changelog-8'\n\n     and names the comparison explicitly in H4: 'secondary C4 (formatted+naive) > C0 (naive\n     alone)'.\n\n     The declared family is the run's six-member pairwise set\n     {C3_vs_C2, C3_vs_C1, C3_vs_C0, C5_vs_C2, C4_vs_C0, C5_vs_C3}, and the Holm-adjusted value\n     for C4_vs_C0 on Track A is stored in that same published artifact: p_holm = 0.10250 against\n     a raw p of 0.02050. **It does not clear 0.05.** So A3's second branch applies: the paper\n     reports the condition table as a family and stores Holm-adjusted values for it.\n\n     A SECOND DEFECT, and the third instance of it in this programme: `prose_rule`'s phrase\n     'CI excluding 0 after Holm' names TWO procedures, exactly as v1.5's `significant_definition`\n     did (Results_v1.5_SmallToBig.md §2; template rule A5). C4-vs-C0 on Track A clears the CI\n     half — [+0.0170, +0.1023] excludes zero — and fails the Holm half. Under the conjunctive\n     reading the phrase's word 'after' implies, the claim does not clear. A multiplicity-adjusted\n     CI for that contrast is computable from persisted per-query data and is deliberately NOT\n     computed here, because it is new analysis and the stored adjusted p already settles the\n     point.\n\n     This is a fact about the paper, true regardless of what the arms return, and it is recorded\n     pre-outcome like PW1-F1 and PW1-F2. Its reporting consequence governs EVERY family-2 label,\n     not only an unfavourable one, and is therefore stated as a reporting rule in section 7 under\n     `family_2_labels_carry_a_qualifier` rather than left here among the findings.\"\n",
+  "branch_1_significance": "Holm within the declared PW-1 family",
+  "scorings": {
+    "S0": "own + absorbed + inherited (claimed; published scoring; supplies delta_full)",
+    "S1": "own + inherited (minus-absorbed); SECONDARY",
+    "S2": "own + absorbed (minus-inherited); PRIMARY",
+    "S3": "own only (minus-both); SECONDARY, conservative floor"
+  },
+  "re_scoring_scope": "formatted arm only; the unformatted arm has width exactly 1.0000",
+  "families": {
+    "family_1_primary": {
+      "definition": "size-matched control, naive-256 original vs formatted, recall@5",
+      "cells": [
+        {
+          "embedder": "all-MiniLM-L6-v2",
+          "track": "A",
+          "delta_full": 0.1534,
+          "ci95": [
+            0.0795,
+            0.2273
+          ],
+          "p_raw": 0.0002,
+          "p_holm_within": 0.0006,
+          "branch_1": "APPLICABLE",
+          "published_levels": {
+            "orig256": 0.5682,
+            "fmt256": 0.7216
+          }
+        },
+        {
+          "embedder": "all-MiniLM-L6-v2",
+          "track": "B",
+          "delta_full": 0.0267,
+          "ci95": [
+            -0.0133,
+            0.0667
+          ],
+          "p_raw": 0.34227,
+          "p_holm_within": 0.34227,
+          "branch_1": "NOT APPLICABLE",
+          "published_levels": {
+            "orig256": 0.3533,
+            "fmt256": 0.38
+          }
+        },
+        {
+          "embedder": "BAAI/bge-base-en-v1.5",
+          "track": "A",
+          "delta_full": 0.1477,
+          "ci95": [
+            0.0795,
+            0.2159
+          ],
+          "p_raw": 0.0001,
+          "p_holm_within": 0.0004,
+          "branch_1": "APPLICABLE",
+          "published_levels": {
+            "orig256": 0.608,
+            "fmt256": 0.7557
+          }
+        },
+        {
+          "embedder": "BAAI/bge-base-en-v1.5",
+          "track": "B",
+          "delta_full": 0.0667,
+          "ci95": [
+            0.02,
+            0.1133
+          ],
+          "p_raw": 0.0135,
+          "p_holm_within": 0.027,
+          "branch_1": "APPLICABLE",
+          "published_levels": {
+            "orig256": 0.36,
+            "fmt256": 0.4267
+          }
+        }
+      ]
+    },
+    "family_2_primary": {
+      "definition": "composition, C4 vs C0 on Track A, recall@5",
+      "outcome_is_conditional": true,
+      "cells": [
+        {
+          "embedder": "all-MiniLM-L6-v2",
+          "track": "A",
+          "delta_full": 0.0568,
+          "ci95": [
+            0.017,
+            0.1023
+          ],
+          "p_raw": 0.0205,
+          "p_holm_within": 0.041,
+          "branch_1": "APPLICABLE",
+          "published_levels": {
+            "C0": 0.7841,
+            "C4": 0.8409
+          }
+        },
+        {
+          "embedder": "BAAI/bge-base-en-v1.5",
+          "track": "A",
+          "delta_full": 0.0455,
+          "ci95": [
+            0.0,
+            0.0909
+          ],
+          "p_raw": 0.09309,
+          "p_holm_within": 0.09309,
+          "branch_1": "NOT APPLICABLE",
+          "published_levels": {
+            "C0": 0.7898,
+            "C4": 0.8352
+          }
+        }
+      ]
+    },
+    "family_secondary": {
+      "definition": "composition, C4 vs C0 on Track B, recall@5; DESCRIPTIVE IN EFFECT",
+      "cells": [
+        {
+          "embedder": "all-MiniLM-L6-v2",
+          "track": "B",
+          "delta_full": 0.0333,
+          "ci95": [
+            -0.0067,
+            0.0733
+          ],
+          "p_raw": 0.17868,
+          "p_holm_within": 0.17868,
+          "branch_1": "NOT APPLICABLE",
+          "published_levels": {
+            "C0": 0.3867,
+            "C4": 0.42
+          }
+        },
+        {
+          "embedder": "BAAI/bge-base-en-v1.5",
+          "track": "B",
+          "delta_full": 0.0467,
+          "ci95": [
+            0.0067,
+            0.0933
+          ],
+          "p_raw": 0.06739,
+          "p_holm_within": 0.13478,
+          "branch_1": "NOT APPLICABLE",
+          "published_levels": {
+            "C0": 0.3533,
+            "C4": 0.4
+          }
+        }
+      ]
+    }
+  },
+  "applicable_cell_counts": {
+    "family_1_primary": 3,
+    "family_2_primary": 1,
+    "family_secondary": 0
+  },
+  "ratio": "r = delta_S2 / delta_full, sign retained",
+  "r_upper_bound_is_a_halt": true,
+  "thresholds": {
+    "SEPARATED_r_min": 0.75,
+    "NOT_SEPARATED_r_max": 0.25,
+    "alpha": 0.05
+  },
+  "boundary_rule": "a CI bound of exactly 0.0000 does NOT exclude zero",
+  "interpretation_rule_order": [
+    "NOT APPLICABLE",
+    "UNDERPOWERED",
+    "NOT SEPARATED",
+    "SEPARATED",
+    "PARTIALLY SEPARATED"
+  ],
+  "aggregation": "least favourable label among applicable and powered cells, per family; families never merged into one headline",
+  "halt_conditions": [
+    "either negative control misbehaves (guard 2)",
+    "any published level fails to reproduce (guard 1) -> paper-level escalation",
+    "r > 1.0 for any cell -> scoring defect",
+    "the rebuild disagrees with production on any document (guard 4)"
+  ],
+  "implementation": {
+    "interpretation": "src/pw1/interpret.py",
+    "tight_provenance": "src/pw1/tight_provenance.py",
+    "tests": [
+      "tests/test_pw1_interpret.py",
+      "tests/test_pw1_range_stripping.py (B3)"
+    ],
+    "step_0": [
+      "scripts/pw1_step0_surface.py",
+      "scripts/pw1_step0c.py"
+    ]
+  },
+  "findings_recorded_pre_arm": [
+    "PW1-F1",
+    "PW1-F2",
+    "PW1-F3",
+    "PROC-1"
+  ],
+  "arms_run_at_stamp_time": [],
+  "outcomes_computed_at_stamp_time": null
+}

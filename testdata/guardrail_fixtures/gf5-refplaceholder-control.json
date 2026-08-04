@@ -1,0 +1,15 @@
+{
+  "id": "gf5-refplaceholder-control",
+  "title": "Guardrail fixture 5 — NEGATIVE CONTROL, structural reference dropped",
+  "violationClass": "none — this fixture must NOT block",
+  "note": "Control for the other four. FIGREF6 is a structural cross-reference placeholder, explicitly exempt from protection in both implementations (_REF_PLACEHOLDER / REF_PLACEHOLDER) because the formatter is licensed to edit references. The edit drops it while preserving HNSW. If this fixture blocks, the exemption has diverged and the other four fixtures prove nothing — they would only show that both sides block indiscriminately.",
+  "expectBlocked": [],
+  "expectOk": [2, 3],
+  "blocks": [
+    { "nodePath": [0], "nodeType": "heading", "text": "Kestrel indexer" },
+    { "nodePath": [1], "nodeType": "paragraph", "text": "The Kestrel indexer builds approximate-nearest-neighbour indexes." },
+    { "nodePath": [2], "nodeType": "paragraph", "text": "See Fig. FIGREF6 for the HNSW pipeline layout." },
+    { "nodePath": [3], "nodeType": "paragraph", "text": "It rebuilds a corrupted shard from the write-ahead log in under 90 seconds." }
+  ],
+  "raw": "{\"resolved\":[{\"i\":2,\"text\":\"See the diagram below for the HNSW pipeline layout.\"},{\"i\":3,\"text\":\"The Kestrel indexer rebuilds a corrupted shard from the write-ahead log in under 90 seconds.\"}],\"drop\":[]}"
+}

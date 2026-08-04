@@ -1,0 +1,12 @@
+id: C3-nosize
+name: "Formatter ablation: right-sizing OFF"
+chunker: formatter
+params:
+  soft_target_tokens: 384
+  reference_resolution: true
+  dedup: true
+  right_size: false            # OFF: keep original section sizes
+  boundary_markers: true
+  verbatim_guardrail: true
+  diff_gate: true
+  min_unit_tokens: 30          # v1.1 §8c: guard against degenerate micro-units

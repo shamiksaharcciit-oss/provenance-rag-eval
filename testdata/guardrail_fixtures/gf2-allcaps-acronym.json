@@ -1,0 +1,15 @@
+{
+  "id": "gf2-allcaps-acronym",
+  "title": "Guardrail fixture 2 — all-caps acronym",
+  "violationClass": "all-caps acronym (HNSW) replaced with a paraphrase",
+  "note": "The edit keeps M=32 intact, so the only protected token lost is the acronym. Block 3 is a clean resolution that must stay ok.",
+  "expectBlocked": [2],
+  "expectOk": [3],
+  "blocks": [
+    { "nodePath": [0], "nodeType": "heading", "text": "Kestrel indexer" },
+    { "nodePath": [1], "nodeType": "paragraph", "text": "The Kestrel indexer serves approximate-nearest-neighbour search over embedded chunks." },
+    { "nodePath": [2], "nodeType": "paragraph", "text": "The indexer uses HNSW graphs with M=32 for approximate search." },
+    { "nodePath": [3], "nodeType": "paragraph", "text": "It refuses writes once a shard holds more than 200k vectors." }
+  ],
+  "raw": "{\"resolved\":[{\"i\":2,\"text\":\"The Kestrel indexer uses graph-based indexes with M=32 for approximate search.\"},{\"i\":3,\"text\":\"The Kestrel indexer refuses writes once a shard holds more than 200k vectors.\"}],\"drop\":[]}"
+}

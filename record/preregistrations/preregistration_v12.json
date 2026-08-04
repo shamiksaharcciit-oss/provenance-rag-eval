@@ -1,0 +1,28 @@
+{
+  "frozen_utc": "2026-07-24T23:06:01Z",
+  "experiment": "v1.2-identity-injection",
+  "decides_on": "Track B2 (fresh held-out); old B-150 is contaminated development data",
+  "hypotheses": {
+    "H5": "C4i recall@5 > C4 on B2; paired CI excludes 0 after Holm over {C4i vs C4, C4i vs C2, C4i vs C0}",
+    "H5a": "the C4i-C4 gain is concentrated in identity_poor queries; identity_rich ~ 0",
+    "H5b": "0 preserved-term failures; 0 identity-source violations; hybrid tracks dense for C4i",
+    "H5c": "3-way readability: C4i within 0.15 of BOTH original and C4 on the 1-5 rubric"
+  },
+  "expectation": "on Track A (identity-rich synthetic), C4i ~ C4",
+  "decision_rules": {
+    "ADOPT": "H5 significant AND H5b clean AND H5c passes",
+    "ADOPT_SCOPED": "H5 significant only within identity_poor subgroup AND H5b/H5c clean",
+    "REJECT": "H5 and subgroup both non-sig, OR any H5b violation>0 unresolved, OR H5c fails"
+  },
+  "one_shot_rule": "if H5 fails on B2, do NOT iterate + re-test on B2; a retry needs a B3 split",
+  "tag_rule": "identity_rich iff query shares >=1 proper-noun token with gold-doc title+abstract",
+  "b2": {
+    "n_queries": 180,
+    "n_docs": 134,
+    "new_seed": 20272,
+    "n_identity_poor": 153,
+    "n_identity_rich": 27
+  },
+  "exclusion_list_hash": "2892875dfb69073d62e42515f1fdaf29cb950205f6cb4f381cc59f19f4bd88f6",
+  "doc_list_hash": "1e7c6ed5f9f1d2f510db48d48d0edf4733662faff8f18bcc71ffb677321b6b2f"
+}

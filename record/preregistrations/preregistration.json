@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-07-24T13:33:49Z",
+  "seed": 1337,
+  "criteria": {
+    "plan_version": "1.1",
+    "supersedes": "run-20260723-223653 (v1.0, Track A, PARTIAL)",
+    "validate_if": "C3 recall@5 >= C2 (within CI or better) on >=2 tracks AND H2 AND H3",
+    "complement_if": "H4 holds on Track B (C5>C2, paired CI excludes 0 after Holm) and directionally on Track A; may be reported alongside any verdict",
+    "partial_if": "parity with C2 plus a SIGNIFICANT win over C0 or C1 (state which, changelog-8), AND H2, AND H3-objective",
+    "kill_if": "treatment only beats the naive floor (not semantic), OR H2 fails (vocabulary drift), OR H3 fails (readability lost -> propositionization)",
+    "hypotheses": {
+      "H1": "C3 recall@k >= C2, and > C1 > C0 at k in {1,3,5,10}",
+      "H2": "C3 (and C4/C5) hybrid recall@k not reduced vs dense (no vocab drift)",
+      "H3": "C3 single output rated as readable or better than source; assessed on Track B real prose (Track A rubric floors; objective preserved-term check is A's signal)",
+      "H4": "C5 (formatted+contextual) recall@5 > C2 (contextual alone), CI excludes 0 after Holm; secondary C4 (formatted+naive) > C0 (naive alone)"
+    },
+    "preregistered_expectation": "de-duplication is neutral-to-negative for recall (redundancy is robustness); a negative dedup ablation is expected",
+    "prose_rule": "any 'beats' claim must be backed by a significant pairwise test (CI excluding 0 after Holm) \u2014 changelog-8"
+  }
+}

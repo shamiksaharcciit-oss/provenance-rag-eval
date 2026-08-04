@@ -1,0 +1,57 @@
+{
+  "frozen_utc": "2026-07-25T19:44:40Z",
+  "experiment": "v1.3-reranker",
+  "amends": "v1.1 base plan; independent of v1.2 identity injection",
+  "axis": "orthogonal \u2014 every condition scored with AND without reranking from the same retrieval call on the same queries (paired). NOT a new condition.",
+  "decides_on": "Track A (220 queries) and Track B (150 queries), existing v1.1 splits. No new corpus.",
+  "reranker": {
+    "backend": "cross_encoder",
+    "model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "revision": "main",
+    "pool": 50,
+    "pool_source": "index.candidate_pool \u2014 identical first-stage candidates with and without rerank",
+    "reranks": "the fused candidate pool, then cuts to top-k (reranking only the top-k could never change recall@k)"
+  },
+  "primary_metric": "recall@5, hybrid ranking, 'any' overlap variant",
+  "hypotheses": {
+    "H6": "X+rerank recall@5 > X for each condition X; paired CI excludes 0 after Holm",
+    "H6a": "interaction via difference-in-differences (C3+rr - C3) - (C0+rr - C0); ~0 = additive/complements, <0 = sub-additive/substitutes, >0 = super-additive",
+    "H6b": "secondary/descriptive: C0+rerank vs C3 \u2014 does a query-side fix reach the corpus-side fix's result?"
+  },
+  "reporting_rule": "H6a is reported in whichever direction it falls. A negative DiD is evidence for the composition story (substitutes, not complements) and must not be suppressed in favour of the direction favouring the formatter.",
+  "holm_families": "H6 main-effect comparisons form their OWN Holm family, separate from the v1.1 H1-H4 pairwise family; merging them would retroactively change the significance of published v1.1 results",
+  "decision_rules": {
+    "ADOPT": "H6 significant on BOTH tracks for the primary metric, on at least C0 and C3",
+    "ADOPT_SCOPED": "significant on one track only or a subset of conditions \u2014 state the scope",
+    "KILL": "gain not statistically distinguishable from zero on Track A AND Track B"
+  },
+  "kill_means_stop": "on KILL, do NOT seek a third corpus to chase significance \u2014 that repeats the error the one-shot rule exists to prevent. A null is reported as a result.",
+  "one_shot_rule": "if H6 fails, changing model or pool size and re-testing on the same A/B test split is not a fresh test; a retry needs a pre-registered amendment",
+  "invariants_enforced_in_code": {
+    "provenance": "assert_permutation runs in-band on every rerank call; any change to the unit set, text, or source_ranges raises ProvenanceViolation",
+    "no_resize": "no Unit is constructed; compute_chunk_stats asserted invariant in tests",
+    "off_is_noop": "rerank.enabled=false reproduces every pre-v1.3 number exactly"
+  },
+  "stats": {
+    "bootstrap_iters": 10000,
+    "permutation_iters": 10000,
+    "ci": 0.95,
+    "holm": true
+  },
+  "seed": 1337,
+  "amendment_doc_sha256": "4868a4f383ef3d263ca041fcc322010646089b4cf5bd5f3129d9cc0a4c3e8e1b",
+  "rerank_module_sha256": {
+    "base.py": "9a06b8f0b8873dbbd4d71f418daeb741971766ca1430f0f8e1d41d3c4475acc6",
+    "cross_encoder.py": "9b8a0ddebf1307b69e6eaf762f1571b45fbe878e56e8fe7015187f46f7a26fec"
+  },
+  "config_default_sha256": "c4b5d7a5f02a859b4ee02a4cb02efbbce8436db14d2df4d0a6051639d6f91fe6",
+  "addenda": [
+    {
+      "utc": "2026-07-25T20:44:05Z",
+      "before_any_result_observed": true,
+      "clarification": "Holm family for H6 main effect = PRIMARY conditions C0-C5 only. The C3-* ablations and C4i are diagnostics and are reported uncorrected and explicitly non-decision-bearing.",
+      "why": "The frozen prereg said H6 forms its own Holm family but did not enumerate conditions; the decision rule references C0 and C3. Correcting across all ~11 conditions would be conservative in proportion to family size rather than to evidence, and could produce a KILL for a bookkeeping reason.",
+      "integrity_note": "Recorded while the first reranked run was still executing; no reranked result had been observed. This is an interpretation of the frozen protocol, not a change to its criteria \u2014 the ADOPT/KILL rules are untouched."
+    }
+  ]
+}

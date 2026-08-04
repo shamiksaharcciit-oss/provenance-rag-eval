@@ -1,0 +1,9 @@
+id: C
+name: "Real internal (user-supplied)"
+adapter: track_c_internal
+params:
+  data_dir: "data/internal"        # Markdown/HTML/PDF->text exports
+  queries_file: "data/internal/queries.jsonl"  # human-verified gold_spans
+  requires_network: false
+  requires_llm: false
+  # If data_dir or queries_file absent -> skip cleanly and note in BLOCKERS.md (§12.4)

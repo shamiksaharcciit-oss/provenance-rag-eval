@@ -1,0 +1,16 @@
+{
+  "id": "gf1-digit-identifier",
+  "title": "Guardrail fixture 1 — digit-bearing identifier",
+  "violationClass": "token containing a digit (port number 50051)",
+  "note": "Block 2's edit resolves the reference correctly but silently drops the port. Block 3's edit is a clean resolution that must stay ok, and block 4 is a verbatim restatement that must be a normal dedup — so this fixture exercises ok, blocked and dedup together, not just the blocked path.",
+  "expectBlocked": [2],
+  "expectOk": [3],
+  "blocks": [
+    { "nodePath": [0], "nodeType": "heading", "text": "Kestrel indexer" },
+    { "nodePath": [1], "nodeType": "paragraph", "text": "The Kestrel indexer is the vector-search component of the Raptor platform." },
+    { "nodePath": [2], "nodeType": "paragraph", "text": "It listens for gRPC traffic on port 50051 by default." },
+    { "nodePath": [3], "nodeType": "paragraph", "text": "This system rebuilds a corrupted shard from the write-ahead log in under 90 seconds." },
+    { "nodePath": [4], "nodeType": "paragraph", "text": "It listens for gRPC traffic on port 50051 by default." }
+  ],
+  "raw": "{\"resolved\":[{\"i\":2,\"text\":\"The Kestrel indexer listens for gRPC traffic on the default port.\"},{\"i\":3,\"text\":\"The Kestrel indexer rebuilds a corrupted shard from the write-ahead log in under 90 seconds.\"}],\"drop\":[4]}"
+}

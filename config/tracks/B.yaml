@@ -1,0 +1,12 @@
+id: B
+name: "Public benchmark"
+adapter: track_b_public
+params:
+  # Preference order (§5.1-B); verify availability on HF datasets at runtime.
+  candidates: ["qasper", "natural_questions", "narrativeqa", "multihop_rag"]
+  n_queries: 150
+  llm_model: "claude-sonnet-5"   # v1.1: Sonnet for the all-fresh public track (Track A stays Opus/cached)
+  max_docs: 60                    # cap indexed docs to bound cost/memory on this host
+  dev_fraction: 0.0               # no sweep on B -> use all 150 queries as test
+  requires_network: true
+  requires_llm: false

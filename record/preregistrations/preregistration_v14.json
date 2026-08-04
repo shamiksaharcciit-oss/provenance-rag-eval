@@ -1,0 +1,94 @@
+{
+  "status": "DRAFT — NOT FROZEN. Awaiting review of Experiment_Plan_v1.4_SmallToBig.md.",
+  "freeze_procedure": "On acknowledgement, stamp frozen_utc and the SHA-256 hashes of the plan and the small-to-big source files, then commit BEFORE the first run. Deliberately not stamped yet: freezing is the act that should FOLLOW review, and freezing criteria nobody else has read is exactly how the v1.3 harm-branch gap happened.",
+  "frozen_utc": null,
+  "experiment": "v1.4-small-to-big",
+  "amends": "v1.1 base plan; independent of v1.2 (identity) and v1.3 (reranker)",
+  "criteria_template": "Amendment_Criteria_Template.md v1.0 (four-branch, mandatory)",
+
+  "axis": "orthogonal retrieval-unit change — every condition scored with and without small-to-big from the same corpus and query set, paired per query. NOT a new condition.",
+
+  "headroom_analysis_before_hypothesis": {
+    "measure": "ceiling gap = 1 - recall@10 — the share of queries whose gold is not retrieved at all, which is the pool small-to-big can address",
+    "track_A_strong_conditions": "0.119-0.153 (C0/C2/C4/C5) — very little to work with",
+    "track_A_C3": 0.165,
+    "track_A_C1": 0.381,
+    "track_B": "0.493-0.553 — half the corpus unretrieved",
+    "source": "results_v13/results.json (bge-base)",
+    "conclusion": "Track A cannot express a success criterion for this treatment; Track B can. Primary hypothesis is therefore scoped to Track B BEFORE any run, with Track A as a no-harm check."
+  },
+
+  "decides_on": "Track B (150 queries, all test — dev_fraction 0.0). Track A (176 test queries) secondary.",
+  "conditions": ["C0", "C2", "C4"],
+  "conditions_excluded": {
+    "C1": "semantic chunker already sets its own boundaries",
+    "C3_C5": "units are already marker-delimited, making 'child of a marked section' partly circular"
+  },
+
+  "child_parent_construction": {
+    "C0": {"child": "naive cut of raw text at child_tokens", "parent": "enclosing 768-token naive chunk"},
+    "C2": {"child": "naive cut of raw text at child_tokens", "parent": "enclosing naive chunk + its contextual blurb"},
+    "C4": {"child": "naive cut of FORMATTED text at child_tokens", "parent": "enclosing formatter-marked section"}
+  },
+  "child_tokens_primary": 128,
+  "child_tokens_robustness": 256,
+  "no_sweep_rationale": "Track B has no dev split (dev_fraction 0.0), so sweeping child size there would contaminate the test set, and transferring a Track-A-swept size would be an untested assumption. Both sizes are pre-declared and both reported; no post-hoc selection between them.",
+
+  "provenance_rule_MANDATORY": "Hits are scored on the CHILD's source_ranges — the unit retrieval actually found — NEVER on the parent's. Scoring on parent ranges would mechanically increase overlap with any gold span, rewarding dilution: the widest parent would always win. The parent is attached as a separate context field and is never passed to hit_flags. A test must assert that widening the parent leaves every recall number unchanged.",
+
+  "declared_structural_advantage": "For C4 the parent is a semantically coherent formatter-marked section; for C0/C2 it is an arbitrary 768-token window. If C4 outperforms, part of that is the formatter supplying better parent boundaries — a real property of the treatment, but not the same claim as 'small-to-big helps'. The primary hypothesis is within-condition (X+s2b vs X), which is immune to this. Declared here rather than left for a reviewer to find.",
+
+  "measures_retrieval_half_only": "This tests whether smaller indexed children find gold that current units miss. The generation-side benefit of returning coherent parent context is ASSERTED, NOT MEASURED — the harness has no generation metric.",
+
+  "hypotheses": {
+    "H7":  "primary, Track B: for each X in {C0,C2,C4}, X+small-to-big recall@5 > X at child_tokens=128, paired, CI excludes 0 after Holm",
+    "H7a": "secondary, Track A: no-harm check — small-to-big does not significantly REDUCE recall@5. Track A is not expected to gain",
+    "H7b": "robustness: H7 at child_tokens=256, reported alongside 128, no selection after the fact",
+    "H7c": "descriptive: parent context-sufficiency rate and mean parent token count. Inflation-prone by construction; NO decision weight; never quoted as a recall number"
+  },
+
+  "primary_metric": "recall@5, hybrid ranking, 'any' overlap variant",
+  "secondary_metrics": ["recall@1", "recall@3", "recall@10", "nDCG@5", "nDCG@10", "MRR", "strict overlap variant"],
+
+  "decision_rules": {
+    "ADOPT": "H7 significant positive on Track B at child_tokens=128 (paired CI excludes 0 after Holm within {C0,C2,C4}) AND H7a shows no significant harm on Track A",
+    "ADOPT_SCOPED": "H7 significant positive confined to a PRE-NAMED admissible scope. Admissible scopes, declared now: (a) one condition family — C0/C2 versus C4; (b) one child size but not the other. Any other scope is a hypothesis, not a verdict",
+    "KILL": "H7 effect not statistically distinguishable from zero on Track B",
+    "REJECT_HARM": "significant NEGATIVE effect on any primary condition on EITHER track — same rule as ADOPT with the sign reversed"
+  },
+  "branch_precedence": "REJECT_HARM takes precedence over KILL when both could apply; a harm finding is reported as harm, never as a null",
+  "harm_reporting_rule": "a significant negative is reported in the direction it fell, with the same prominence a positive would receive",
+  "harm_branch_motivation": "v1.3 froze ADOPT/ADOPT_SCOPED/KILL only, then produced a significant negative that fitted none of them and had to be recorded as 'REJECT (criteria incomplete)'. Small-to-big can plausibly harm: smaller units carry less context and may embed worse.",
+
+  "holm_families": "H7's three Track B conditions form one family. Track A's no-harm checks form a SEPARATE family. Neither is merged with v1.1's H1-H4 or v1.3's H6. Child-size variants are reported separately, never pooled.",
+
+  "one_shot_rule": "if H7 fails, changing child size, parent definition or embedder and re-testing on this same Track A/B split is NOT a fresh test; a retry needs a new pre-registered amendment stating what changed and why",
+
+  "reporting_rule": "H7c and any interaction are reported in whichever direction they fall; a result unfavourable to small-to-big or to the formatter is reported with equal prominence",
+
+  "environment_pins": {
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "embedding_revision": "main",
+    "embedding_backend": "sentence-transformers",
+    "llm_model_track_A": "claude-opus-4-8",
+    "llm_model_track_B": "claude-sonnet-5",
+    "llm_provider": "anthropic (cache-served; a miss fails loud)",
+    "seed": 1337,
+    "comparability_note": "v1.1's published numbers used all-MiniLM-L6-v2. v1.4 pins bge-base, so v1.4 absolute numbers are comparable to v1.3's, NOT to v1.1's. Only within-run paired deltas are quotable across amendments."
+  },
+
+  "run_requirements": {
+    "run_id": "must be populated",
+    "out_dir": "results_v14 — never results/",
+    "pipefail": "no result-bearing command may run through a pipe that can mask its exit status (template §A1)"
+  },
+
+  "stats": {"bootstrap_iters": 10000, "permutation_iters": 10000, "ci": 0.95, "holm": true},
+
+  "not_tested": [
+    "generation quality or faithfulness with parent context (no generation metric)",
+    "child sizes other than 128 and 256",
+    "Track C (blocked on v1.2's open design items)",
+    "interaction with reranking (that axis is spent on this split)"
+  ]
+}

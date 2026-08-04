@@ -1,0 +1,12 @@
+id: C3
+name: "Semantic formatter (treatment)"
+chunker: formatter
+params:
+  soft_target_tokens: 384    # overridden by sweep if enabled (§5.3)
+  # Formatter operations (all ON for the full pass). Ablations toggle these (§9).
+  reference_resolution: true # resolve dangling references / anaphora
+  dedup: true                # de-duplicate restated context
+  right_size: true           # right-size sections to one idea vs soft budget
+  boundary_markers: true     # emit machine-readable boundary markers (always on)
+  verbatim_guardrail: true   # never edit domain terms/identifiers/numbers
+  diff_gate: true            # reject edits that violate the verbatim guardrail

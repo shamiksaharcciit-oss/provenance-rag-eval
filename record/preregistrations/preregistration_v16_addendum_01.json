@@ -1,0 +1,93 @@
+{
+  "document": "preregistration_v16_addendum_01",
+  "kind": "DISCLOSURE ADDENDUM. Adds prior knowledge. Alters nothing.",
+  "supersedes": null,
+  "augments": "1b01f9b4c760123eb7a26a713e473ad69346bc8d",
+  "augments_frozen_utc": "2026-07-31T10:06:54Z",
+  "written_utc": "2026-07-31T10:14:27Z",
+  "why_this_exists": "prior_knowledge_at_freeze records the three published 768 values and both differences. It does not record a SECOND body of knowledge that existed before the freeze commit -- a component ledger read off the published ablation table, and an expectation formed from it, held by the principal and discussed in conversation. That conversation is not a committed artifact, so NOTHING IN THE REPOSITORY WOULD EVER REVEAL IT. It is disclosed here because a sealed prediction is worth only as much as the record of what informed it.",
+  "prior_knowledge_addendum": {
+    "component_ledger": {
+      "provenance": "published; Track A; all-MiniLM-L6-v2; hybrid ranking; any-overlap scoring; recall@5; from results/results.md in the v1.1 bundle (rag-formatter-results.zip, run-20260724-135411)",
+      "n_queries": 176,
+      "note": "Levels are exact integer query counts over n=176; each published 4-dp value recovers its count exactly. Recorded as counts because the programme's r-value defect (PW-1 PA-2) established that 4-dp decimals hide arithmetic.",
+      "levels": [
+        {
+          "condition": "C0",
+          "recall@5": 0.7841,
+          "count": "138/176",
+          "read_as": "baseline"
+        },
+        {
+          "condition": "C3-markeronly",
+          "recall@5": 0.7955,
+          "count": "140/176",
+          "read_as": "seam placement; established at Gate 0 G10 to BE the SEAM arm"
+        },
+        {
+          "condition": "C3-noref",
+          "recall@5": 0.7784,
+          "count": "137/176",
+          "read_as": "BELOW baseline"
+        },
+        {
+          "condition": "C3-nodedup",
+          "recall@5": 0.8295,
+          "count": "146/176",
+          "read_as": "ABOVE the full pass"
+        },
+        {
+          "condition": "C3",
+          "recall@5": 0.8182,
+          "count": "144/176",
+          "read_as": "the full pass"
+        },
+        {
+          "condition": "C2",
+          "recall@5": 0.8523,
+          "count": "150/176",
+          "read_as": "a simpler published method OUTPERFORMS the formatter"
+        },
+        {
+          "condition": "C5",
+          "recall@5": 0.8523,
+          "count": "150/176",
+          "read_as": "formatter + contextual: no gain over contextual alone"
+        }
+      ],
+      "differences": {
+        "status": "DERIVED BY SUBTRACTION OF PUBLISHED POINT ESTIMATES. No confidence interval, no test, NOT a v1.6 quantity. They enter no arm and no v1.6 number is computed from them.",
+        "seam_placement_S_minus_C0": "+2/176 = +0.0114",
+        "full_pass_over_baseline_C3_minus_C0": "+6/176 = +0.0341",
+        "reference_resolution_C3_minus_C3noref": "+7/176 = +0.0398",
+        "dedup_C3_minus_C3nodedup": "-2/176 = -0.0114",
+        "contextual_over_formatter_C2_minus_C3": "+6/176 = +0.0341"
+      }
+    },
+    "principal_expectation_at_freeze": {
+      "held_by": "the principal (Shamik Saha)",
+      "in_substance": "that the formatter's retrieval advantage is small -- on the order of six queries out of 176 -- that whatever is real in it is concentrated in REFERENCE RESOLUTION, that DEDUP MAY COST SLIGHTLY, and that D_edit may well come back indistinguishable from zero.",
+      "arithmetic_check": "'six queries out of 176' is exact: C3 - C0 = 144/176 - 138/176 = +6/176.",
+      "status": "A PRIOR BELIEF ABOUT THE OUTCOME, HELD BY THE PRINCIPAL AT FREEZE TIME."
+    },
+    "chronology": {
+      "P6_P7_formed_at": "4851f58",
+      "P6_P7_formed_before": "the ablation ledger existed",
+      "ledger_formed": "after d43063f and before the freeze commit 1b01f9b",
+      "arm_values_computed": "NONE, at any point up to and including this addendum",
+      "conclusion": "The ledger did NOT inform the formation of P6 or P7, but it WAS knowledge held at freeze time. Both facts are recorded; a reader may weigh them."
+    },
+    "relation_to_P7_stated_rather_than_asserted_away": "P7 predicts that D_text carries the majority of D_edit -- that the benefit is text quality rather than boundary movement. 'The benefit is concentrated in reference resolution' leans the same way, since ref-resolution is the component that most obviously improves text. The principal does not believe the ledger determined P7, and the chronology above supports that. But the two are NOT cleanly orthogonal, and a reader is entitled to weigh that themselves rather than take anyone's word for it.",
+    "why_disclosure_helps_in_both_directions": "If v1.6 lands on KILL, the record shows the outcome was suspected in advance and the test was run anyway. If it lands on ADOPT, the record shows the result survived a principal who expected it to fail. UNDISCLOSED, the first case looks like hindsight and the second looks like luck."
+  },
+  "alters_nothing": {
+    "assertion": "This addendum alters NO prediction, NO arm, NO decision rule, NO Holm family, NO metric and NO halt condition. It adds disclosure and nothing else.",
+    "P6_P7": "stand EXACTLY as sealed and remain marked BLIND. This note is attached to that marking, not a replacement for it: they were formed before the ledger existed, which is what BLIND claims and what the chronology establishes.",
+    "preregistration_v16_json": "NOT MODIFIED. Its hash and timestamp are the freeze; rewriting the file would destroy the thing the freeze exists to establish."
+  },
+  "bound_on_this_precedent": {
+    "rule": "A disclosure addendum is permitted ONLY before the first arm value exists, and ONLY to ADD prior knowledge, expectations or provenance. It may NEVER remove or weaken a disclosure. Anything that touches a prediction, an arm, a decision rule, a family, a metric or a halt condition is not an addendum -- it is a new pre-registration, and therefore a NEW EXPERIMENT under the one-shot rule.",
+    "why": "Without the bound, 'we can always add an addendum' becomes a way to keep the pre-registration negotiable after the fact, which is the failure mode the freeze exists to prevent. With it, the mechanism can only ever make the record more complete."
+  },
+  "published_values_are_not_comparators": "Motivation and disclosure only, as in prior_knowledge_at_freeze. They enter no arm, and no v1.6 number is computed from them."
+}

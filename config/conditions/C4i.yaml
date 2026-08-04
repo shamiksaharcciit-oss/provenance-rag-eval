@@ -1,0 +1,14 @@
+id: C4i
+name: "Formatted + identity injection + naive (v1.2 treatment)"
+chunker: formatted_naive
+params:
+  # Identical to C4 except identity_injection ON — isolates the single v1.2 operation.
+  reference_resolution: true
+  dedup: true
+  right_size: true
+  soft_target_tokens: 384
+  verbatim_guardrail: true
+  diff_gate: true
+  identity_injection: true   # v1.2 §1: document-identity stamping (PROMPTS_VERSION=v1.2-identity)
+  chunk_tokens: 768
+  overlap_frac: 0.0

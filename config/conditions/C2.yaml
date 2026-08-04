@@ -1,0 +1,10 @@
+id: C2
+name: "Contextual retrieval"
+chunker: contextual
+params:
+  # Base chunks (naive) each prepended with an LLM-generated 1-2 sentence
+  # document-context blurb (Anthropic-style). Blurb is NOT part of provenance (§6.1).
+  base: naive
+  chunk_tokens: 768      # same best base size as C0 (fairness; C2 is naive + blurb)
+  overlap_frac: 0.0
+  blurb_max_sentences: 2

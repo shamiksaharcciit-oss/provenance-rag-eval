@@ -1,0 +1,13 @@
+id: C5
+name: "Formatted + contextual blurbs (stacked, H4)"
+chunker: formatted_contextual
+params:
+  # Formatter full pass (split on markers, as C3), then a contextual blurb per formatted
+  # unit — same prompt/model as C2 (v1.1 §3). Tests complementarity H4: C5 > C2.
+  reference_resolution: true
+  dedup: true
+  right_size: true
+  soft_target_tokens: 768   # match C3's swept-best unit size
+  verbatim_guardrail: true
+  diff_gate: true
+  blurb_max_sentences: 2

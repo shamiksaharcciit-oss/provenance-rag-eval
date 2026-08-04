@@ -1,0 +1,15 @@
+{
+  "id": "gf4-camelcase-product",
+  "title": "Guardrail fixture 4 — internally-capitalised product name",
+  "violationClass": "CamelCase product name (VictoriaMetrics) replaced with a generic phrase",
+  "note": "CamelCase is the protected class most easily lost to well-meaning paraphrase, because the replacement reads naturally. The retention period 400 is preserved, so the digit rule cannot be what triggers the block.",
+  "expectBlocked": [2],
+  "expectOk": [3],
+  "blocks": [
+    { "nodePath": [0], "nodeType": "heading", "text": "Osprey metrics collector" },
+    { "nodePath": [1], "nodeType": "paragraph", "text": "The Osprey metrics collector scrapes every Raptor platform component on a 15-second interval." },
+    { "nodePath": [2], "nodeType": "paragraph", "text": "It writes samples to a VictoriaMetrics cluster retained for 400 days." },
+    { "nodePath": [3], "nodeType": "paragraph", "text": "This collector drops any series with more than 50k label combinations." }
+  ],
+  "raw": "{\"resolved\":[{\"i\":2,\"text\":\"The Osprey metrics collector writes samples to a time-series cluster retained for 400 days.\"},{\"i\":3,\"text\":\"The Osprey metrics collector drops any series with more than 50k label combinations.\"}],\"drop\":[]}"
+}

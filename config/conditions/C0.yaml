@@ -1,0 +1,6 @@
+id: C0
+name: "Naive fixed-size"
+chunker: naive
+params:
+  chunk_tokens: 384     # overridden by dev sweep if enabled (§5.3)
+  overlap_frac: 0.1

@@ -1,0 +1,11 @@
+id: C3-nodedup
+name: "Formatter ablation: de-duplication OFF"
+chunker: formatter
+params:
+  soft_target_tokens: 384
+  reference_resolution: true
+  dedup: false                 # OFF
+  right_size: true
+  boundary_markers: true
+  verbatim_guardrail: true
+  diff_gate: true

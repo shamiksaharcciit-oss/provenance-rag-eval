@@ -1,0 +1,12 @@
+id: A
+name: "Controlled synthetic"
+adapter: track_a_synthetic
+params:
+  n_docs: 45              # ~30-60 seed docs (§5.1-A)
+  n_queries: 220          # ~150-300 queries
+  # Degradation controls (gold recorded by construction)
+  anaphora_rate: 0.5      # fraction of eligible entity mentions replaced with pronoun
+  duplication_copies: 2   # restate a fact in 2-3 places
+  split_distance_chars: 600  # min chars between definition and usage
+  requires_network: false
+  requires_llm: false     # runnable with zero paid LLM calls

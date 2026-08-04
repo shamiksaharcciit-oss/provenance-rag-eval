@@ -1,0 +1,47 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+# The Anthropic key is read from the environment (src/llm/client.py) and the Forge
+# app stores it encrypted via `forge variables set --encrypt`. Nothing should ever
+# land here, but fail safe.
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+**/credentials.json
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ── Node / Forge ──────────────────────────────────────────────────────────────
+node_modules/
+dist/
+.forge/
+*.log
+forge-app/static/panel/build/bundle.js
+forge-app/scripts/.crosscheck.js
+
+# ── Generated data & caches ───────────────────────────────────────────────────
+# Corpora and LLM cache are large and reproducible; the evidentiary bundles
+# (rag-formatter-results.zip, rag_formatter_v1.2_identity_REJECT.zip) and the
+# results_v12/ outputs ARE tracked — they are the experimental record.
+data/
+cache/
+results/runs/
+*.faiss
+
+# Cross-check working artifacts (§7.5). report.md is regenerated per run; archive
+# a copy alongside a milestone if you want it preserved.
+crosscheck/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

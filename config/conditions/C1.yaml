@@ -1,0 +1,8 @@
+id: C1
+name: "Semantic chunking"
+chunker: semantic
+params:
+  # Embedding-similarity boundary detection between sentences.
+  breakpoint_percentile: 90   # split where inter-sentence distance exceeds this pct
+  max_tokens: 512             # hard cap; overridden by dev sweep if enabled
+  min_tokens: 64

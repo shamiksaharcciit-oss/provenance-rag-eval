@@ -1,0 +1,15 @@
+{
+  "id": "gf3-hyphenated-version",
+  "title": "Guardrail fixture 3 — hyphenated alphanumeric version string",
+  "violationClass": "hyphenated alphanumeric model identifier (bge-large-en-v1.5)",
+  "note": "The model name is the single most retrieval-critical token on the page and the edit generalises it away. Triton is deliberately NOT protected (single capital, no digit or hyphen), so its survival is incidental and must not be what decides the verdict.",
+  "expectBlocked": [2],
+  "expectOk": [1],
+  "blocks": [
+    { "nodePath": [0], "nodeType": "heading", "text": "Merlin embedding service" },
+    { "nodePath": [1], "nodeType": "paragraph", "text": "It batches up to 64 chunks per request to keep GPU utilisation above 80 percent." },
+    { "nodePath": [2], "nodeType": "paragraph", "text": "It runs the bge-large-en-v1.5 model behind a Triton inference server." },
+    { "nodePath": [3], "nodeType": "paragraph", "text": "Swapping the model requires a full reindex, because vectors from different models are not comparable." }
+  ],
+  "raw": "{\"resolved\":[{\"i\":1,\"text\":\"The Merlin embedding service batches up to 64 chunks per request to keep GPU utilisation above 80 percent.\"},{\"i\":2,\"text\":\"The Merlin embedding service runs the large embedding model behind a Triton inference server.\"}],\"drop\":[]}"
+}

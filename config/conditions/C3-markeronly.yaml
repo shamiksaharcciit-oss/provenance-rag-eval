@@ -1,0 +1,15 @@
+id: C3-markeronly
+name: "Formatter ablation: markers only, no text edits"
+chunker: formatter
+params:
+  soft_target_tokens: 384
+  # Isolates "better boundaries" from "better text": structural boundary markers
+  # only, all text-editing operations OFF. Units are verbatim substrings cut on
+  # the formatter's chosen boundaries (§9).
+  reference_resolution: false
+  dedup: false
+  right_size: false
+  boundary_markers: true       # ONLY this
+  verbatim_guardrail: true
+  diff_gate: true
+  markers_only: true

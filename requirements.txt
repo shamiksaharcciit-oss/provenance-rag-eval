@@ -1,0 +1,22 @@
+# Core retrieval / embedding stack
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+rank_bm25>=0.2.2
+numpy>=1.26,<2.3
+scipy>=1.11
+pandas>=2.1
+
+# Datasets (Track B); optional at runtime
+datasets>=2.19
+
+# LLM (C2 blurbs, C3 formatter, judges); optional if provider=none
+anthropic>=0.40.0
+
+# Config / plotting / testing
+pyyaml>=6.0
+matplotlib>=3.8
+pytest>=8.0
+
+# Optional cross-checks (nice-to-have; import guarded)
+# ragas>=0.1
+# pytrec_eval>=0.5

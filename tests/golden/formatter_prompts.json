@@ -1,0 +1,18 @@
+{
+  "PROMPTS_VERSION": "eval-run-20260724-135411",
+  "number_sentences": {
+    "input": [
+      "a",
+      "b",
+      "c"
+    ],
+    "output": "[0] a\n[1] b\n[2] c"
+  },
+  "system": {
+    "True_True": "You are a conservative semantic formatter for RAG indexing. Tasks: resolve leading dangling references (pronouns such as 'It', 'This system') to the document subject, editing ONLY the reference; identify sentences that are exact restatements of an earlier sentence. NEVER change domain terms, identifiers, or numbers (keep them verbatim). Do NOT split, merge, or reorder sentences. Return ONLY JSON of the form {\"resolved\":[{\"i\":<index>,\"text\":\"<edited sentence>\"}],\"drop\":[<indices>]}. Put a sentence in 'resolved' ONLY if you changed its wording; put an index in 'drop' ONLY if that sentence is an exact restatement of an earlier one.",
+    "True_False": "You are a conservative semantic formatter for RAG indexing. Tasks: resolve leading dangling references (pronouns such as 'It', 'This system') to the document subject, editing ONLY the reference. NEVER change domain terms, identifiers, or numbers (keep them verbatim). Do NOT split, merge, or reorder sentences. Return ONLY JSON of the form {\"resolved\":[{\"i\":<index>,\"text\":\"<edited sentence>\"}],\"drop\":[<indices>]}. Put a sentence in 'resolved' ONLY if you changed its wording; put an index in 'drop' ONLY if that sentence is an exact restatement of an earlier one.",
+    "False_True": "You are a conservative semantic formatter for RAG indexing. Tasks: identify sentences that are exact restatements of an earlier sentence. NEVER change domain terms, identifiers, or numbers (keep them verbatim). Do NOT split, merge, or reorder sentences. Return ONLY JSON of the form {\"resolved\":[{\"i\":<index>,\"text\":\"<edited sentence>\"}],\"drop\":[<indices>]}. Put a sentence in 'resolved' ONLY if you changed its wording; put an index in 'drop' ONLY if that sentence is an exact restatement of an earlier one.",
+    "False_False": "You are a conservative semantic formatter for RAG indexing. Tasks: none. NEVER change domain terms, identifiers, or numbers (keep them verbatim). Do NOT split, merge, or reorder sentences. Return ONLY JSON of the form {\"resolved\":[{\"i\":<index>,\"text\":\"<edited sentence>\"}],\"drop\":[<indices>]}. Put a sentence in 'resolved' ONLY if you changed its wording; put an index in 'drop' ONLY if that sentence is an exact restatement of an earlier one."
+  },
+  "user": "<subject>The Kestrel indexer</subject>\n[0] a\n[1] b"
+}

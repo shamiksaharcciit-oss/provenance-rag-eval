@@ -1,0 +1,313 @@
+{
+  "status": "FROZEN",
+  "frozen_utc": "2026-07-28T16:07:33Z",
+  "freeze_procedure": "Frozen after the terminal whole-document review (v15_Terminal_Review.md). Both blocking findings (\u00a71 fusion locus / pool denomination) resolved by the \u00a72 retrieval specification; \u00a73 multiplicity settled as one Holm family of six; \u00a74 limitations (a)-(e) folded in; \u00a75 generalisation added to the template as \u00a7A1c. No run executed and no data observed at freeze time.",
+  "experiment": "v1.5-small-to-big",
+  "supersedes": {
+    "file": "preregistration_v14.json",
+    "frozen_utc": "2026-07-28T10:50:48Z",
+    "status": "SUPERSEDED BEFORE RUN \u2014 never executed, no data observed",
+    "not_unfrozen": "v1.4 stands as stamped. The seal's value is its monotonicity; a freeze undoable with a sufficiently reasonable rationale is not a commitment device. The integrity property pre-registration buys is PRE-DATA, not pre-timestamp \u2014 and no data was observed at any point in the sequence."
+  },
+  "amends": "v1.1 base plan; independent of v1.2 (identity) and v1.3 (reranker)",
+  "criteria_template": "Amendment_Criteria_Template.md v1.2 (four-branch + \u00a7A1b demonstrated-failure + \u00a7A1c fixed-cardinality re-denomination)",
+  "why_v14_was_superseded": {
+    "fixed_k_volume_bias": "v1.4 \u00a74 mandated scoring the child, never the parent. That prevented parent-dilution and in the same stroke created its mirror: at fixed k a 128-token child retrieves ~6x less text than a 768-token parent (5x128=640 vs 5x768=3840). Measured Track A C0: parents@5 0.790 vs children@5 0.4886. H7 as written would have returned REJECT_HARM on both tracks for a MEASUREMENT-DESIGN reason, indistinguishable in the write-up from real harm.",
+    "headroom_invalidated_by_the_fix": "Scoring the delivered parent with a set-identical inventory means the treatment can only REORDER units, never surface new ones. v1.4 \u00a72's ceiling-gap justification (1 - r@10) was therefore wrong; \u00a72 is rewritten around r@inf - r@5.",
+    "c4_provenance": "Formatter units carry merged, disjoint sentence ranges spanning MORE original text than the unit's own text (one C4 unit: 108 ranges, span 7492 chars vs text 5371), over edited text whose offsets are not linear. ProvenanceNotDerivable is raised rather than guessed; the alternatives were handing children the parent's ranges (the dilution defect itself) or interpolating across edited text (fabricated provenance)."
+  },
+  "axis": "orthogonal retrieval-unit change; every condition scored with and without small-to-big over the same corpus and query set, paired per query. NOT a new condition.",
+  "decides_on": "Track B (150 queries, all test \u2014 dev_fraction 0.0). Track A (176 test queries) secondary no-harm check.",
+  "conditions": [
+    "C0",
+    "C2",
+    "C4"
+  ],
+  "conditions_excluded": {
+    "C1": "semantic chunker already sets its own boundaries"
+  },
+  "headroom_bound": {
+    "measure": "recall@inf - recall@5",
+    "why_r10_minus_r5_is_WRONG": "It measures reordering within an existing shortlist, which would be right only if best-child scoring were a local re-rank. Under max-over-children a parent whose whole-unit embedding is diluted \u2014 one relevant passage averaged with ~700 unrelated tokens \u2014 can sit at rank 200 under whole-unit scoring and rank 3 under best-child scoring, because the child carrying that passage is embedded alone. Nothing confines the movement to the top-10. That dilution-rescue IS the mechanism.",
+    "recall_inf_definition": "COVERAGE \u2014 the fraction of queries whose gold lies in SOME indexed unit. Computed without retrieval by checking every unit against every gold span, so it is exact rather than estimated.",
+    "recall_inf_is_also_diagnostic": "recall@inf < 1 for a condition means that condition's pipeline loses gold OUTRIGHT at any k. C4 is the one to watch: if a gold span sits in a duplicate whose ranges were not absorbed into the canonical unit it is unreachable at any k \u2014 a genuine treatment defect, invisible in every number reported to date.",
+    "caveat_not_a_prediction": "The realistically achievable fraction is a small share of the bound on both tracks. A large pool means the test is CAPABLE of expressing an outcome, not that one is expected.",
+    "caveat_track_level_only": "Per-condition pools inside a track are within noise at n=176/150. The bound scopes the primary hypothesis to a TRACK; it must NOT be used to drop or select conditions.",
+    "data_source": "v1.3 TEST artifacts extended in k, using run.py's --no-sweep configuration verbatim.",
+    "admissibility_principle": "Quantities that BOUND what an experiment could show are admissible pre-data; quantities that INDICATE what it would show are not. A headroom analysis can only shrink or cancel an experiment, never manufacture a positive \u2014 that asymmetry is what makes it safe on spent test data. Precedent: v1.4 \u00a72's ceiling-gap table came from the same source and was approved in writing.",
+    "measured": [
+      {
+        "track": "A",
+        "condition": "C0",
+        "n_units": 90,
+        "n_queries": 176,
+        "recall@5": 0.7898,
+        "recall@10": 0.8466,
+        "recall@50": 0.9773,
+        "recall@inf": 1.0,
+        "headroom_r10_minus_r5": 0.0568,
+        "headroom_r50_minus_r5": 0.1875,
+        "headroom_rinf_minus_r5": 0.2102,
+        "coverage_complete": true
+      },
+      {
+        "track": "A",
+        "condition": "C2",
+        "n_units": 90,
+        "n_queries": 176,
+        "recall@5": 0.8523,
+        "recall@10": 0.8807,
+        "recall@50": 0.9716,
+        "recall@inf": 1.0,
+        "headroom_r10_minus_r5": 0.0284,
+        "headroom_r50_minus_r5": 0.1193,
+        "headroom_rinf_minus_r5": 0.1477,
+        "coverage_complete": true
+      },
+      {
+        "track": "A",
+        "condition": "C4",
+        "n_units": 90,
+        "n_queries": 176,
+        "recall@5": 0.8352,
+        "recall@10": 0.875,
+        "recall@50": 0.9886,
+        "recall@inf": 1.0,
+        "headroom_r10_minus_r5": 0.0398,
+        "headroom_r50_minus_r5": 0.1534,
+        "headroom_rinf_minus_r5": 0.1648,
+        "coverage_complete": true
+      },
+      {
+        "track": "B",
+        "condition": "C0",
+        "n_units": 378,
+        "n_queries": 150,
+        "recall@5": 0.3533,
+        "recall@10": 0.4733,
+        "recall@50": 0.7,
+        "recall@inf": 1.0,
+        "headroom_r10_minus_r5": 0.12,
+        "headroom_r50_minus_r5": 0.3467,
+        "headroom_rinf_minus_r5": 0.6467,
+        "coverage_complete": true
+      },
+      {
+        "track": "B",
+        "condition": "C2",
+        "n_units": 378,
+        "n_queries": 150,
+        "recall@5": 0.3867,
+        "recall@10": 0.4733,
+        "recall@50": 0.6933,
+        "recall@inf": 1.0,
+        "headroom_r10_minus_r5": 0.0867,
+        "headroom_r50_minus_r5": 0.3067,
+        "headroom_rinf_minus_r5": 0.6133,
+        "coverage_complete": true
+      },
+      {
+        "track": "B",
+        "condition": "C4",
+        "n_units": 379,
+        "n_queries": 150,
+        "recall@5": 0.4,
+        "recall@10": 0.5067,
+        "recall@50": 0.74,
+        "recall@inf": 1.0,
+        "headroom_r10_minus_r5": 0.1067,
+        "headroom_r50_minus_r5": 0.34,
+        "headroom_rinf_minus_r5": 0.6,
+        "coverage_complete": true
+      }
+    ],
+    "measured_source": "scripts/headroom_bound.py; v1.3 test artifacts extended in k; bge-base; run.py --no-sweep baseline config verbatim. Every r@5 and r@10 reproduces v1.3's published values exactly.",
+    "conclusion": "Track B pool is ~3-4x Track A's (+0.600..+0.647 vs +0.148..+0.210), so scoping H7 to Track B survives the correction on corrected reasoning.",
+    "coverage_result": "recall@inf = 1.000 on EVERY condition of BOTH tracks, including C4. The C4 gold-loss risk is RETIRED with evidence: dedup orphans no gold span on either corpus.",
+    "spread_reading": "Track A: r@50 already 0.972-0.989, so nearly the whole pool sits within the top 50 \u2014 short reordering distance. Track B: r@50 0.693-0.740 vs r@inf 1.000, so ~26-30 points of the pool lie BEYOND rank 50 \u2014 a larger pool that must also be moved further, reachable only by the dilution-rescue mechanism.",
+    "limitation_a_coverage_near_tautological": "For C0/C2 complete coverage is expected BY CONSTRUCTION (contiguous chunking + 'any' overlap), so the bound collapses to 1 - r@5 there. The measurement was still worth taking because it was the only way to find out whether C4 was the exception; C4 is the informative result.",
+    "limitation_b_what_coverage_does_not_retire": "Coverage is measured against a unit's CLAIMED ranges, and a C4 unit's ranges are wider than its own text (canonical absorbs duplicates' ranges: 108 ranges / 7492 chars vs 5371 chars of text). RETIRED: no gold span falls outside the union of claimed ranges. NOT RETIRED: no gold text was removed by dedup. These coincide only if absorbed duplicates were genuine duplicates \u2014 recorded as an explicit assumption."
+  },
+  "child_construction_ONE_RULE_ALL_CONDITIONS": {
+    "rule": "Split the condition's indexed text into sentences; greedily accumulate sentences into a child until adding the next would exceed child_tokens; emit. A sentence longer than child_tokens alone is hard-cut at a token boundary.",
+    "child_tokens_is_a_ceiling_not_a_size": "Conditions will not land on identical distributions. Report realized child token distribution (mean, median, p10/p90) per condition.",
+    "why_uniform": "Child cutting quality drives ranking quality, so condition-asymmetric cutting would be a machinery advantage in the one place that determines the entire result. One rule across three corpora, so the only thing differing between conditions is THE CORPUS, not the machinery.",
+    "sentence_alignment_re_decided_not_inherited": "Originally adopted to give C4 derivable child provenance. Children now only RANK and are never scored, so that necessity evaporated. Kept on the independent uniformity ground above. Recorded as re-made rather than carried forward, because superseded requirements surviving as unexplained design is its own failure mode.",
+    "C2_children": "blurb + child text; child_tokens is the ceiling on the child TEXT, blurb prepended on top. Faithful to what contextual retrieval does (context on every indexed unit) and keeps C2's child text directly comparable to C0's. Children rank only, so child size carries no volume consequence. Report mean blurb-to-child token ratio per track as the dilution diagnostic."
+  },
+  "parents_set_identical_to_baseline_inventory": {
+    "C0": "enclosing 768-token naive chunk = C0's baseline unit",
+    "C2": "enclosing naive chunk + blurb = C2's baseline unit",
+    "C4": "enclosing 768-token cut of formatted text = C4's baseline unit",
+    "C4_marked_section_parents": "DECLARED SECONDARY ARM, reported separately with the width asymmetry restated. Moving C4's primary parent to its baseline unit removes the last machinery asymmetry from the primary."
+  },
+  "scoring": {
+    "ranking": "parents-ranked-by-best-child: each parent scored as max over its children, parents ranked by that score, top-k parents taken and delivered.",
+    "why_not_children_then_collapse": "That makes the delivered ordering a function of the child pool size, which is a harness parameter rather than a property of the method.",
+    "hits_scored_on": "the delivered PARENT. Parents are baseline units, so this is exactly what the baseline scores \u2014 same inventory, same widths, same delivered volume, different ranking function.",
+    "report_children_per_parent_distribution": "max over N gives a parent with more children more chances at a high score. Parents are fixed-size baseline units so it should be near-uniform \u2014 but 'should be' is what the distribution is for."
+  },
+  "guard": {
+    "assertion": "Set-identity between the s2b parent inventory and the baseline unit inventory, per condition per track \u2014 exact identity, not overlap or containment \u2014 checked at build time and again at scoring time.",
+    "why_stronger_than_the_v14_invariance_test": "Widening becomes UNAVAILABLE rather than merely discouraged: any parent that is not literally a baseline unit fails the assertion.",
+    "regression_guard_not_evidence": "This assertion is TRUE BY CONSTRUCTION (parents are built from baseline units) and can only fail if a later refactor breaks the construction. Per template \u00a7A1b it is labelled a regression guard, and a negative control asserts it FAILS against a deliberately widened inventory.",
+    "quantified_motivation": "The v1.4 parent-dilution negative control measured recall@5 inflating by +0.267 (C0) and +0.301 (C2) on Track A \u2014 larger than any genuine effect in this programme. That is the documented reason for pinning the inventory rather than merely testing it."
+  },
+  "hypotheses": {
+    "H7": "primary, Track B: for each X in {C0,C2,C4}, ranking X's units by best-child score improves recall@5 (hybrid, 'any') over ranking them by whole-unit score, paired over queries, at child_tokens=128",
+    "H7a": "secondary, Track A: no-harm check \u2014 best-child ranking does not significantly REDUCE recall@5",
+    "H7b": "robustness: H7 at child_tokens=256, reported alongside 128, no post-hoc selection",
+    "H7c": "descriptive, NO decision weight: localisation precision at fixed k (child-scored); realized child token distributions; children-per-parent distribution; blurb-to-child ratio"
+  },
+  "H7c_caption_note": "For C4 a sentence range is PROVENANCE OF ORIGIN, not byte-identity \u2014 the formatter may have edited the sentence, so the range identifies where the text came from rather than asserting the text is verbatim.",
+  "primary_metric": "recall@5, hybrid ranking, 'any' overlap variant",
+  "secondary_metrics": [
+    "recall@1",
+    "recall@3",
+    "recall@10",
+    "nDCG@5",
+    "nDCG@10",
+    "MRR",
+    "strict overlap variant"
+  ],
+  "decision_arithmetic": {
+    "form_chosen": "per-condition, NOT pooled. C0/C2/C4 are different corpora, not replicates, so a pooled delta is not a well-defined single effect and would let a harm in one condition be averaged away by gains in another.",
+    "significant_definition": "paired CI excludes 0 after Holm within {C0,C2,C4}, positive direction",
+    "primary_child_size": 128,
+    "outcome_table_at_128": {
+      "C0,C2,C4": "ADOPT (provided H7a clean)",
+      "C0,C2": "ADOPT_SCOPED \u2014 unformatted family",
+      "C4": "ADOPT_SCOPED \u2014 formatted family",
+      "C0": "KILL \u2014 not a pre-named family",
+      "C2": "KILL \u2014 not a pre-named family",
+      "C0,C4": "KILL \u2014 not a pre-named family",
+      "C2,C4": "KILL \u2014 not a pre-named family",
+      "none": "KILL"
+    },
+    "passing_conditions_in_a_KILL_pattern": "recorded as hypotheses for a future pre-registered test, never as a verdict",
+    "child_size_scope": "if 128 yields KILL AND 256 would independently yield ADOPT, the verdict is ADOPT_SCOPED \u2014 child size ('helps at 256, not at 128'). No other child-size pattern creates a scope.",
+    "precedence": "REJECT_HARM overrides every row, including a full ADOPT sweep.",
+    "multiplicity_across_child_size": {
+      "decision": "Holm over ALL SIX tests (three conditions x two child sizes) as a SINGLE family.",
+      "rejected_alternative": "two families plus an honest 'rests on an uncorrected second look' label",
+      "why": "Removes the multiplicity rather than annotating it. Two child sizes otherwise give two looks at a positive verdict with an uncontrolled family-wise error rate across the size axis. The cost is a higher bar, which is the correct direction for a claim that would otherwise rest on two looks, and it makes a child-size scope a FINDING rather than a caveated one. Holm is valid under arbitrary dependence, so the two sizes sharing corpora and queries is not an obstacle.",
+      "accepted_consequence": "With six comparisons the correction is stricter, so a genuine but small effect is more likely to be missed. Traded deliberately."
+    }
+  },
+  "pre_named_families": {
+    "unformatted": [
+      "C0",
+      "C2"
+    ],
+    "formatted": [
+      "C4"
+    ]
+  },
+  "decision_rules": {
+    "ADOPT": "all three of {C0,C2,C4} individually significant positive on Track B at child_tokens=128 after Holm, AND H7a clean (no significant harm on Track A)",
+    "ADOPT_SCOPED": "significant-positive set exactly matches a pre-named family, or the child-size scope. Any other pattern is KILL, not a scope",
+    "KILL": "no significant positive, or a set not exactly matching a pre-named family",
+    "REJECT_HARM": "significant NEGATIVE on any primary condition on EITHER track \u2014 same rule as ADOPT, sign reversed"
+  },
+  "branch_precedence": "REJECT_HARM takes precedence over every other branch; a harm finding is reported as harm, never as a null and never offset by gains elsewhere",
+  "mandatory_verdict_wording": "If the verdict is ADOPT_SCOPED \u2014 formatted family {C4}, the \u00a75 secondary-arm asymmetry MUST be restated in the verdict text itself, so 'small-to-big helps only on formatted corpora' cannot silently absorb 'C4's parents are denser by treatment'.",
+  "holm_families": "H7's three Track B conditions form one family. Track A no-harm checks form a SEPARATE family. Neither merges with v1.1's H1-H4 or v1.3's H6. Child-size variants reported separately, never pooled.",
+  "one_shot_rule": "If H7 fails, changing child size, parent definition, ranking function or embedder and re-testing on this same Track A/B split is NOT a fresh test; a retry needs a new pre-registered amendment.",
+  "reporting_rule": "H7c and any interaction are reported in whichever direction they fall; a result unfavourable to small-to-big or to the formatter is reported with equal prominence.",
+  "residual_asymmetry": {
+    "primary": "NONE. Children sentence-aligned everywhere and C4's primary parent width-matched to its baseline unit; the only differences between conditions are the corpora.",
+    "secondary_arm_only": "marked-section parents are semantically coherent and variable-width against C0/C2's fixed windows; reported separately with the asymmetry restated at the point of comparison.",
+    "treatment_effect_declared_up_front": "C4's parents hold denser text (dedup removed redundancy), so its children may be more heterogeneous and its max correspondingly higher. Treatment effect, not artifact \u2014 stated here rather than discovered in the results.",
+    "c4_density_is_a_HYPOTHESIS_not_a_fact": "Unit counts weakly contradict the density claim: Track A C0 90 vs C4 90; Track B C0 378 vs C4 379. If dedup had removed material redundancy the formatted corpus would cut into fewer 768-token units. Reference resolution and right-sizing plausibly add back what dedup removes. \u00a77's mandatory verdict wording must NOT lean on density as established; to be settled by the realized child token distributions and unit counts, reported either way."
+  },
+  "environment_pins": {
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "embedding_revision": "main",
+    "embedding_backend": "sentence-transformers",
+    "llm_model_track_A": "claude-opus-4-8",
+    "llm_model_track_B": "claude-sonnet-5",
+    "llm_provider": "anthropic (cache-served; a miss fails loud)",
+    "seed": 1337,
+    "baseline_config": "run.py --no-sweep verbatim: C0 {chunk_tokens 768, overlap_frac 0.0}; C2 and C4 take YAML defaults. A first headroom pass that overrode only chunk_tokens measured a DIFFERENT C0 (91 units, r@5 0.722) than v1.3 ran (90 units, r@5 0.790).",
+    "comparability_note": "v1.5 absolutes are comparable to v1.3's, NEVER to v1.1's (MiniLM stack). Only within-run paired deltas travel across amendments.",
+    "truncation_note": "v1.3's confound does not apply \u2014 no cross-encoder here, and 128/256-token children sit inside bge-base's 512-token input window, so no indexed text is truncated before embedding."
+  },
+  "child_size_cost_decision": {
+    "decision": "BOTH child sizes (128 and 256) will be run. Neither is dropped.",
+    "taken_before_any_measurement": true,
+    "if_a_cut_becomes_necessary": "documented amendment recorded BEFORE any child_tokens=128 result exists, stating compute cost as the reason. Running both and reporting the better one \u2014 or skipping 256 'for time' after seeing 128 \u2014 is indistinguishable from post-hoc selection after the fact."
+  },
+  "calibration_data_declaration": "The parents@5 0.790 / children@5 0.4886 calibration was measured on Track A TEST. It is a property of the BASELINE CONFIGURATION (the token volume a fixed k delivers), not a treatment outcome, and it motivated a measurement-validity repair rather than a hypothesis fitted to an observed result. From here calibration runs on Track A DEV only, never Track B (dev_fraction 0.0 \u2014 every query is test on the primary track).",
+  "run_requirements": {
+    "run_id": "must be populated",
+    "out_dir": "results_v15 \u2014 never results/",
+    "pipefail": "no result-bearing command may run through a pipe that can mask its exit status (template \u00a7A1)"
+  },
+  "stats": {
+    "bootstrap_iters": 10000,
+    "permutation_iters": 10000,
+    "ci": 0.95,
+    "holm": true
+  },
+  "not_tested": [
+    "generation quality or faithfulness with parent context (no generation metric)",
+    "child sizes other than 128 and 256",
+    "Track C (blocked on v1.2's open design items)",
+    "interaction with reranking (that axis is spent on this split)"
+  ],
+  "retrieval_specification": {
+    "both_arms_identical_depth_and_fusion_locus": "For each modality independently: rank children, walk the ranked child list emitting each parent on FIRST APPEARANCE until index.candidate_pool DISTINCT parents are emitted or the child list is exhausted (first appearance IS max-over-children). Then RRF-fuse the two PARENT-level rankings with the same k_rrf and take top-k parents.",
+    "pool_denomination": "candidate_pool is denominated in DELIVERED PARENTS in both arms, never in indexed children. The child-side pool is whatever depth reaches that many distinct parents \u2014 variable per query, which is correct: the child side is the harness parameter, the delivered side is pinned.",
+    "why": "Handing children to Retriever caused two one-directional biases against the treatment, both in the primary metric: (1) fusion at CHILD level loses RRF's cross-modality agreement bonus, so the treatment behaves like max(dense,sparse) while the baseline behaves like dense+sparse \u2014 changing the ranking function AND the fusion locus at once; (2) 50 children is bounded above by 50 parents and in practice fewer, truncating the deep-reordering reach that \u00a72 identifies as the source of Track B's entire advantage.",
+    "baseline_untouched": "so v1.3's published values still reproduce exactly and \u00a72's configuration-match check survives",
+    "depth_assertion": "both arms' per-modality parent rankings must have equal length per query (both reached candidate_pool, or both exhausted). Negative control asserts ParentRankingDepthMismatch fires when the walk is truncated in children rather than parents.",
+    "implementation": "src/smalltobig/retrieve.py"
+  },
+  "parentcontext_scope_under_v15": "The primary parent IS a baseline Unit and carries source_ranges legitimately, because the pinned inventory means no wider parent is reachable. The v1.4 type separation RETIRES from the primary path and survives only for the C4 marked-section secondary arm, where parents are not baseline units and dilution is still live.",
+  "hashes_at_freeze": {
+    "Experiment_Plan_v1.5_SmallToBig.md": "f9e4909e9f440f871d498079c53f45de120af1072fcb194711b8c16173870ef1",
+    "Amendment_Criteria_Template.md": "3b0014cfb72ea033d060efc4c18f256996f934f954aa21d9f1a82f98a2a0ca8c",
+    "src/smalltobig/retrieve.py": "bbdb4afdb4150494bafade77e9ef43a9bc09304bbe244528b6218ee8f3d1cb31",
+    "src/smalltobig/chunker.py": "066434a1018e0cb5d8c91feaad12d81ef124c49c45328c3db7ccc214945eb74f",
+    "src/smalltobig/units.py": "0362495c10ebd612eff51084463bca5cb1e69662fecd2f1045a22689b4ab4c21",
+    "config/default.yaml": "34608f66f6c0b157987a0bb53d7fe5861ae60edcb189277ddc51a2f5a3375b53"
+  },
+  "review_record": {
+    "reviewer_verdict": "two blocking items (same defect, one fix), one item to settle, four limitations, then stamp",
+    "reviewer_stated_terminal": "no further review round regardless of what lands",
+    "blocking_resolved": [
+      "fusion moved to parent level",
+      "candidate_pool denominated in delivered parents"
+    ],
+    "settled_in_same_pass": "Holm over all six tests as one family",
+    "limitations_recorded": [
+      "coverage near-tautological for C0/C2",
+      "coverage does not retire 'no gold text removed by dedup'",
+      "C4 density demoted to hypothesis",
+      "ParentContext scope stated",
+      "SWEPT imported from run.NO_SWEEP_PARAMS"
+    ]
+  }
+  ,
+  "errata": [
+  {
+    "added_utc": "2026-07-29T00:00:00Z",
+    "key": "holm_families",
+    "defect": "stale clause carried from v1.4: 'Child-size variants reported separately, never pooled' \u2014 and 'Track A no-harm checks form a SEPARATE family', which the same settlement also replaced",
+    "governing_key": "decision_arithmetic.multiplicity_across_child_size",
+    "governing_text": "Holm over ALL SIX tests (three conditions x two child sizes) as a SINGLE family.",
+    "effect_on_results": "none - every reported Holm value was computed under the governing clause",
+    "note": "frozen key left untouched; this block records the supersession. An auditor reading the seal hits a direct contradiction with no way to tell which governs, which is what this resolves."
+  },
+  {
+    "added_utc": "2026-07-29T00:00:00Z",
+    "key": "hashes_at_freeze['src/smalltobig/chunker.py']",
+    "defect": "the pinned hash 066434a1... is the state at freeze commit d5953fa (2026-07-28T16:08Z). chunker.py was then rewritten in commit d13216e (2026-07-28T16:57Z, +166/-87) to IMPLEMENT the sentence-aligned child rule that plan section 3 mandates. The code that ran is therefore not the code that was pinned, and this pin cannot be verified against any shipped artifact.",
+    "governing_key": "none - this is a defect in the freeze procedure, not a contradiction between clauses",
+    "as_run_sha256": "1f3e13c7fc2ebdb85a84ac9b0647c96d0d024f5d8d63948f72dd67f532fbeb72 (commit dbef489, as stored) - this is the file shipped in rag_formatter_v1.5_smalltobig_REJECT_HARM.zip and the one that produced the results",
+    "effect_on_results": "none identified - the as-run implementation is the one plan section 3 specifies, and its behaviour is covered by tests/test_smalltobig_sentence_children.py. But the pin's PURPOSE is to make that checkable without trusting this sentence, and for this one file it does not.",
+    "found_by": "attempting to ship the pinned source files, per the 2026-07-29 handoff section 7a. The other three pins and both document pins verify exactly.",
+    "rule_for_next_time": "pin source hashes only after the source implements the frozen spec, or freeze the spec and the implementation in the same commit. A pin taken mid-implementation records a file that never ran."
+  }
+]
+}

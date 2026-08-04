@@ -1,0 +1,79 @@
+# Global settings, seeds, model pins. Merged first; per-track/per-condition override.
+
+seed: 1337
+
+embedding:
+  # Primary per plan §5.4. Speed fallback: sentence-transformers/all-MiniLM-L6-v2
+  #
+  # !! REPRODUCIBILITY WARNING !!
+  # The PUBLISHED v1.1 numbers (results/, run-20260724-174208, and the white paper) were
+  # produced with the SPEED FALLBACK, not this default:
+  #     python -m src.run --track A --embedding-model all-MiniLM-L6-v2
+  # Running with this default (bge-base) gives DIFFERENT absolute numbers — every ranking
+  # changes, e.g. Track A C3 recall@5 0.818 (MiniLM) vs 0.773 (bge-base). Nothing is broken;
+  # the retrieval stack simply differs. Absolute numbers are comparable only WITHIN an
+  # embedder; within-run paired deltas are comparable across both.
+  # See Answers_Gate_Questions_2026-07-27.md §1a.
+  model: "BAAI/bge-base-en-v1.5"
+  revision: "main"          # pinned; recorded into results.json (§11)
+  normalize: true           # cosine == inner product on normalized vectors
+  batch_size: 64
+  device: "cpu"
+
+index:
+  dense: "faiss"            # in-process IP on normalized vectors
+  sparse: "bm25"           # rank_bm25
+  fusion: "rrf"
+  k_rrf: 60
+  candidate_pool: 50        # top-k candidates per retriever before fusion (§5.4)
+
+retrieval:
+  k_values: [1, 3, 5, 10]
+
+# Reranking axis (amendment v1.3, M6). ORTHOGONAL to the formatter conditions: when enabled,
+# every condition is scored both with and without reranking on the same retrieval, so the
+# comparison is paired. Default OFF so all prior results reproduce unchanged.
+rerank:
+  enabled: false
+  backend: "cross_encoder"                        # "cross_encoder" | "noop"
+  model: "cross-encoder/ms-marco-MiniLM-L-6-v2"   # pinned; recorded into results.json (§11)
+  revision: "main"
+  batch_size: 32
+  device: "cpu"
+  max_length: 512
+  # The pool reranked per query is index.candidate_pool (50). Reranking the pool, not the
+  # top-k, is what allows recall@k to change at all.
+
+scoring:
+  min_overlap_chars: 1      # "any overlap > 0" lenient primary (§6.2)
+  strict_containment: 0.5   # >=50% of gold span contained → strict cross-check variant
+
+# LLM config (C2 blurbs, C3 formatter, judges). provider=none => rule-based stubs, zero cost.
+llm:
+  provider: "none"          # "none" | "anthropic"
+  model: "claude-opus-4-8"  # pinned when provider=anthropic (§11)
+  temperature: 0.0
+  max_tokens: 1024
+
+# Cost guard (§11). Abort with a clear message if exceeded.
+cost_guard:
+  max_llm_calls: 100000
+  max_usd: 60.0        # v1.1 Track B: guard estimates with Opus pricing (overestimates
+                       # Sonnet actual ~$20); headroom avoids a premature abort near the end
+
+stats:
+  bootstrap_iters: 10000    # paired bootstrap (§8)
+  permutation_iters: 10000
+  ci: 0.95
+  holm_correction: true
+
+judge:
+  faithfulness_n: 50        # subset size (§7.6)
+  readability_n_docs: 20    # (§7.8)
+
+# Fairness sweep grids (§5.3). Baselines tuned to own best recall@5 on dev split.
+sweep:
+  baseline_chunk_tokens: [128, 256, 384, 512, 768]
+  baseline_overlap_frac: [0.0, 0.1, 0.2]
+  formatter_soft_target: [128, 256, 384, 512, 768]   # SAME grid as baselines (fairness)
+  dev_fraction: 0.2         # held-out dev split for the sweep

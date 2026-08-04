@@ -1,0 +1,14 @@
+id: C4
+name: "Formatted + naive chunking (composition)"
+chunker: formatted_naive
+params:
+  # Formatter full pass (produces the formatted corpus), then naive fixed-size chunking
+  # that IGNORES the emitted markers (v1.1 §3). Same base size as C0's swept-best.
+  reference_resolution: true
+  dedup: true
+  right_size: true
+  soft_target_tokens: 384
+  verbatim_guardrail: true
+  diff_gate: true
+  chunk_tokens: 768        # naive re-chunk size (matches C0 swept-best)
+  overlap_frac: 0.0
