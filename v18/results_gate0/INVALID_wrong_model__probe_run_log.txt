@@ -41,15 +41,15 @@ Traceback (most recent call last):
   File "<repo-root>\src\llm\client.py", line 162, in _create
     return self._client.messages.create(**kwargs)  # type: ignore[attr-defined]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\polo2\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+  File "C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
     return func(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\polo2\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\resources\messages\messages.py", line 1050, in create
+  File "C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\resources\messages\messages.py", line 1050, in create
     return self._post(
            ^^^^^^^^^^^
-  File "C:\Users\polo2\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_base_client.py", line 1536, in post
+  File "C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_base_client.py", line 1536, in post
     return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\polo2\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_base_client.py", line 1195, in request
+  File "C:\Users\<user>\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_base_client.py", line 1195, in request
     raise self._make_status_error_from_response(response) from None
 anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdcHQKeEoPZYXWEK74vyn'}
