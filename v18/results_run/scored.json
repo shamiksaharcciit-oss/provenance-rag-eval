@@ -1,0 +1,227 @@
+{
+  "n_cells": 978,
+  "contrasts": {
+    "context_contrasts_A": {
+      "total_F768_minus_U256": {
+        "n": 176,
+        "mean_diff": 0.283925,
+        "n01_favour_first": 108,
+        "n10_favour_second": 26,
+        "ties": 42,
+        "informative": 134,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "size_U768_minus_U256": {
+        "n": 176,
+        "mean_diff": 0.289323,
+        "n01_favour_first": 104,
+        "n10_favour_second": 19,
+        "ties": 53,
+        "informative": 123,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "residual_F768_minus_U768": {
+        "n": 176,
+        "mean_diff": -0.005398,
+        "n01_favour_first": 33,
+        "n10_favour_second": 52,
+        "ties": 91,
+        "informative": 85,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "pd2_direction_holds": true,
+      "_note": "descriptive; no test and no ratio (\u00a74, PF-7). PD-2 is the direction comparison size >= residual, scored on point values."
+    },
+    "answer_contrasts_A": {
+      "F768_minus_U256": {
+        "n": 176,
+        "mean_diff": 0.26947,
+        "n01_favour_first": 151,
+        "n10_favour_second": 11,
+        "ties": 14,
+        "informative": 162,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "U768_minus_U256": {
+        "n": 176,
+        "mean_diff": 0.151038,
+        "n01_favour_first": 125,
+        "n10_favour_second": 34,
+        "ties": 17,
+        "informative": 159,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "F768_minus_U768": {
+        "n": 176,
+        "mean_diff": 0.118432,
+        "n01_favour_first": 93,
+        "n10_favour_second": 49,
+        "ties": 34,
+        "informative": 142,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      }
+    },
+    "B1_A": {
+      "n": 176,
+      "mean": 0.142045,
+      "ci95": [
+        0.039773,
+        0.25
+      ],
+      "p_permutation": 0.011699,
+      "discordant": {
+        "favour_positive": 24,
+        "favour_negative": 11,
+        "ties": 141,
+        "informative": 35,
+        "_note": "descriptive only; no test is computed from these (A5b)"
+      }
+    },
+    "i2_contrasts_A": {
+      "F768_minus_U768": {
+        "n": 176,
+        "mean_diff": 0.134602,
+        "n01_favour_first": 71,
+        "n10_favour_second": 48,
+        "ties": 57,
+        "informative": 119,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "F768_minus_U256": {
+        "n": 176,
+        "mean_diff": 0.298402,
+        "n01_favour_first": 127,
+        "n10_favour_second": 15,
+        "ties": 34,
+        "informative": 142,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "U768_minus_U256": {
+        "n": 176,
+        "mean_diff": 0.1638,
+        "n01_favour_first": 90,
+        "n10_favour_second": 21,
+        "ties": 65,
+        "informative": 111,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      }
+    },
+    "context_contrasts_B": {
+      "total_F768_minus_U256": {
+        "n": 150,
+        "mean_diff": 0.048701,
+        "n01_favour_first": 52,
+        "n10_favour_second": 25,
+        "ties": 73,
+        "informative": 77,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "size_U768_minus_U256": {
+        "n": 150,
+        "mean_diff": 0.038051,
+        "n01_favour_first": 46,
+        "n10_favour_second": 28,
+        "ties": 76,
+        "informative": 74,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "residual_F768_minus_U768": {
+        "n": 150,
+        "mean_diff": 0.01065,
+        "n01_favour_first": 31,
+        "n10_favour_second": 25,
+        "ties": 94,
+        "informative": 56,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "pd2_direction_holds": true,
+      "_note": "descriptive; no test and no ratio (\u00a74, PF-7). PD-2 is the direction comparison size >= residual, scored on point values."
+    },
+    "answer_contrasts_B": {
+      "F768_minus_U256": {
+        "n": 150,
+        "mean_diff": 0.087736,
+        "n01_favour_first": 92,
+        "n10_favour_second": 48,
+        "ties": 10,
+        "informative": 140,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "U768_minus_U256": {
+        "n": 150,
+        "mean_diff": -0.017756,
+        "n01_favour_first": 69,
+        "n10_favour_second": 66,
+        "ties": 15,
+        "informative": 135,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "F768_minus_U768": {
+        "n": 150,
+        "mean_diff": 0.105492,
+        "n01_favour_first": 93,
+        "n10_favour_second": 48,
+        "ties": 9,
+        "informative": 141,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      }
+    },
+    "B1_B": {
+      "n": 150,
+      "mean": 0.26,
+      "ci95": [
+        0.113333,
+        0.4
+      ],
+      "p_permutation": 0.001,
+      "discordant": {
+        "favour_positive": 75,
+        "favour_negative": 33,
+        "ties": 42,
+        "informative": 108,
+        "_note": "descriptive only; no test is computed from these (A5b)"
+      }
+    },
+    "i2_contrasts_B": {
+      "F768_minus_U768": {
+        "n": 150,
+        "mean_diff": 0.009154,
+        "n01_favour_first": 24,
+        "n10_favour_second": 18,
+        "ties": 108,
+        "informative": 42,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "F768_minus_U256": {
+        "n": 150,
+        "mean_diff": 0.003987,
+        "n01_favour_first": 26,
+        "n10_favour_second": 19,
+        "ties": 105,
+        "informative": 45,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      },
+      "U768_minus_U256": {
+        "n": 150,
+        "mean_diff": -0.005167,
+        "n01_favour_first": 19,
+        "n10_favour_second": 20,
+        "ties": 111,
+        "informative": 39,
+        "_note": "descriptive only; no test is computed on this contrast (\u00a74)"
+      }
+    },
+    "F_BIAS": {
+      "members": [
+        "B1"
+      ],
+      "p_raw": {
+        "B1": 0.011699
+      },
+      "p_holm": {
+        "B1": 0.011699
+      },
+      "_note": "single-member family: Holm is the identity and p_holm is the plain p-value, not a corrected one"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "original_256": 0.5682,
+    "original_256_units": 238,
+    "formatted_256": 0.7216,
+    "formatted_256_units": 235,
+    "track": "A",
+    "n_queries": 176,
+    "metric": "recall@5",
+    "delta": 0.1534,
+    "ci95": [
+      0.0795,
+      0.2273
+    ],
+    "p_value": 0.0002,
+    "significant_ci": true,
+    "embedding_model": "all-MiniLM-L6-v2"
+  }
+]

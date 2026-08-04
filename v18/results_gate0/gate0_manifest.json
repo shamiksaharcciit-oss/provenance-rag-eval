@@ -1,0 +1,222 @@
+{
+  "experiment": "v1.8-instrument-divergence",
+  "stage": "GATE-0-BUILD",
+  "status": "NOT FROZEN \u2014 becomes a pre-registration only at the Gate 0 freeze commit",
+  "plan": "Plan_v18_InstrumentDivergence_2026-08-01.md",
+  "arms": [
+    "U256",
+    "U768",
+    "F768"
+  ],
+  "fixed_k": 5,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "generator_model": "claude-sonnet-5",
+  "judge_model": "claude-sonnet-5",
+  "ragas_library": "not installed; \u00a73's second branch selected (see judge_prompts.py)",
+  "tracks": {
+    "A": {
+      "track": "A",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "n_documents": 45,
+      "n_dev": 44,
+      "n_test": 176,
+      "dev_fraction_declared": 0.2,
+      "fixed_k": 5,
+      "arms": {
+        "U256": {
+          "index_units": 238,
+          "units_per_doc": 5.2889,
+          "token_mean": 230.61,
+          "token_median": 256,
+          "token_min": 18,
+          "token_max": 256,
+          "package_tokens_mean": 1260.39,
+          "package_tokens_min": 1129,
+          "package_tokens_max": 1280,
+          "realised_k_mean": 5.0,
+          "realised_k_min": 5,
+          "seconds": 173.3,
+          "llm_cache_hits_delta": 0,
+          "llm_fresh_calls_delta": 0
+        },
+        "U768": {
+          "index_units": 90,
+          "units_per_doc": 2.0,
+          "token_mean": 609.84,
+          "token_median": 768,
+          "token_min": 332,
+          "token_max": 768,
+          "package_tokens_mean": 3451.3,
+          "package_tokens_min": 2291,
+          "package_tokens_max": 3840,
+          "realised_k_mean": 5.0,
+          "realised_k_min": 5,
+          "seconds": 46.8,
+          "llm_cache_hits_delta": 0,
+          "llm_fresh_calls_delta": 0
+        },
+        "F768": {
+          "index_units": 90,
+          "units_per_doc": 2.0,
+          "token_mean": 583.52,
+          "token_median": 758,
+          "token_min": 272,
+          "token_max": 768,
+          "package_tokens_mean": 3414.91,
+          "package_tokens_min": 2477,
+          "package_tokens_max": 3828,
+          "realised_k_mean": 5.0,
+          "realised_k_min": 5,
+          "seconds": 56.0,
+          "llm_cache_hits_delta": 45,
+          "llm_fresh_calls_delta": 0
+        }
+      },
+      "memory_margin_mb": {
+        "U256": {
+          "free_after_arm": 613,
+          "known_failure_point": 393,
+          "_note": "PW-1 bge memory-exhaustion segfault"
+        },
+        "U768": {
+          "free_after_arm": 458,
+          "known_failure_point": 393,
+          "_note": "PW-1 bge memory-exhaustion segfault"
+        },
+        "F768": {
+          "free_after_arm": 524,
+          "known_failure_point": 393,
+          "_note": "PW-1 bge memory-exhaustion segfault"
+        }
+      },
+      "total_fresh_llm_calls": 0,
+      "total_llm_cache_hits": 45
+    },
+    "B": {
+      "track": "B",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "n_documents": 60,
+      "n_dev": 0,
+      "n_test": 150,
+      "dev_fraction_declared": 0.0,
+      "fixed_k": 5,
+      "arms": {
+        "U256": {
+          "index_units": 1072,
+          "units_per_doc": 17.8667,
+          "token_mean": 249.78,
+          "token_median": 256,
+          "token_min": 11,
+          "token_max": 256,
+          "package_tokens_mean": 1258.66,
+          "package_tokens_min": 985,
+          "package_tokens_max": 1280,
+          "realised_k_mean": 5.0,
+          "realised_k_min": 5,
+          "seconds": 560.8,
+          "llm_cache_hits_delta": 0,
+          "llm_fresh_calls_delta": 0
+        },
+        "U768": {
+          "index_units": 378,
+          "units_per_doc": 6.3,
+          "token_mean": 708.38,
+          "token_median": 768,
+          "token_min": 11,
+          "token_max": 768,
+          "package_tokens_mean": 3715.32,
+          "package_tokens_min": 2715,
+          "package_tokens_max": 3840,
+          "realised_k_mean": 5.0,
+          "realised_k_min": 5,
+          "seconds": 187.1,
+          "llm_cache_hits_delta": 0,
+          "llm_fresh_calls_delta": 0
+        },
+        "F768": {
+          "index_units": 381,
+          "units_per_doc": 6.35,
+          "token_mean": 702.69,
+          "token_median": 754,
+          "token_min": 43,
+          "token_max": 1334,
+          "package_tokens_mean": 3607.25,
+          "package_tokens_min": 3040,
+          "package_tokens_max": 3817,
+          "realised_k_mean": 5.0,
+          "realised_k_min": 5,
+          "seconds": 228.3,
+          "llm_cache_hits_delta": 60,
+          "llm_fresh_calls_delta": 0
+        }
+      },
+      "memory_margin_mb": {
+        "U256": {
+          "free_after_arm": 461,
+          "known_failure_point": 393,
+          "_note": "PW-1 bge memory-exhaustion segfault"
+        },
+        "U768": {
+          "free_after_arm": 506,
+          "known_failure_point": 393,
+          "_note": "PW-1 bge memory-exhaustion segfault"
+        },
+        "F768": {
+          "free_after_arm": 540,
+          "known_failure_point": 393,
+          "_note": "PW-1 bge memory-exhaustion segfault"
+        }
+      },
+      "total_fresh_llm_calls": 0,
+      "total_llm_cache_hits": 60
+    }
+  },
+  "cost_projection": {
+    "corpus": {
+      "track_A": 176,
+      "track_B": 150,
+      "n_total": 326,
+      "n_arms": 3
+    },
+    "judge_calls_per_query_arm": 12,
+    "judge_calls_breakdown": {
+      "context_precision": 5,
+      "context_recall": 1,
+      "faithfulness": 2,
+      "answer_relevancy": 3,
+      "answer_correctness": 1
+    },
+    "stages": {
+      "generation_test_set": 978,
+      "judging_test_set": 11736,
+      "probe_generation_dev": 180,
+      "probe_judging_dev": 2160,
+      "probe_total_dev": 2340
+    },
+    "branch_single_run": {
+      "total_calls": 15054,
+      "gate": 25000,
+      "within_gate": true
+    },
+    "branch_median_x3": {
+      "total_calls": 40482,
+      "gate": 25000,
+      "within_gate": false,
+      "_note": "\u00a72's declared fallback if the probe is not byte-identical; the multiplier applies to the test set only, the dev probe having already run"
+    }
+  },
+  "spend_this_stage": {
+    "fresh_llm_calls": 0,
+    "llm_cache_hits": 105,
+    "_note": "asserted per arm and per track, not claimed in prose"
+  },
+  "completed_utc": "2026-08-01T13:32:05Z",
+  "context_artifacts_sha256": {
+    "contexts_A_F768.json": "95c6529aaf52a469ef7eed06ab191c59f19fa8845428a108503f74fe07adc36f",
+    "contexts_A_U256.json": "8f3681a905eb83078b6282eab947aeddebfa1c12e5ea41524230565a884cec01",
+    "contexts_A_U768.json": "cf0c0110e84a955071cee80c7069f61ba71356768e85233bafbb79eb852c4071",
+    "contexts_B_F768.json": "563ef56b8e4b3fad087060d8623204274f8b0ddcffebbd0531d61b171eadf624",
+    "contexts_B_U256.json": "29971adc105a24e613fa1d2cb1aad00eb3854ba9ccbc39bf4a9774118df95d83",
+    "contexts_B_U768.json": "113739c60fe1d6336122cae1b744374e527b6dcfdd67f0fc1b2d92dad65e2d6b"
+  }
+}

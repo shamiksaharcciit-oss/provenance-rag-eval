@@ -1,0 +1,245 @@
+{
+  "run_id": "run-20260728-204836",
+  "created_utc": "2026-07-28T19:47:57Z",
+  "git_commit": "6c2b85775594d0178e3b71ba3f37aaeec05629d9",
+  "experiment": "v1.5-small-to-big",
+  "preregistration": "preregistration_v15.json",
+  "environment": {
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "embedding_revision": "main",
+    "seed": 1337,
+    "candidate_pool": 50,
+    "k_rrf": 60
+  },
+  "holm_family": "all six tests (3 conditions x 2 child sizes) as ONE family",
+  "results": [
+    {
+      "condition": "C0",
+      "child_tokens": 128,
+      "n_queries": 176,
+      "baseline": {
+        "1": 0.5625,
+        "3": 0.7273,
+        "5": 0.7898,
+        "10": 0.8466
+      },
+      "s2b": {
+        "1": 0.4886,
+        "3": 0.6307,
+        "5": 0.6932,
+        "10": 0.7841
+      },
+      "diagnostics": {
+        "n_parents": 90,
+        "n_children": 497,
+        "child_token_distribution": {
+          "n": 497,
+          "mean": 110.43,
+          "median": 122,
+          "p10": 39,
+          "p90": 127,
+          "max": 128
+        },
+        "blurb_to_child_ratio": 0.0,
+        "children_per_parent": {
+          "mean": 5.52,
+          "median": 7,
+          "min": 3,
+          "max": 7
+        },
+        "children_without_provenance": 0
+      },
+      "track": "A"
+    },
+    {
+      "condition": "C2",
+      "child_tokens": 128,
+      "n_queries": 176,
+      "baseline": {
+        "1": 0.4602,
+        "3": 0.8182,
+        "5": 0.8523,
+        "10": 0.8807
+      },
+      "s2b": {
+        "1": 0.5568,
+        "3": 0.7898,
+        "5": 0.8182,
+        "10": 0.8807
+      },
+      "diagnostics": {
+        "n_parents": 90,
+        "n_children": 497,
+        "child_token_distribution": {
+          "n": 497,
+          "mean": 110.43,
+          "median": 122,
+          "p10": 39,
+          "p90": 127,
+          "max": 128
+        },
+        "blurb_to_child_ratio": 0.5669,
+        "children_per_parent": {
+          "mean": 5.52,
+          "median": 7,
+          "min": 3,
+          "max": 7
+        },
+        "children_without_provenance": 0
+      },
+      "track": "A"
+    },
+    {
+      "condition": "C4",
+      "child_tokens": 128,
+      "n_queries": 176,
+      "baseline": {
+        "1": 0.7443,
+        "3": 0.8068,
+        "5": 0.8352,
+        "10": 0.875
+      },
+      "s2b": {
+        "1": 0.5795,
+        "3": 0.75,
+        "5": 0.7955,
+        "10": 0.8409
+      },
+      "diagnostics": {
+        "n_parents": 90,
+        "n_children": 485,
+        "child_token_distribution": {
+          "n": 485,
+          "mean": 108.28,
+          "median": 123,
+          "p10": 34,
+          "p90": 127,
+          "max": 128
+        },
+        "blurb_to_child_ratio": 0.0,
+        "children_per_parent": {
+          "mean": 5.39,
+          "median": 7,
+          "min": 3,
+          "max": 7
+        },
+        "children_without_provenance": 485
+      },
+      "track": "A"
+    },
+    {
+      "condition": "C0",
+      "child_tokens": 256,
+      "n_queries": 176,
+      "baseline": {
+        "1": 0.5625,
+        "3": 0.7273,
+        "5": 0.7898,
+        "10": 0.8466
+      },
+      "s2b": {
+        "1": 0.5227,
+        "3": 0.6705,
+        "5": 0.75,
+        "10": 0.8295
+      },
+      "diagnostics": {
+        "n_parents": 90,
+        "n_children": 284,
+        "child_token_distribution": {
+          "n": 284,
+          "mean": 193.26,
+          "median": 249,
+          "p10": 14,
+          "p90": 255,
+          "max": 256
+        },
+        "blurb_to_child_ratio": 0.0,
+        "children_per_parent": {
+          "mean": 3.16,
+          "median": 3,
+          "min": 2,
+          "max": 4
+        },
+        "children_without_provenance": 0
+      },
+      "track": "A"
+    },
+    {
+      "condition": "C2",
+      "child_tokens": 256,
+      "n_queries": 176,
+      "baseline": {
+        "1": 0.4602,
+        "3": 0.8182,
+        "5": 0.8523,
+        "10": 0.8807
+      },
+      "s2b": {
+        "1": 0.5568,
+        "3": 0.7955,
+        "5": 0.8125,
+        "10": 0.8693
+      },
+      "diagnostics": {
+        "n_parents": 90,
+        "n_children": 284,
+        "child_token_distribution": {
+          "n": 284,
+          "mean": 193.26,
+          "median": 249,
+          "p10": 14,
+          "p90": 255,
+          "max": 256
+        },
+        "blurb_to_child_ratio": 0.9711,
+        "children_per_parent": {
+          "mean": 3.16,
+          "median": 3,
+          "min": 2,
+          "max": 4
+        },
+        "children_without_provenance": 0
+      },
+      "track": "A"
+    },
+    {
+      "condition": "C4",
+      "child_tokens": 256,
+      "n_queries": 176,
+      "baseline": {
+        "1": 0.7443,
+        "3": 0.8068,
+        "5": 0.8352,
+        "10": 0.875
+      },
+      "s2b": {
+        "1": 0.6932,
+        "3": 0.8011,
+        "5": 0.8352,
+        "10": 0.8523
+      },
+      "diagnostics": {
+        "n_parents": 90,
+        "n_children": 279,
+        "child_token_distribution": {
+          "n": 279,
+          "mean": 188.23,
+          "median": 250,
+          "p10": 16,
+          "p90": 255,
+          "max": 256
+        },
+        "blurb_to_child_ratio": 0.0,
+        "children_per_parent": {
+          "mean": 3.1,
+          "median": 3,
+          "min": 2,
+          "max": 4
+        },
+        "children_without_provenance": 279
+      },
+      "track": "A"
+    }
+  ]
+}

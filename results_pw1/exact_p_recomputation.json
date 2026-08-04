@@ -1,0 +1,154 @@
+{
+  "kind": "POST-STAMP recomputation; stamped values are NOT edited",
+  "method": "exact sign-flip enumeration (src.stats.tests.exact_signflip_p)",
+  "families": {
+    "family_1": [
+      {
+        "embedder": "all-MiniLM-L6-v2",
+        "track": "A",
+        "delta_full": 0.1534,
+        "p_raw_stamped_monte_carlo": 0.0002,
+        "p_exact": 9.8e-05,
+        "k_discordant": 47,
+        "n_gains": 37,
+        "n_losses": 10,
+        "p_holm_within_family_exact": 9.8e-05,
+        "p_holm_within_family_stamped": 0.0002,
+        "branch_1_under_exact": "APPLICABLE",
+        "branch_1_stamped": "APPLICABLE",
+        "classification_unchanged": true
+      }
+    ],
+    "family_2": [
+      {
+        "embedder": "all-MiniLM-L6-v2",
+        "track": "A",
+        "delta_full": 0.0568,
+        "p_raw_stamped_monte_carlo": 0.0205,
+        "p_exact": 0.021271,
+        "k_discordant": 16,
+        "n_gains": 13,
+        "n_losses": 3,
+        "p_holm_within_family_exact": 0.042542,
+        "p_holm_within_family_stamped": 0.041,
+        "branch_1_under_exact": "APPLICABLE",
+        "branch_1_stamped": "APPLICABLE",
+        "classification_unchanged": true
+      },
+      {
+        "embedder": "BAAI/bge-base-en-v1.5",
+        "track": "A",
+        "delta_full": 0.0455,
+        "p_raw_stamped_monte_carlo": 0.09309,
+        "p_exact": 0.096252,
+        "k_discordant": 18,
+        "n_gains": 13,
+        "n_losses": 5,
+        "p_holm_within_family_exact": 0.096252,
+        "p_holm_within_family_stamped": 0.09309,
+        "branch_1_under_exact": "NOT APPLICABLE",
+        "branch_1_stamped": "NOT APPLICABLE",
+        "classification_unchanged": true
+      }
+    ],
+    "secondary": [
+      {
+        "embedder": "all-MiniLM-L6-v2",
+        "track": "B",
+        "delta_full": 0.0333,
+        "p_raw_stamped_monte_carlo": 0.17868,
+        "p_exact": 0.179688,
+        "k_discordant": 9,
+        "n_gains": 7,
+        "n_losses": 2,
+        "p_holm_within_family_exact": 0.179688,
+        "p_holm_within_family_stamped": 0.17868,
+        "branch_1_under_exact": "NOT APPLICABLE",
+        "branch_1_stamped": "NOT APPLICABLE",
+        "classification_unchanged": true
+      },
+      {
+        "embedder": "BAAI/bge-base-en-v1.5",
+        "track": "B",
+        "delta_full": 0.0467,
+        "p_raw_stamped_monte_carlo": 0.06739,
+        "p_exact": 0.06543,
+        "k_discordant": 11,
+        "n_gains": 9,
+        "n_losses": 2,
+        "p_holm_within_family_exact": 0.130859,
+        "p_holm_within_family_stamped": 0.13478,
+        "branch_1_under_exact": "NOT APPLICABLE",
+        "branch_1_stamped": "NOT APPLICABLE",
+        "classification_unchanged": true
+      }
+    ],
+    "family_1_complete": [
+      {
+        "family": "1",
+        "embedder": "all-MiniLM-L6-v2",
+        "track": "A",
+        "delta_full": 0.1534,
+        "p_raw_stamped_mc": 0.0002,
+        "p_exact": 9.8e-05,
+        "k_discordant": 47,
+        "n_gains": 37,
+        "n_losses": 10,
+        "p_holm_exact": 0.000294,
+        "p_holm_stamped": 0.0006,
+        "branch_1_exact": "APPLICABLE",
+        "branch_1_stamped": "APPLICABLE",
+        "unchanged": true
+      },
+      {
+        "family": "1",
+        "embedder": "all-MiniLM-L6-v2",
+        "track": "B",
+        "delta_full": 0.0267,
+        "p_raw_stamped_mc": 0.34227,
+        "p_exact": 0.34375,
+        "k_discordant": 10,
+        "n_gains": 7,
+        "n_losses": 3,
+        "p_holm_exact": 0.34375,
+        "p_holm_stamped": 0.34227,
+        "branch_1_exact": "NOT APPLICABLE",
+        "branch_1_stamped": "NOT APPLICABLE",
+        "unchanged": true
+      },
+      {
+        "family": "1",
+        "embedder": "BAAI/bge-base-en-v1.5",
+        "track": "A",
+        "delta_full": 0.1477,
+        "p_raw_stamped_mc": 0.0001,
+        "p_exact": 6.9e-05,
+        "k_discordant": 42,
+        "n_gains": 34,
+        "n_losses": 8,
+        "p_holm_exact": 0.000276,
+        "p_holm_stamped": 0.0004,
+        "branch_1_exact": "APPLICABLE",
+        "branch_1_stamped": "APPLICABLE",
+        "unchanged": true
+      },
+      {
+        "family": "1",
+        "embedder": "BAAI/bge-base-en-v1.5",
+        "track": "B",
+        "delta_full": 0.0667,
+        "p_raw_stamped_mc": 0.0135,
+        "p_exact": 0.012939,
+        "k_discordant": 14,
+        "n_gains": 12,
+        "n_losses": 2,
+        "p_holm_exact": 0.025878,
+        "p_holm_stamped": 0.027,
+        "branch_1_exact": "APPLICABLE",
+        "branch_1_stamped": "APPLICABLE",
+        "unchanged": true
+      }
+    ]
+  },
+  "note_family_1": "completed 2026-07-31: family 1's four cells now have persisted per-query vectors (_vectors in the guard-1 artifacts), so E-1's table covers all eight published cells. Every branch-1 classification is unchanged under exact p."
+}

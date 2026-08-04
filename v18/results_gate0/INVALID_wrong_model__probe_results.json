@@ -1,0 +1,38 @@
+{
+  "stage": "PROBE",
+  "track": "A (dev only)",
+  "planned_calls": 74,
+  "bound": 1000,
+  "actual_calls": 74,
+  "generation_probe": "SKIPPED \u2014 verdict from probe_generation.json / run log",
+  "judge_probe": {
+    "prompts": 24,
+    "repeats": 3,
+    "fresh_calls": 72,
+    "cache_hits": 0,
+    "byte_identical": true,
+    "divergent_prompt_indices": [],
+    "n_divergent": 0,
+    "requested_model": "claude-opus-4-8",
+    "_served_model_note": "response.model is not recoverable through LLMClient (finding G10); this is the REQUESTED id",
+    "_note": "byte_identical=True selects the single-run branch; False selects \u00a72's targeted-repeat fallback (PF-3)"
+  },
+  "judge_scope": {
+    "queries": 2,
+    "arms": [
+      "F768"
+    ],
+    "_note": "reduced under PF-1; see module docstring"
+  },
+  "answer_generation_calls": 2,
+  "requested_model": "claude-opus-4-8",
+  "_served_model_note": "response.model is not recoverable through LLMClient (finding G10); this is the REQUESTED id",
+  "selected_branch": "targeted_repeats",
+  "projection_single_run": {
+    "total_calls": 15054,
+    "gate": 25000,
+    "within_gate": true
+  },
+  "cross_track_assumption": "Track A's verdict governs Track B: nondeterminism at fixed parameters is a property of the sampler, not the corpus (PF-6). Track B has no dev split.",
+  "completed_utc": "2026-08-01T16:15:34Z"
+}

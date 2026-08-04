@@ -1,0 +1,5 @@
+operation,delta_recall@5
+reference_resolution,0.0067
+right_sizing,0.1333
+de_duplication,0.0067
+text_editing_vs_markers,0.0133

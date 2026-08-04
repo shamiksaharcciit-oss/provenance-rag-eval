@@ -1,0 +1,154 @@
+{
+  "analysis": "PW-1 step 0c",
+  "computed_utc": "2026-07-30T15:06:55Z",
+  "kind": "descriptive \u2014 properties of the corpora and gold set; no outcome computed",
+  "width_statistic": "union of a unit's source_ranges in original-document characters, summed over units, divided by the units' own size (reported per own token and per own char)",
+  "tracks": {
+    "A": {
+      "n_docs": 45,
+      "n_test_queries": 176,
+      "width": {
+        "orig256": {
+          "n_units": 238,
+          "claimed_chars": 378041,
+          "own_chars": 378041,
+          "own_tokens": 54886,
+          "W_unit": 1588.4,
+          "own_chars_per_unit": 1588.4,
+          "top_decile_ratio_mean": 1.0,
+          "top_decile_own_chars_mean": 1592.8,
+          "W_index_char": 1.0,
+          "W_index_token": 6.8877,
+          "W_index_mean": 1.0,
+          "ranges_per_unit": 1.0
+        },
+        "fmt256": {
+          "n_units": 235,
+          "claimed_chars": 838499,
+          "own_chars": 361707,
+          "own_tokens": 52517,
+          "W_unit": 3568.1,
+          "own_chars_per_unit": 1539.2,
+          "top_decile_ratio_mean": 10.75,
+          "top_decile_own_chars_mean": 212.5,
+          "W_index_char": 2.3182,
+          "W_index_token": 15.9662,
+          "W_index_mean": 3.0935,
+          "ranges_per_unit": 51.39
+        }
+      },
+      "ratio_of_ratios": {
+        "W_unit_MECHANISM_MATCHED": 2.2463,
+        "W_index_char": 2.3182,
+        "W_index_token": 2.3181,
+        "W_index_mean": 3.0935,
+        "W_cover": 2.2781,
+        "_note": "orig256 has W_index_char = W_index_token/6.8877 = W_cover = 1.0000 by construction, so each ratio of ratios equals the fmt256 value itself"
+      },
+      "W_cover_fmt256": 2.2781,
+      "fmt256_decomposition_per_chunk": {
+        "claimed": 838499,
+        "tight": 368066,
+        "absorbed": 12454,
+        "excess": 470433,
+        "excess_share_of_claimed": 0.561,
+        "absorbed_share_of_excess": 0.0265,
+        "inheritance_share_of_excess": 0.9735,
+        "_note": "per-chunk sums. Width is a per-unit property, so this is the correct denominator. `excess` has NO meaningful corpus-level union: a sentence that is excess for one chunk is own text for the next, so unioning it approaches the whole corpus and measures nothing."
+      },
+      "absorbed_surface_corpus_union": {
+        "absorbed": 12019,
+        "claimed": 367656,
+        "tight": 355637,
+        "_note": "per-document unions; the canonical absorbed surface figure"
+      },
+      "clean_query_retention": {
+        "narrow_D_absorbed_only": {
+          "clean": 64,
+          "total": 176,
+          "share": 0.3636,
+          "passes_60pct_gate": false
+        },
+        "wide_D_absorbed_plus_inherited": {
+          "clean": 2,
+          "total": 176,
+          "share": 0.0114,
+          "passes_60pct_gate": false
+        }
+      }
+    },
+    "B": {
+      "n_docs": 60,
+      "n_test_queries": 150,
+      "width": {
+        "orig256": {
+          "n_units": 1072,
+          "claimed_chars": 1430795,
+          "own_chars": 1430795,
+          "own_tokens": 267767,
+          "W_unit": 1334.7,
+          "own_chars_per_unit": 1334.7,
+          "top_decile_ratio_mean": 1.0,
+          "top_decile_own_chars_mean": 1362.1,
+          "W_index_char": 1.0,
+          "W_index_token": 5.3434,
+          "W_index_mean": 1.0,
+          "ranges_per_unit": 1.0
+        },
+        "fmt256": {
+          "n_units": 1074,
+          "claimed_chars": 3369209,
+          "own_chars": 1429176,
+          "own_tokens": 267726,
+          "W_unit": 3137.1,
+          "own_chars_per_unit": 1330.7,
+          "top_decile_ratio_mean": 4.34,
+          "top_decile_own_chars_mean": 983.1,
+          "W_index_char": 2.3574,
+          "W_index_token": 12.5845,
+          "W_index_mean": 2.4793,
+          "ranges_per_unit": 25.49
+        }
+      },
+      "ratio_of_ratios": {
+        "W_unit_MECHANISM_MATCHED": 2.3504,
+        "W_index_char": 2.3574,
+        "W_index_token": 2.3551,
+        "W_index_mean": 2.4793,
+        "W_cover": 2.1119,
+        "_note": "orig256 has W_index_char = W_index_token/6.8877 = W_cover = 1.0000 by construction, so each ratio of ratios equals the fmt256 value itself"
+      },
+      "W_cover_fmt256": 2.1119,
+      "fmt256_decomposition_per_chunk": {
+        "claimed": 3369209,
+        "tight": 1595310,
+        "absorbed": 2973,
+        "excess": 1773899,
+        "excess_share_of_claimed": 0.5265,
+        "absorbed_share_of_excess": 0.0017,
+        "inheritance_share_of_excess": 0.9983,
+        "_note": "per-chunk sums. Width is a per-unit property, so this is the correct denominator. `excess` has NO meaningful corpus-level union: a sentence that is excess for one chunk is own text for the next, so unioning it approaches the whole corpus and measures nothing."
+      },
+      "absorbed_surface_corpus_union": {
+        "absorbed": 2887,
+        "claimed": 1416168,
+        "tight": 1413281,
+        "_note": "per-document unions; the canonical absorbed surface figure"
+      },
+      "clean_query_retention": {
+        "narrow_D_absorbed_only": {
+          "clean": 145,
+          "total": 150,
+          "share": 0.9667,
+          "passes_60pct_gate": true
+        },
+        "wide_D_absorbed_plus_inherited": {
+          "clean": 0,
+          "total": 150,
+          "share": 0.0,
+          "passes_60pct_gate": false
+        }
+      }
+    }
+  }
+}

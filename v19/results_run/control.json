@@ -1,0 +1,544 @@
+{
+  "stage": "control",
+  "freeze": "5bc4aebea635fdc10d83c349d2a37486d1f337bf",
+  "tracks": {
+    "A": {
+      "n": 30,
+      "median_f1_correct": 0.5301,
+      "median_f1_mismatched": 0.0,
+      "gap": 0.5301,
+      "criterion": "mismatched median < 0.2 AND gap > 0.3",
+      "PR0_passes": true,
+      "rows": [
+        {
+          "query_id": "A-000-kestrel-indexer::mh",
+          "mismatched_package_of": "A-003-ember-scheduler::mh",
+          "f1_correct": 0.88,
+          "f1_mismatched": 0.0,
+          "answer_correct": "900 milliseconds\n\n**Quote:** \"The Kestrel indexer applies a default request timeout of 900 milliseconds.\"",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-003-ember-scheduler::mh",
+          "mismatched_package_of": "A-006-halcyon-compactor::syn",
+          "f1_correct": 0.07407407407407407,
+          "f1_mismatched": 0.0,
+          "answer_correct": "8081",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "A-006-halcyon-compactor::syn",
+          "mismatched_package_of": "A-007-vega-broker::f7",
+          "f1_correct": 0.4511278195488722,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The key configuration defaults of the Halcyon compactor are:\n\n- \"The Halcyon compactor persists its index to disk in the Parquet file format.\"\n- \"The Halcyon compactor applies a default request timeout of 500 milliseconds.\"\n- \"The Halcyon compactor is distributed under the Apache-2.0 license.\"\n- \"Th",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-007-vega-broker::f7",
+          "mismatched_package_of": "A-010-marlin-collator::f3",
+          "f1_correct": 0.4848484848484849,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Vega broker applies a default request timeout of 350 milliseconds.",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-010-marlin-collator::f3",
+          "mismatched_package_of": "A-010-marlin-collator::f6",
+          "f1_correct": 0.6842105263157894,
+          "f1_mismatched": 0.6842105263157894,
+          "answer_correct": "900 milliseconds\n\nQuote: \"The Marlin collator applies a default request timeout of 900 milliseconds.\"",
+          "answer_mismatched": "900 milliseconds\n\nQuote: \"The Marlin collator applies a default request timeout of 900 milliseconds.\""
+        },
+        {
+          "query_id": "A-010-marlin-collator::f6",
+          "mismatched_package_of": "A-012-ridge-indexer::mh",
+          "f1_correct": 0.761904761904762,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Marlin collator reached general availability in release v4.0.0.",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "A-012-ridge-indexer::mh",
+          "mismatched_package_of": "A-015-beacon-scheduler::f2",
+          "f1_correct": 0.846153846153846,
+          "f1_mismatched": 0.0,
+          "answer_correct": "GPL-3.0\n\nQuote: \"The Ridge indexer is distributed under the GPL-3.0 license.\"",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-015-beacon-scheduler::f2",
+          "mismatched_package_of": "A-018-verde-compactor::syn",
+          "f1_correct": 0.5714285714285714,
+          "f1_mismatched": 0.0,
+          "answer_correct": "900 milliseconds\n\n(\"The Beacon scheduler applies a default request timeout of 900 milliseconds.\")",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-018-verde-compactor::syn",
+          "mismatched_package_of": "A-019-crag-broker::f3",
+          "f1_correct": 0.5301204819277109,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Verde compactor's key configuration defaults, based on the context, are:\n\n- \"The Verde compactor evicts hot vectors using a CLOCK-Pro replacement policy.\"\n- \"The Verde compactor sustains up to 125000 queries per second on a single node.\"\n- \"The Verde compactor listens for gRPC traffic on port 50",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-019-crag-broker::f3",
+          "mismatched_package_of": "A-019-crag-broker::f4",
+          "f1_correct": 1.0,
+          "f1_mismatched": 1.0,
+          "answer_correct": "The Crag broker applies a default request timeout of 350 milliseconds.",
+          "answer_mismatched": "The Crag broker applies a default request timeout of 350 milliseconds."
+        },
+        {
+          "query_id": "A-019-crag-broker::f4",
+          "mismatched_package_of": "A-020-drift-resolver::f0",
+          "f1_correct": 0.5454545454545455,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Crag broker is distributed under the AGPL-3.0 license.",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-020-drift-resolver::f0",
+          "mismatched_package_of": "A-020-drift-resolver::syn",
+          "f1_correct": 0.2857142857142857,
+          "f1_mismatched": 0.2857142857142857,
+          "answer_correct": "S3-FIFO",
+          "answer_mismatched": "S3-FIFO"
+        },
+        {
+          "query_id": "A-020-drift-resolver::syn",
+          "mismatched_package_of": "A-021-fable-ledger::f1",
+          "f1_correct": 0.4835164835164835,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The key configuration defaults of the Drift resolver are:\n\n- \"The Drift resolver evicts hot vectors using a S3-FIFO replacement policy.\"\n- \"The Drift resolver listens for gRPC traffic on port 50051 by default.\"\n- \"The Drift resolver uses the IVF-PQ algorithm for approximate nearest-neighbor search.\"",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "A-021-fable-ledger::f1",
+          "mismatched_package_of": "A-021-fable-ledger::syn",
+          "f1_correct": 0.5294117647058824,
+          "f1_mismatched": 0.5294117647058824,
+          "answer_correct": "The Fable ledger listens for gRPC traffic on port 7000 by default.",
+          "answer_mismatched": "The Fable ledger listens for gRPC traffic on port 7000 by default."
+        },
+        {
+          "query_id": "A-021-fable-ledger::syn",
+          "mismatched_package_of": "A-022-glint-collator::f0",
+          "f1_correct": 0.47692307692307695,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The key configuration defaults of the Fable ledger are:\n\n- \"The Fable ledger listens for gRPC traffic on port 7000 by default.\"\n- \"The Fable ledger persists its index to disk in the Lance file format.\"\n- \"The Fable ledger sustains up to 3300 queries per second on a single node.\"\n- \"The Fable ledger ",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-022-glint-collator::f0",
+          "mismatched_package_of": "A-023-harbor-sharder::f4",
+          "f1_correct": 0.07999999999999999,
+          "f1_mismatched": 0.0,
+          "answer_correct": "ARC",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-023-harbor-sharder::f4",
+          "mismatched_package_of": "A-023-harbor-sharder::syn",
+          "f1_correct": 0.6285714285714286,
+          "f1_mismatched": 0.6285714285714286,
+          "answer_correct": "The Harbor sharder reached general availability in release v3.5.0.",
+          "answer_mismatched": "The Harbor sharder reached general availability in release v3.5.0."
+        },
+        {
+          "query_id": "A-023-harbor-sharder::syn",
+          "mismatched_package_of": "A-024-ion-indexer::f3",
+          "f1_correct": 0.6153846153846154,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Harbor sharder's key configuration defaults are:\n\n- \"The Harbor sharder applies a default request timeout of 500 milliseconds.\"\n- \"The Harbor sharder persists its index to disk in the Protobuf file format.\"\n- \"The Harbor sharder listens for gRPC traffic on port 7000 by default.\"",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-024-ion-indexer::f3",
+          "mismatched_package_of": "A-024-ion-indexer::f4",
+          "f1_correct": 0.07999999999999999,
+          "f1_mismatched": 0.07999999999999999,
+          "answer_correct": "DiskANN",
+          "answer_mismatched": "DiskANN"
+        },
+        {
+          "query_id": "A-024-ion-indexer::f4",
+          "mismatched_package_of": "A-026-krait-router::f1",
+          "f1_correct": 0.8484848484848484,
+          "f1_mismatched": 0.0,
+          "answer_correct": "125000 queries per second\n\n**Quote:** \"The Ion indexer sustains up to 125000 queries per second on a single node.\"",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "A-026-krait-router::f1",
+          "mismatched_package_of": "A-028-mica-gateway::f7",
+          "f1_correct": 0.07407407407407407,
+          "f1_mismatched": 0.0,
+          "answer_correct": "Parquet",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-028-mica-gateway::f7",
+          "mismatched_package_of": "A-030-kestrel-broker::syn",
+          "f1_correct": 0.761904761904762,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Mica gateway applies a default request timeout of 1200 milliseconds.",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-030-kestrel-broker::syn",
+          "mismatched_package_of": "A-034-cirrus-sharder::mh",
+          "f1_correct": 0.39716312056737585,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Kestrel broker's key configuration defaults are:\n\n- \"The Kestrel broker persists its index to disk in the Arrow file format.\"\n- \"The Kestrel broker uses the ScaNN algorithm for approximate nearest-neighbor search.\"\n- \"The Kestrel broker listens for gRPC traffic on port 7000 by default.\"\n- \"The K",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-034-cirrus-sharder::mh",
+          "mismatched_package_of": "A-036-halcyon-cache::syn",
+          "f1_correct": 0.8695652173913043,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Cirrus sharder uses the ScaNN algorithm for approximate nearest-neighbor search.",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-036-halcyon-cache::syn",
+          "mismatched_package_of": "A-037-vega-router::f4",
+          "f1_correct": 0.4275862068965517,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The key configuration defaults of the Halcyon cache are:\n\n- \"The Halcyon cache uses the NGT algorithm for approximate nearest-neighbor search.\"\n- \"The Halcyon cache evicts hot vectors using a CLOCK-Pro replacement policy.\"\n- \"The Halcyon cache applies a default request timeout of 350 milliseconds.\"\n",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-037-vega-router::f4",
+          "mismatched_package_of": "A-038-quartz-scheduler::mh",
+          "f1_correct": 0.8695652173913043,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Vega router uses the NGT algorithm for approximate nearest-neighbor search.",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "A-038-quartz-scheduler::mh",
+          "mismatched_package_of": "A-039-zephyr-gateway::mh",
+          "f1_correct": 0.0,
+          "f1_mismatched": 0.0,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-039-zephyr-gateway::mh",
+          "mismatched_package_of": "A-040-marlin-planner::syn",
+          "f1_correct": 0.631578947368421,
+          "f1_mismatched": 0.0,
+          "answer_correct": "MIT license \u2014 \"The Zephyr gateway is distributed under the MIT license.\"",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "A-040-marlin-planner::syn",
+          "mismatched_package_of": "A-044-aster-ledger::f5",
+          "f1_correct": 0.5084745762711864,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Marlin planner's key configuration defaults are:\n\n- \"The Marlin planner persists its index to disk in the ORC file format.\"\n- \"The Marlin planner evicts hot vectors using a LRU replacement policy.\"\n- \"The Marlin planner applies a default request timeout of 500 milliseconds.\"\n- \"The Marlin planne",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "A-044-aster-ledger::f5",
+          "mismatched_package_of": "A-000-kestrel-indexer::mh",
+          "f1_correct": 0.5,
+          "f1_mismatched": 0.0,
+          "answer_correct": "The Aster ledger listens for gRPC traffic on port 7000 by default.",
+          "answer_mismatched": "NOT FOUND"
+        }
+      ],
+      "pin": {
+        "requested_model": "claude-sonnet-5",
+        "response_model_distinct": [
+          "claude-sonnet-5"
+        ],
+        "n_calls_observed": 60,
+        "run_started_utc": "2026-08-01T22:54:41Z",
+        "run_ended_utc": "2026-08-01T22:56:53Z",
+        "_note": "G5: the strongest pin the surface offers. A dated snapshot id does not exist to be pinned."
+      },
+      "cost": {
+        "llm_calls": 60,
+        "llm_tokens": 137494,
+        "input_tokens": 135236,
+        "output_tokens": 2258,
+        "cache_hits": 0,
+        "est_usd": 0.7326
+      }
+    },
+    "B": {
+      "n": 30,
+      "median_f1_correct": 0.1661,
+      "median_f1_mismatched": 0.0061,
+      "gap": 0.16,
+      "criterion": "mismatched median < 0.2 AND gap > 0.3",
+      "PR0_passes": false,
+      "rows": [
+        {
+          "query_id": "1601.02403::q5",
+          "mismatched_package_of": "1612.08205::q3",
+          "f1_correct": 0.0,
+          "f1_mismatched": 0.0,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1612.08205::q3",
+          "mismatched_package_of": "1704.04452::q4",
+          "f1_correct": 0.24390243902439027,
+          "f1_mismatched": 0.0,
+          "answer_correct": "Blogger (http://www.blogger.com)",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "1704.04452::q4",
+          "mismatched_package_of": "1707.05236::q0",
+          "f1_correct": 0.5934065934065934,
+          "f1_mismatched": 0.0,
+          "answer_correct": "DIP corpus BIBREF37 , a collection of 49 clusters of 100 web pages on educational topics (e.g. bullying, homeschooling, drugs) with a short description of each topic.",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1707.05236::q0",
+          "mismatched_package_of": "1707.05236::q4",
+          "f1_correct": 0.3418803418803419,
+          "f1_mismatched": 0.0,
+          "answer_correct": "Rei2016\n\nSpecifically: \"For comparison, we also report the performance of the error detection system by Rei2016, trained using the same FCE dataset.\"",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1707.05236::q4",
+          "mismatched_package_of": "1709.07814::q1",
+          "f1_correct": 0.0,
+          "f1_mismatched": 0.0,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1709.07814::q1",
+          "mismatched_package_of": "1806.04511::q3",
+          "f1_correct": 0.01234567901234568,
+          "f1_mismatched": 0.01234567901234568,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1806.04511::q3",
+          "mismatched_package_of": "1806.05504::q0",
+          "f1_correct": 0.5217391304347826,
+          "f1_mismatched": 0.0,
+          "answer_correct": "majority baseline for each language where the majority baseline corresponds to a model's accuracy if it always predicts the majority class in the dataset\n\nIn addition to the majority baseline, we also compare our results with a lexicon-based approach. We use SentiWordNet BIBREF29 to obtain a positiv",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1806.05504::q0",
+          "mismatched_package_of": "1810.08699::q0",
+          "f1_correct": 0.007246376811594202,
+          "f1_mismatched": 0.007246376811594202,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "1810.08699::q0",
+          "mismatched_package_of": "1811.00383::q1",
+          "f1_correct": 0.16818181818181818,
+          "f1_mismatched": 0.0049382716049382715,
+          "answer_correct": "Stanford NER, spaCy 2.0, and a recurrent model similar to BIBREF13 , BIBREF14 that uses bidirectional LSTM cells for character-based feature extraction and CRF, described in Guillaume Genthial's Sequence Tagging with Tensorflow blog post BIBREF15",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "1811.00383::q1",
+          "mismatched_package_of": "1908.05828::q0",
+          "f1_correct": 0.0,
+          "f1_mismatched": 0.0,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1908.05828::q0",
+          "mismatched_package_of": "1908.05828::q10",
+          "f1_correct": 0.23076923076923078,
+          "f1_mismatched": 0.23076923076923078,
+          "answer_correct": "BiLSTM+CNN(grapheme-level) and BiLSTM+CNN(G)+POS",
+          "answer_mismatched": "BiLSTM+CNN(grapheme-level) and BiLSTM+CNN(G)+POS"
+        },
+        {
+          "query_id": "1908.05828::q10",
+          "mismatched_package_of": "1908.06267::q3",
+          "f1_correct": 0.028169014084507046,
+          "f1_mismatched": 0.028169014084507046,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "1908.06267::q3",
+          "mismatched_package_of": "1908.10084::q2",
+          "f1_correct": 0.07868852459016394,
+          "f1_mismatched": 0.055045871559633024,
+          "answer_correct": "Reuters, BBCSport, Polarity, Subjectivity, MPQA, IMDB, TREC, SST-1, SST-2, Yelp2013",
+          "answer_mismatched": "SNLI BIBREF13, Multi-Genre NLI BIBREF14, the STS tasks 2012 - 2016 BIBREF16, BIBREF17, BIBREF18, BIBREF19, BIBREF20, the STS benchmark BIBREF10, the SICK-Relatedness dataset BIBREF21, and the Argument Facet Similarity (AFS) corpus by MisraEW16."
+        },
+        {
+          "query_id": "1908.10084::q2",
+          "mismatched_package_of": "1908.10084::q4",
+          "f1_correct": 0.2647058823529412,
+          "f1_mismatched": 0.2647058823529412,
+          "answer_correct": "SBERT can be tuned in less than 20 minutes",
+          "answer_mismatched": "SBERT can be tuned in less than 20 minutes"
+        },
+        {
+          "query_id": "1908.10084::q4",
+          "mismatched_package_of": "1909.00175::q2",
+          "f1_correct": 0.15249266862170088,
+          "f1_mismatched": 0.0,
+          "answer_correct": "We fine-tune SBERT with a 3-way softmax-classifier objective function for one epoch. We used a batch-size of 16, Adam optimizer with learning rate $2\\mathrm {e}{-5}$, and a linear learning rate warm-up over 10% of the training data. Our default pooling strategy is MEAN.",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "1909.00175::q2",
+          "mismatched_package_of": "1909.03405::q2",
+          "f1_correct": 0.4905660377358491,
+          "f1_mismatched": 0.06249999999999999,
+          "answer_correct": "The homographic dataset (2,250 contexts, 1,607 of which contain a pun) and the heterographic dataset (1,780 contexts with 1,271 containing a pun).",
+          "answer_mismatched": "GLUE (MNLI, QNLI, RTE, QQP, STS-B, MRPC, SST-2 and CoLA), and several Chinese datasets."
+        },
+        {
+          "query_id": "1909.03405::q2",
+          "mismatched_package_of": "1909.06200::q3",
+          "f1_correct": 0.7272727272727273,
+          "f1_mismatched": 0.0,
+          "answer_correct": "BERTbase model, which has 12 layers, 12 self-attention heads with a hidden size of 768.",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "1909.06200::q3",
+          "mismatched_package_of": "1910.06592::q1",
+          "f1_correct": 0.0054200542005420045,
+          "f1_mismatched": 0.0054200542005420045,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1910.06592::q1",
+          "mismatched_package_of": "1910.06592::q10",
+          "f1_correct": 0.0,
+          "f1_mismatched": 0.0,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1910.06592::q10",
+          "mismatched_package_of": "1910.06592::q2",
+          "f1_correct": 0.16611295681063123,
+          "f1_mismatched": 0.16611295681063123,
+          "answer_correct": "LR + Bag-of-words; Tweet2vec; LR + All Features (tweet-level); LR + All Features (chunk-level); FacTweet (tweet-level); Top-$k$ replies, likes, or re-tweets",
+          "answer_mismatched": "LR + Bag-of-words; Tweet2vec; LR + All Features (tweet-level); LR + All Features (chunk-level); FacTweet (tweet-level); Top-$k$ replies, likes, or re-tweets"
+        },
+        {
+          "query_id": "1910.06592::q2",
+          "mismatched_package_of": "1910.06592::q4",
+          "f1_correct": 0.16611295681063123,
+          "f1_mismatched": 0.007194244604316546,
+          "answer_correct": "LR + Bag-of-words; Tweet2vec; LR + All Features (tweet-level); LR + All Features (chunk-level); FacTweet (tweet-level); Top-$k$ replies, likes, or re-tweets.",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1910.06592::q4",
+          "mismatched_package_of": "1910.14076::q0",
+          "f1_correct": 0.04225352112676056,
+          "f1_mismatched": 0.0071428571428571435,
+          "answer_correct": "Emotion, Sentiment, Morality, Style, Words embeddings",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1910.14076::q0",
+          "mismatched_package_of": "1910.14076::q1",
+          "f1_correct": 0.17171717171717168,
+          "f1_mismatched": 0.0,
+          "answer_correct": "We have a remarkable increase of 12.27% on the accuracy and 14.86% on F1 score.",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "1910.14076::q1",
+          "mismatched_package_of": "1912.01214::q3",
+          "f1_correct": 0.6838235294117647,
+          "f1_mismatched": 0.020942408376963352,
+          "answer_correct": "TF-IDF: We applied TF-IDF features as inputs to four classifiers: support vector machine classifier (SVM), logistic regression classifier (LR), Naive Bayes classifier (NB) and random forest (RF); CNN: We followed the same architecture as BIBREF9; LSTM: We applied an LSTM model BIBREF20 to classify t",
+          "answer_mismatched": "Pivoting, multilingual NMT (MNMT) BIBREF19, and cross-lingual transfer without pretraining BIBREF16."
+        },
+        {
+          "query_id": "1912.01214::q3",
+          "mismatched_package_of": "2002.01320::q1",
+          "f1_correct": 0.14448669201520914,
+          "f1_mismatched": 0.008130081300813009,
+          "answer_correct": "French-English-Spanish (Fr-En-Es), German-English-French (De-En-Fr) and Romanian-English-German (Ro-En-De)",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "2002.01320::q1",
+          "mismatched_package_of": "2002.01320::q4",
+          "f1_correct": 0.6717557251908397,
+          "f1_mismatched": 0.0,
+          "answer_correct": "For ASR and ST: \"Our ASR and ST models follow the architecture in berard2018end, but have 3 decoder layers like that in pino2019harnessing.\"\n\nFor MT: \"we use a Transformer base architecture BIBREF15, but with 3 encoder layers, 3 decoder layers and 0.3 dropout.\"",
+          "answer_mismatched": "NOT FOUND."
+        },
+        {
+          "query_id": "2002.01320::q4",
+          "mismatched_package_of": "2002.02070::q1",
+          "f1_correct": 0.7796610169491525,
+          "f1_mismatched": 0.0061349693251533735,
+          "answer_correct": "1) For German-English, French-English and Russian-English translations, we computed sentence-level BLEU BIBREF12 with the NLTK BIBREF13 implementation between the human translations and the automatic translations produced by a state-of-the-art system BIBREF14 (the French-English system was a Transfo",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "2002.02070::q1",
+          "mismatched_package_of": "2004.04721::q2",
+          "f1_correct": 0.0,
+          "f1_mismatched": 0.0,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "2004.04721::q2",
+          "mismatched_package_of": "2004.04721::q4",
+          "f1_correct": 0.3076923076923077,
+          "f1_mismatched": 0.016806722689075633,
+          "answer_correct": "Both introduce artifacts. As stated: \"both human and machine translation can alter superficial patterns in data, which requires reconsidering previous findings in cross-lingual transfer learning.\"",
+          "answer_mismatched": "NOT FOUND"
+        },
+        {
+          "query_id": "2004.04721::q4",
+          "mismatched_package_of": "1601.02403::q5",
+          "f1_correct": 0.016806722689075633,
+          "f1_mismatched": 0.016806722689075633,
+          "answer_correct": "NOT FOUND",
+          "answer_mismatched": "NOT FOUND"
+        }
+      ],
+      "pin": {
+        "requested_model": "claude-sonnet-5",
+        "response_model_distinct": [
+          "claude-sonnet-5"
+        ],
+        "n_calls_observed": 60,
+        "run_started_utc": "2026-08-01T22:57:09Z",
+        "run_ended_utc": "2026-08-01T22:58:50Z",
+        "_note": "G5: the strongest pin the surface offers. A dated snapshot id does not exist to be pinned."
+      },
+      "cost": {
+        "llm_calls": 60,
+        "llm_tokens": 146680,
+        "input_tokens": 144246,
+        "output_tokens": 2434,
+        "cache_hits": 0,
+        "est_usd": 0.7821
+      }
+    }
+  },
+  "APPARATUS_STOP": false,
+  "total_est_usd": 1.5147
+}

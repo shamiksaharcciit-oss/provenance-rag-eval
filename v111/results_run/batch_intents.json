@@ -1,0 +1,42 @@
+[
+  {
+    "stage": "ea",
+    "n_requests": 698,
+    "request_set_sha256": "cfe09bfa145ba0f8d55facfc5a14210c7df57e52abd330cb62adac02c93a8504",
+    "batch_id": "msgbatch_01WMNv1yBwQcXHkYe9WQNPHa",
+    "state": "submitted",
+    "submitted_utc": "2026-08-02T12:22:46Z"
+  },
+  {
+    "stage": "eb",
+    "n_requests": 352,
+    "request_set_sha256": "6dc14906b12ed23e49024537f9992b5760d971e5e8dec4c41504515725f7f56c",
+    "batch_id": "msgbatch_01UuvTth5neS9S8r4KeZ286y",
+    "state": "submitted",
+    "submitted_utc": "2026-08-02T12:31:11Z"
+  },
+  {
+    "stage": "ec-v1",
+    "n_requests": 352,
+    "request_set_sha256": "b83203f1b9eaf21724e7852a367ff92dfd810cf40a31e3077883aa40ce7a5637",
+    "batch_id": "msgbatch_016zhNmsTPnb626TaW7T4HvR",
+    "state": "submitted",
+    "submitted_utc": "2026-08-02T12:35:03Z"
+  },
+  {
+    "stage": "ec-v2",
+    "n_requests": 352,
+    "request_set_sha256": "f58741fe8f664cf3d93130c9068e501fd7248ad55502a80de0dc66cb39af5a9d",
+    "batch_id": "msgbatch_01UKgZLihKcjtSErpju98sE5",
+    "state": "submitted",
+    "submitted_utc": "2026-08-02T12:38:10Z"
+  },
+  {
+    "stage": "ee",
+    "n_requests": 352,
+    "request_set_sha256": "7392658ec8a09e6c32b64ba0e52e1c3c4d883e51aa6f1f6ae69bc496cd7a91ea",
+    "batch_id": "msgbatch_01VysjPAqK1Fe9tPYdEE3YUp",
+    "state": "submitted",
+    "submitted_utc": "2026-08-02T12:41:19Z"
+  }
+]

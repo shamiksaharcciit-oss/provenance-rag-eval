@@ -1,0 +1,463 @@
+{
+  "tracks": [
+    {
+      "track": "A",
+      "n_queries": 176,
+      "n_scored": 176,
+      "failures": [],
+      "b2_min": 1024,
+      "b2_median": 1024,
+      "b2_max": 1444,
+      "n_escalated": 6,
+      "escalation_attribution": {
+        "U768": 6
+      },
+      "cap_8192_hits": 0,
+      "n_unequal_across_arms": 6,
+      "unequal_examples": [
+        {
+          "query_id": "A-036-halcyon-cache::f4",
+          "b2": 1111,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 762,
+            "U768": 1111,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1058,
+            "U768": 1111,
+            "U256": 1111
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-012-ridge-indexer::f4",
+          "b2": 1152,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 768,
+            "U768": 1152,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1124,
+            "U768": 1152,
+            "U256": 1152
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-000-kestrel-indexer::f4",
+          "b2": 1105,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 763,
+            "U768": 1105,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1058,
+            "U768": 1105,
+            "U256": 1105
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-023-harbor-sharder::f4",
+          "b2": 1346,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 763,
+            "U768": 1346,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1300,
+            "U768": 1346,
+            "U256": 1346
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-008-quartz-resolver::f4",
+          "b2": 1444,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 762,
+            "U768": 1444,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1368,
+            "U768": 1444,
+            "U256": 1444
+          },
+          "equal_across_arms": false
+        }
+      ],
+      "control_sample": [
+        "A-000-kestrel-indexer::mh",
+        "A-003-ember-scheduler::mh",
+        "A-006-halcyon-compactor::syn",
+        "A-007-vega-broker::f7",
+        "A-010-marlin-collator::f3",
+        "A-010-marlin-collator::f6",
+        "A-012-ridge-indexer::mh",
+        "A-015-beacon-scheduler::f2",
+        "A-018-verde-compactor::syn",
+        "A-019-crag-broker::f3",
+        "A-019-crag-broker::f4",
+        "A-020-drift-resolver::f0",
+        "A-020-drift-resolver::syn",
+        "A-021-fable-ledger::f1",
+        "A-021-fable-ledger::syn",
+        "A-022-glint-collator::f0",
+        "A-023-harbor-sharder::f4",
+        "A-023-harbor-sharder::syn",
+        "A-024-ion-indexer::f3",
+        "A-024-ion-indexer::f4",
+        "A-026-krait-router::f1",
+        "A-028-mica-gateway::f7",
+        "A-030-kestrel-broker::syn",
+        "A-034-cirrus-sharder::mh",
+        "A-036-halcyon-cache::syn",
+        "A-037-vega-router::f4",
+        "A-038-quartz-scheduler::mh",
+        "A-039-zephyr-gateway::mh",
+        "A-040-marlin-planner::syn",
+        "A-044-aster-ledger::f5"
+      ],
+      "control_pairs": [
+        {
+          "query_id": "A-000-kestrel-indexer::mh",
+          "mismatched_package_of": "A-003-ember-scheduler::mh"
+        },
+        {
+          "query_id": "A-003-ember-scheduler::mh",
+          "mismatched_package_of": "A-006-halcyon-compactor::syn"
+        },
+        {
+          "query_id": "A-006-halcyon-compactor::syn",
+          "mismatched_package_of": "A-007-vega-broker::f7"
+        },
+        {
+          "query_id": "A-007-vega-broker::f7",
+          "mismatched_package_of": "A-010-marlin-collator::f3"
+        },
+        {
+          "query_id": "A-010-marlin-collator::f3",
+          "mismatched_package_of": "A-010-marlin-collator::f6"
+        },
+        {
+          "query_id": "A-010-marlin-collator::f6",
+          "mismatched_package_of": "A-012-ridge-indexer::mh"
+        },
+        {
+          "query_id": "A-012-ridge-indexer::mh",
+          "mismatched_package_of": "A-015-beacon-scheduler::f2"
+        },
+        {
+          "query_id": "A-015-beacon-scheduler::f2",
+          "mismatched_package_of": "A-018-verde-compactor::syn"
+        },
+        {
+          "query_id": "A-018-verde-compactor::syn",
+          "mismatched_package_of": "A-019-crag-broker::f3"
+        },
+        {
+          "query_id": "A-019-crag-broker::f3",
+          "mismatched_package_of": "A-019-crag-broker::f4"
+        },
+        {
+          "query_id": "A-019-crag-broker::f4",
+          "mismatched_package_of": "A-020-drift-resolver::f0"
+        },
+        {
+          "query_id": "A-020-drift-resolver::f0",
+          "mismatched_package_of": "A-020-drift-resolver::syn"
+        },
+        {
+          "query_id": "A-020-drift-resolver::syn",
+          "mismatched_package_of": "A-021-fable-ledger::f1"
+        },
+        {
+          "query_id": "A-021-fable-ledger::f1",
+          "mismatched_package_of": "A-021-fable-ledger::syn"
+        },
+        {
+          "query_id": "A-021-fable-ledger::syn",
+          "mismatched_package_of": "A-022-glint-collator::f0"
+        },
+        {
+          "query_id": "A-022-glint-collator::f0",
+          "mismatched_package_of": "A-023-harbor-sharder::f4"
+        },
+        {
+          "query_id": "A-023-harbor-sharder::f4",
+          "mismatched_package_of": "A-023-harbor-sharder::syn"
+        },
+        {
+          "query_id": "A-023-harbor-sharder::syn",
+          "mismatched_package_of": "A-024-ion-indexer::f3"
+        },
+        {
+          "query_id": "A-024-ion-indexer::f3",
+          "mismatched_package_of": "A-024-ion-indexer::f4"
+        },
+        {
+          "query_id": "A-024-ion-indexer::f4",
+          "mismatched_package_of": "A-026-krait-router::f1"
+        },
+        {
+          "query_id": "A-026-krait-router::f1",
+          "mismatched_package_of": "A-028-mica-gateway::f7"
+        },
+        {
+          "query_id": "A-028-mica-gateway::f7",
+          "mismatched_package_of": "A-030-kestrel-broker::syn"
+        },
+        {
+          "query_id": "A-030-kestrel-broker::syn",
+          "mismatched_package_of": "A-034-cirrus-sharder::mh"
+        },
+        {
+          "query_id": "A-034-cirrus-sharder::mh",
+          "mismatched_package_of": "A-036-halcyon-cache::syn"
+        },
+        {
+          "query_id": "A-036-halcyon-cache::syn",
+          "mismatched_package_of": "A-037-vega-router::f4"
+        },
+        {
+          "query_id": "A-037-vega-router::f4",
+          "mismatched_package_of": "A-038-quartz-scheduler::mh"
+        },
+        {
+          "query_id": "A-038-quartz-scheduler::mh",
+          "mismatched_package_of": "A-039-zephyr-gateway::mh"
+        },
+        {
+          "query_id": "A-039-zephyr-gateway::mh",
+          "mismatched_package_of": "A-040-marlin-planner::syn"
+        },
+        {
+          "query_id": "A-040-marlin-planner::syn",
+          "mismatched_package_of": "A-044-aster-ledger::f5"
+        },
+        {
+          "query_id": "A-044-aster-ledger::f5",
+          "mismatched_package_of": "A-000-kestrel-indexer::mh"
+        }
+      ],
+      "inventory_sizes": {
+        "F768": 90,
+        "U768": 90,
+        "U256": 238
+      }
+    },
+    {
+      "track": "B",
+      "n_queries": 150,
+      "n_scored": 150,
+      "failures": [],
+      "b2_min": 1024,
+      "b2_median": 1024,
+      "b2_max": 3840,
+      "n_escalated": 65,
+      "escalation_attribution": {
+        "U768": 54,
+        "F768": 11,
+        "U256": 2
+      },
+      "cap_8192_hits": 0,
+      "n_unequal_across_arms": 0,
+      "unequal_examples": [],
+      "control_sample": [
+        "1601.02403::q5",
+        "1612.08205::q3",
+        "1704.04452::q4",
+        "1707.05236::q0",
+        "1707.05236::q4",
+        "1709.07814::q1",
+        "1806.04511::q3",
+        "1806.05504::q0",
+        "1810.08699::q0",
+        "1811.00383::q1",
+        "1908.05828::q0",
+        "1908.05828::q10",
+        "1908.06267::q3",
+        "1908.10084::q2",
+        "1908.10084::q4",
+        "1909.00175::q2",
+        "1909.03405::q2",
+        "1909.06200::q3",
+        "1910.06592::q1",
+        "1910.06592::q10",
+        "1910.06592::q2",
+        "1910.06592::q4",
+        "1910.14076::q0",
+        "1910.14076::q1",
+        "1912.01214::q3",
+        "2002.01320::q1",
+        "2002.01320::q4",
+        "2002.02070::q1",
+        "2004.04721::q2",
+        "2004.04721::q4"
+      ],
+      "control_pairs": [
+        {
+          "query_id": "1601.02403::q5",
+          "mismatched_package_of": "1612.08205::q3"
+        },
+        {
+          "query_id": "1612.08205::q3",
+          "mismatched_package_of": "1704.04452::q4"
+        },
+        {
+          "query_id": "1704.04452::q4",
+          "mismatched_package_of": "1707.05236::q0"
+        },
+        {
+          "query_id": "1707.05236::q0",
+          "mismatched_package_of": "1707.05236::q4"
+        },
+        {
+          "query_id": "1707.05236::q4",
+          "mismatched_package_of": "1709.07814::q1"
+        },
+        {
+          "query_id": "1709.07814::q1",
+          "mismatched_package_of": "1806.04511::q3"
+        },
+        {
+          "query_id": "1806.04511::q3",
+          "mismatched_package_of": "1806.05504::q0"
+        },
+        {
+          "query_id": "1806.05504::q0",
+          "mismatched_package_of": "1810.08699::q0"
+        },
+        {
+          "query_id": "1810.08699::q0",
+          "mismatched_package_of": "1811.00383::q1"
+        },
+        {
+          "query_id": "1811.00383::q1",
+          "mismatched_package_of": "1908.05828::q0"
+        },
+        {
+          "query_id": "1908.05828::q0",
+          "mismatched_package_of": "1908.05828::q10"
+        },
+        {
+          "query_id": "1908.05828::q10",
+          "mismatched_package_of": "1908.06267::q3"
+        },
+        {
+          "query_id": "1908.06267::q3",
+          "mismatched_package_of": "1908.10084::q2"
+        },
+        {
+          "query_id": "1908.10084::q2",
+          "mismatched_package_of": "1908.10084::q4"
+        },
+        {
+          "query_id": "1908.10084::q4",
+          "mismatched_package_of": "1909.00175::q2"
+        },
+        {
+          "query_id": "1909.00175::q2",
+          "mismatched_package_of": "1909.03405::q2"
+        },
+        {
+          "query_id": "1909.03405::q2",
+          "mismatched_package_of": "1909.06200::q3"
+        },
+        {
+          "query_id": "1909.06200::q3",
+          "mismatched_package_of": "1910.06592::q1"
+        },
+        {
+          "query_id": "1910.06592::q1",
+          "mismatched_package_of": "1910.06592::q10"
+        },
+        {
+          "query_id": "1910.06592::q10",
+          "mismatched_package_of": "1910.06592::q2"
+        },
+        {
+          "query_id": "1910.06592::q2",
+          "mismatched_package_of": "1910.06592::q4"
+        },
+        {
+          "query_id": "1910.06592::q4",
+          "mismatched_package_of": "1910.14076::q0"
+        },
+        {
+          "query_id": "1910.14076::q0",
+          "mismatched_package_of": "1910.14076::q1"
+        },
+        {
+          "query_id": "1910.14076::q1",
+          "mismatched_package_of": "1912.01214::q3"
+        },
+        {
+          "query_id": "1912.01214::q3",
+          "mismatched_package_of": "2002.01320::q1"
+        },
+        {
+          "query_id": "2002.01320::q1",
+          "mismatched_package_of": "2002.01320::q4"
+        },
+        {
+          "query_id": "2002.01320::q4",
+          "mismatched_package_of": "2002.02070::q1"
+        },
+        {
+          "query_id": "2002.02070::q1",
+          "mismatched_package_of": "2004.04721::q2"
+        },
+        {
+          "query_id": "2004.04721::q2",
+          "mismatched_package_of": "2004.04721::q4"
+        },
+        {
+          "query_id": "2004.04721::q4",
+          "mismatched_package_of": "1601.02403::q5"
+        }
+      ],
+      "inventory_sizes": {
+        "F768": 381,
+        "U768": 378,
+        "U256": 1072
+      }
+    }
+  ],
+  "costs": {
+    "generation_single_run": 978,
+    "control": 120,
+    "probe": 60,
+    "judge": 176,
+    "total_single_run_branch": 1334,
+    "total_worst_case_targeted_repeats": 2390,
+    "ceiling": 5000,
+    "over_ceiling": false,
+    "_note": "control counts BOTH the correct and mismatched generation per sampled query (\u00a72); probe is 20 Track A dev prompts x 3 (G2/G6)"
+  }
+}

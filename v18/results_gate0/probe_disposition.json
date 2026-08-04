@@ -1,0 +1,53 @@
+{
+  "experiment": "v1.8-instrument-divergence",
+  "record": "PROBE_DISPOSITION",
+  "outcome": "ABANDONED BY RULE \u2014 not re-run, not repaired",
+  "ruling": "Decisions_v18_Gate0b_2026-08-01.md \u00a73",
+  "attempts": [
+    {
+      "n": 1,
+      "outcome": "PF-2 assertion fired: 120 cache hits on 180 calls",
+      "cause": "bypass isolated the cache directory but left caching on; repeat 1 wrote and repeats 2-3 read it back \u2014 G2 reproduced inside the fix for G2"
+    },
+    {
+      "n": 2,
+      "outcome": "died on credit exhaustion during generation"
+    },
+    {
+      "n": 3,
+      "outcome": "generation completed, judge stage died on credit exhaustion",
+      "note": "runner persisted only at the end, discarding 194 calls of finished work; per-stage persistence added afterwards"
+    },
+    {
+      "n": 4,
+      "outcome": "both stages completed, then found INVALID",
+      "cause": "config fell through to the harness default; measured claude-opus-4-8, not the pinned claude-sonnet-5 (G11)"
+    }
+  ],
+  "verdicts_withdrawn": {
+    "generation_35_of_60_divergent": "withdrawn with the artifacts \u2014 wrong model",
+    "judge_0_of_24_divergent": "withdrawn with the artifacts \u2014 wrong model"
+  },
+  "invalid_artifact_sha256": {
+    "INVALID_wrong_model__probe_results.json": "b4af4a60132308269a5cc73da068ed676b83ee4f260dbb2d02c95c1425be75e1",
+    "INVALID_wrong_model__probe_judge.json": "eefac25309670f9e17783b1192b9f19135a6473b8bbaef724c52983a03bbe744",
+    "INVALID_wrong_model__probe_run_log.txt": "c968170372300ae616374dbcb2e9c9a29c31e5f3fc2b218635254f37f3fa4d04"
+  },
+  "spend": {
+    "low": 334,
+    "high": 1018,
+    "indeterminate": true,
+    "bound": 1000,
+    "bound_status": "treated as consumed"
+  },
+  "branch_selected_by_rule": {
+    "determinism": "UNMEASURED, recorded as such",
+    "generation_repeats": "3x, Track A F768/U768 only",
+    "judge_repeats": "3x answer-level metrics, Track A F768/U768 only",
+    "projection_calls": 17642,
+    "ceiling": 25000,
+    "why_safe": "median-of-3 over a deterministic model returns the deterministic value, so the conservative branch is valid under either truth",
+    "mandatory_caveat": "single sample, sampling nondeterminism unquantified, temperature pin unavailable"
+  },
+  "written_utc": "2026-08-01T17:13:57Z"
+}

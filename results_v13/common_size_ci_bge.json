@@ -1,0 +1,36 @@
+[
+  {
+    "original_256": 0.608,
+    "original_256_units": 238,
+    "formatted_256": 0.7557,
+    "formatted_256_units": 235,
+    "track": "A",
+    "n_queries": 176,
+    "metric": "recall@5",
+    "delta": 0.1477,
+    "ci95": [
+      0.0795,
+      0.2159
+    ],
+    "p_value": 0.0001,
+    "significant_ci": true,
+    "embedding_model": "BAAI/bge-base-en-v1.5"
+  },
+  {
+    "original_256": 0.36,
+    "original_256_units": 1072,
+    "formatted_256": 0.4267,
+    "formatted_256_units": 1074,
+    "track": "B",
+    "n_queries": 150,
+    "metric": "recall@5",
+    "delta": 0.0667,
+    "ci95": [
+      0.02,
+      0.1133
+    ],
+    "p_value": 0.0135,
+    "significant_ci": true,
+    "embedding_model": "BAAI/bge-base-en-v1.5"
+  }
+]

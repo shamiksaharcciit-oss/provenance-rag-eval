@@ -1,0 +1,776 @@
+{
+  "arm": "P",
+  "row": {
+    "index_units": 378,
+    "token_mean": 761.71,
+    "realised_k": {
+      "mean": 3.033,
+      "max": 4,
+      "depth": 50,
+      "tokens_charged_mean": 2409.4
+    },
+    "seconds": 682.2,
+    "recall@budget": {
+      "numerator": 46,
+      "denominator": 150,
+      "rate": 0.306667
+    },
+    "recall@5": {
+      "numerator": 55,
+      "denominator": 150,
+      "rate": 0.366667
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "1911.07555::q5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.05441::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1503.00841::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1906.00790::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2004.04721::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.05828::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1902.09666::q6",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1809.00530::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1904.10503::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1706.08198::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1808.10245::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1809.00530::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2002.08795::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2002.02070::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.06592::q6",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.06592::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1911.07555::q6",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1601.02403::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1605.03481::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1810.04635::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1909.06200::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1908.06267::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1902.09666::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2001.01269::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1908.06267::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2002.02070::q5",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2002.01320::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1605.03481::q4",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2004.01862::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1904.09535::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1704.04452::q5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1906.00790::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1611.08661::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1610.09225::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1712.00991::q6",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1811.00147::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1909.03582::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1906.07662::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2002.01320::q4",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1910.06592::q8",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1908.05828::q4",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1910.14537::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.14076::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1707.05236::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1902.09666::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1912.01214::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1709.07814::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2004.01862::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2002.04095::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1907.09369::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1911.02855::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.10084::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1910.06592::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1809.00530::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1908.10084::q4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2002.02070::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2002.02070::q4",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1909.03405::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1704.04452::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1909.03582::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1702.03342::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2002.01664::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1707.05236::q3",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1810.08699::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.14076::q1",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2001.01269::q1",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1911.02855::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.06592::q10",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1903.11283::q1",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.05828::q8",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1704.04452::q4",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1808.10245::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1908.10084::q1",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1909.00175::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1806.04511::q5",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1911.07555::q8",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2002.11910::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1811.00383::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.14537::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1806.04511::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1806.04511::q1",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.05828::q6",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2002.01320::q6",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1601.02403::q5",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1908.06267::q4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1903.11283::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.06592::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1910.12795::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.05441::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1703.07476::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1712.00991::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1603.08594::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.05441::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1801.02073::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.10084::q5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1906.07662::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2002.01320::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2001.01269::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1705.01214::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1910.14537::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1705.01265::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1808.10245::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2002.01320::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1712.00991::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1909.06200::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1707.05236::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1904.10503::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2004.04721::q3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1912.01772::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1809.00530::q3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1603.09631::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1605.03481::q1",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1703.07476::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2002.01664::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.06592::q4",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1911.02855::q3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "2002.08795::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1802.08636::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2004.04721::q6",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1610.09225::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1912.08960::q2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1610.09225::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1906.00790::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1705.01265::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1810.04635::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1912.01772::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1503.00841::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.14076::q2",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1707.05236::q4",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1612.08205::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1910.14537::q3",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1811.00147::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "2004.04721::q4",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1911.07555::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1810.08699::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1908.05828::q10",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1605.03481::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1811.00383::q0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1910.06592::q7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1612.08205::q1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1806.04511::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1810.08699::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1801.02073::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1907.09369::q1",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1902.09666::q7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1908.10084::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1908.05828::q9",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1909.06200::q3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "1503.00841::q2",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "1806.05504::q0",
+      "recall@budget": 0,
+      "recall@5": 0
+    }
+  ]
+}

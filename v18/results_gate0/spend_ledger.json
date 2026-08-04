@@ -1,0 +1,52 @@
+{
+  "experiment": "v1.8-instrument-divergence",
+  "ceiling": 25000,
+  "frozen_projection": 17642,
+  "entries": [
+    {
+      "stage": "gate0-probe",
+      "calls_low": 334,
+      "calls_high": 1018,
+      "indeterminate": true,
+      "cause": "four attempts; two died on API credit exhaustion, so their consumption was set by the account balance rather than by the plan. PF-1's 1,000-call bound is treated as consumed (Gate 0(b) \u00a73).",
+      "utc": "2026-08-01T17:13:57Z"
+    },
+    {
+      "stage": "gen",
+      "calls": 1682,
+      "input_tokens": 10526615,
+      "output_tokens": 84928,
+      "batch_id": "msgbatch_018qmUr9PEUmhJer7FpjULiZ",
+      "note": "raw rows sha256=d51ee286d1667396",
+      "utc": "2026-08-01T18:50:50Z"
+    },
+    {
+      "stage": "j1-part0",
+      "calls": 10000,
+      "input_tokens": 8640251,
+      "output_tokens": 274492,
+      "batch_id": "msgbatch_01ECiDmfqYPnUiQNok9VWMJc",
+      "note": "raw rows sha256=1106e17895413979",
+      "utc": "2026-08-01T20:54:50Z"
+    },
+    {
+      "stage": "j1-part1",
+      "calls": 4278,
+      "input_tokens": 5859021,
+      "output_tokens": 78712,
+      "batch_id": "msgbatch_01MzRUXHmUpuvThHNAuVz2wJ",
+      "note": "raw rows sha256=8a6bd94a0e28f906",
+      "utc": "2026-08-01T21:01:14Z"
+    },
+    {
+      "stage": "j2",
+      "calls": 1682,
+      "input_tokens": 10729048,
+      "output_tokens": 29699,
+      "batch_id": "msgbatch_01Qb3ELmtjVYMjxeMqgYfpiF",
+      "note": "raw rows sha256=9a6c61c700986ebc",
+      "utc": "2026-08-01T21:19:22Z"
+    }
+  ],
+  "_note": "append-only; actuals from API usage rows, not estimates (Gate 0(b) \u00a74)"
+}

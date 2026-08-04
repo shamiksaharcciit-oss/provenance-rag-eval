@@ -1,0 +1,4323 @@
+{
+  "arm": "F768",
+  "row": {
+    "empty_segments": 0,
+    "index_units": 90,
+    "units_per_doc": 2.0,
+    "token_mean": 583.52,
+    "realised_k": {
+      "mean": 3.318,
+      "max": 5,
+      "depth": 50
+    },
+    "degenerate_gold_spans": 0,
+    "seconds": 61.7,
+    "llm_cache_hits_delta": 45,
+    "integrity_single_S2": {
+      "numerator": 132,
+      "denominator": 176,
+      "rate": 0.75
+    },
+    "integrity_full_S2": {
+      "numerator": 132,
+      "denominator": 176,
+      "rate": 0.75
+    },
+    "recall@budget_S2": {
+      "numerator": 132,
+      "denominator": 176,
+      "rate": 0.75
+    },
+    "feasible_single_S2": {
+      "numerator": 176,
+      "denominator": 176
+    },
+    "infeasible_single_S2": 0,
+    "integrity_single_S3": {
+      "numerator": 40,
+      "denominator": 176,
+      "rate": 0.227273
+    },
+    "integrity_full_S3": {
+      "numerator": 40,
+      "denominator": 176,
+      "rate": 0.227273
+    },
+    "recall@budget_S3": {
+      "numerator": 132,
+      "denominator": 176,
+      "rate": 0.75
+    },
+    "feasible_single_S3": {
+      "numerator": 64,
+      "denominator": 176
+    },
+    "infeasible_single_S3": 112,
+    "reproduces_v16_recall_at_budget": true
+  },
+  "per_query": [
+    {
+      "query_id": "A-040-marlin-planner::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2438,
+      "gold_spans": [
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 956,
+          "end_char": 1025
+        },
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 1095,
+          "end_char": 1174
+        },
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 2258,
+          "end_char": 2334
+        },
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 2406,
+          "end_char": 2492
+        },
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 3431,
+          "end_char": 3500
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-022-glint-collator::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2099,
+      "gold_spans": [
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 1118,
+          "end_char": 1187
+        },
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 1270,
+          "end_char": 1349
+        },
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 2058,
+          "end_char": 2115
+        },
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 2194,
+          "end_char": 2261
+        },
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 3313,
+          "end_char": 3381
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-001-basalt-cache::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2285,
+      "gold_spans": [
+        {
+          "doc_id": "A-001-basalt-cache",
+          "start_char": 8604,
+          "end_char": 8685
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-044-aster-ledger::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2293,
+      "gold_spans": [
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 8184,
+          "end_char": 8239
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-022-glint-collator::f2",
+      "realised_k": 3,
+      "budget_tokens_taken": 2287,
+      "gold_spans": [
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 3313,
+          "end_char": 3381
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::f2",
+      "realised_k": 3,
+      "budget_tokens_taken": 2184,
+      "gold_spans": [
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 3341,
+          "end_char": 3413
+        },
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 3487,
+          "end_char": 3569
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::mh",
+      "realised_k": 4,
+      "budget_tokens_taken": 2599,
+      "gold_spans": [
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 5445,
+          "end_char": 5534
+        },
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 5606,
+          "end_char": 5705
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-024-ion-indexer::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2290,
+      "gold_spans": [
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 5415,
+          "end_char": 5489
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-026-krait-router::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2288,
+      "gold_spans": [
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 3719,
+          "end_char": 3771
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 3850,
+          "end_char": 3912
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-021-fable-ledger::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2283,
+      "gold_spans": [
+        {
+          "doc_id": "A-021-fable-ledger",
+          "start_char": 1079,
+          "end_char": 1136
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-042-ridge-broker::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2285,
+      "gold_spans": [
+        {
+          "doc_id": "A-042-ridge-broker",
+          "start_char": 6487,
+          "end_char": 6562
+        },
+        {
+          "doc_id": "A-042-ridge-broker",
+          "start_char": 6632,
+          "end_char": 6717
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-027-lattice-scheduler::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2283,
+      "gold_spans": [
+        {
+          "doc_id": "A-027-lattice-scheduler",
+          "start_char": 7892,
+          "end_char": 7956
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-017-talon-planner::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2587,
+      "gold_spans": [
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 957,
+          "end_char": 1026
+        },
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 1097,
+          "end_char": 1176
+        },
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 1945,
+          "end_char": 2012
+        },
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 2872,
+          "end_char": 2940
+        },
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 3005,
+          "end_char": 3083
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-035-onyx-indexer::f5",
+      "realised_k": 4,
+      "budget_tokens_taken": 2573,
+      "gold_spans": [
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 5697,
+          "end_char": 5768
+        },
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 5832,
+          "end_char": 5913
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-011-falcon-sharder::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2299,
+      "gold_spans": [
+        {
+          "doc_id": "A-011-falcon-sharder",
+          "start_char": 3334,
+          "end_char": 3417
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-036-halcyon-cache::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2291,
+      "gold_spans": [
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 5054,
+          "end_char": 5129
+        },
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 5211,
+          "end_char": 5296
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-020-drift-resolver::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2182,
+      "gold_spans": [
+        {
+          "doc_id": "A-020-drift-resolver",
+          "start_char": 1115,
+          "end_char": 1188
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-044-aster-ledger::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 1987,
+      "gold_spans": [
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 1268,
+          "end_char": 1351
+        },
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 1426,
+          "end_char": 1519
+        },
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 2595,
+          "end_char": 2653
+        },
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 3587,
+          "end_char": 3655
+        },
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 3731,
+          "end_char": 3809
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-029-nyx-planner::f1",
+      "realised_k": 4,
+      "budget_tokens_taken": 2591,
+      "gold_spans": [
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 2149,
+          "end_char": 2229
+        },
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 2301,
+          "end_char": 2391
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-014-aster-router::f7",
+      "realised_k": 4,
+      "budget_tokens_taken": 2605,
+      "gold_spans": [
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 8439,
+          "end_char": 8519
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-035-onyx-indexer::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2285,
+      "gold_spans": [
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 2452,
+          "end_char": 2510
+        },
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 2576,
+          "end_char": 2644
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2291,
+      "gold_spans": [
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 5281,
+          "end_char": 5346
+        },
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 5416,
+          "end_char": 5491
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2094,
+      "gold_spans": [
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 4211,
+          "end_char": 4280
+        },
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 4354,
+          "end_char": 4433
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-015-beacon-scheduler::f3",
+      "realised_k": 5,
+      "budget_tokens_taken": 2246,
+      "gold_spans": [
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 4438,
+          "end_char": 4491
+        },
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 4565,
+          "end_char": 4628
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-007-vega-broker::f7",
+      "realised_k": 3,
+      "budget_tokens_taken": 2081,
+      "gold_spans": [
+        {
+          "doc_id": "A-007-vega-broker",
+          "start_char": 8695,
+          "end_char": 8764
+        },
+        {
+          "doc_id": "A-007-vega-broker",
+          "start_char": 8829,
+          "end_char": 8908
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-017-talon-planner::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2297,
+      "gold_spans": [
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 4006,
+          "end_char": 4078
+        },
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 4144,
+          "end_char": 4226
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-008-quartz-resolver::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2285,
+      "gold_spans": [
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 1068,
+          "end_char": 1125
+        },
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 1986,
+          "end_char": 2052
+        },
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 3140,
+          "end_char": 3214
+        },
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 3289,
+          "end_char": 3373
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::f0",
+      "realised_k": 3,
+      "budget_tokens_taken": 2295,
+      "gold_spans": [
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 961,
+          "end_char": 1024
+        },
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 1095,
+          "end_char": 1168
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2301,
+      "gold_spans": [
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 1216,
+          "end_char": 1263
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 1338,
+          "end_char": 1395
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 2210,
+          "end_char": 2284
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 2354,
+          "end_char": 2438
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 3403,
+          "end_char": 3469
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 3537,
+          "end_char": 3613
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f6",
+      "realised_k": 3,
+      "budget_tokens_taken": 2283,
+      "gold_spans": [
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 7923,
+          "end_char": 8009
+        },
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 8089,
+          "end_char": 8185
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-007-vega-broker::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2081,
+      "gold_spans": [
+        {
+          "doc_id": "A-007-vega-broker",
+          "start_char": 5801,
+          "end_char": 5864
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 2291,
+      "gold_spans": [
+        {
+          "doc_id": "A-000-kestrel-indexer",
+          "start_char": 1997,
+          "end_char": 2058
+        },
+        {
+          "doc_id": "A-000-kestrel-indexer",
+          "start_char": 2130,
+          "end_char": 2201
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-027-lattice-scheduler::f5",
+      "realised_k": 4,
+      "budget_tokens_taken": 2239,
+      "gold_spans": [
+        {
+          "doc_id": "A-027-lattice-scheduler",
+          "start_char": 5958,
+          "end_char": 6030
+        },
+        {
+          "doc_id": "A-027-lattice-scheduler",
+          "start_char": 6114,
+          "end_char": 6196
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-028-mica-gateway::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2298,
+      "gold_spans": [
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 3319,
+          "end_char": 3372
+        },
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 3447,
+          "end_char": 3510
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-019-crag-broker::f6",
+      "realised_k": 4,
+      "budget_tokens_taken": 2568,
+      "gold_spans": [
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 7623,
+          "end_char": 7690
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-026-krait-router::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 2569,
+      "gold_spans": [
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 3719,
+          "end_char": 3771
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 3850,
+          "end_char": 3912
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 2292,
+      "gold_spans": [
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 1890,
+          "end_char": 1965
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-037-vega-router::f4",
+      "realised_k": 4,
+      "budget_tokens_taken": 2601,
+      "gold_spans": [
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 5470,
+          "end_char": 5544
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-026-krait-router::f4",
+      "realised_k": 4,
+      "budget_tokens_taken": 2569,
+      "gold_spans": [
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 5531,
+          "end_char": 5587
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 5668,
+          "end_char": 5734
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2299,
+      "gold_spans": [
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 4313,
+          "end_char": 4391
+        },
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 4467,
+          "end_char": 4555
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-022-glint-collator::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2287,
+      "gold_spans": [
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 4318,
+          "end_char": 4376
+        },
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 4450,
+          "end_char": 4518
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-023-harbor-sharder::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2291,
+      "gold_spans": [
+        {
+          "doc_id": "A-023-harbor-sharder",
+          "start_char": 1037,
+          "end_char": 1106
+        },
+        {
+          "doc_id": "A-023-harbor-sharder",
+          "start_char": 2047,
+          "end_char": 2121
+        },
+        {
+          "doc_id": "A-023-harbor-sharder",
+          "start_char": 3135,
+          "end_char": 3195
+        },
+        {
+          "doc_id": "A-023-harbor-sharder",
+          "start_char": 3259,
+          "end_char": 3329
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f2",
+      "realised_k": 3,
+      "budget_tokens_taken": 2297,
+      "gold_spans": [
+        {
+          "doc_id": "A-000-kestrel-indexer",
+          "start_char": 3056,
+          "end_char": 3114
+        },
+        {
+          "doc_id": "A-000-kestrel-indexer",
+          "start_char": 3181,
+          "end_char": 3249
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-022-glint-collator::f0",
+      "realised_k": 3,
+      "budget_tokens_taken": 2287,
+      "gold_spans": [
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 1118,
+          "end_char": 1187
+        },
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 1270,
+          "end_char": 1349
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-023-harbor-sharder::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2293,
+      "gold_spans": [
+        {
+          "doc_id": "A-023-harbor-sharder",
+          "start_char": 2047,
+          "end_char": 2121
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 1958,
+      "gold_spans": [
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 3093,
+          "end_char": 3163
+        },
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 3244,
+          "end_char": 3324
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-014-aster-router::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2384,
+      "gold_spans": [
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 986,
+          "end_char": 1048
+        },
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 1973,
+          "end_char": 2040
+        },
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 2110,
+          "end_char": 2187
+        },
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 3055,
+          "end_char": 3112
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2299,
+      "gold_spans": [
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 5415,
+          "end_char": 5489
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-025-juniper-cache::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2067,
+      "gold_spans": [
+        {
+          "doc_id": "A-025-juniper-cache",
+          "start_char": 1268,
+          "end_char": 1333
+        },
+        {
+          "doc_id": "A-025-juniper-cache",
+          "start_char": 2246,
+          "end_char": 2324
+        },
+        {
+          "doc_id": "A-025-juniper-cache",
+          "start_char": 2391,
+          "end_char": 2479
+        },
+        {
+          "doc_id": "A-025-juniper-cache",
+          "start_char": 3232,
+          "end_char": 3305
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-011-falcon-sharder::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2277,
+      "gold_spans": [
+        {
+          "doc_id": "A-011-falcon-sharder",
+          "start_char": 1026,
+          "end_char": 1087
+        },
+        {
+          "doc_id": "A-011-falcon-sharder",
+          "start_char": 2080,
+          "end_char": 2134
+        },
+        {
+          "doc_id": "A-011-falcon-sharder",
+          "start_char": 2202,
+          "end_char": 2266
+        },
+        {
+          "doc_id": "A-011-falcon-sharder",
+          "start_char": 3334,
+          "end_char": 3417
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2297,
+      "gold_spans": [
+        {
+          "doc_id": "A-000-kestrel-indexer",
+          "start_char": 5331,
+          "end_char": 5392
+        },
+        {
+          "doc_id": "A-000-kestrel-indexer",
+          "start_char": 5463,
+          "end_char": 5534
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2291,
+      "gold_spans": [
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 4347,
+          "end_char": 4415
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2184,
+      "gold_spans": [
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 1031,
+          "end_char": 1092
+        },
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 1170,
+          "end_char": 1241
+        },
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 2389,
+          "end_char": 2459
+        },
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 3341,
+          "end_char": 3413
+        },
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 3487,
+          "end_char": 3569
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-023-harbor-sharder::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2291,
+      "gold_spans": [
+        {
+          "doc_id": "A-023-harbor-sharder",
+          "start_char": 5091,
+          "end_char": 5157
+        },
+        {
+          "doc_id": "A-023-harbor-sharder",
+          "start_char": 5237,
+          "end_char": 5313
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::f0",
+      "realised_k": 3,
+      "budget_tokens_taken": 2301,
+      "gold_spans": [
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 1216,
+          "end_char": 1263
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 1338,
+          "end_char": 1395
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-028-mica-gateway::f7",
+      "realised_k": 3,
+      "budget_tokens_taken": 1969,
+      "gold_spans": [
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 7846,
+          "end_char": 7913
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-026-krait-router::f1",
+      "realised_k": 4,
+      "budget_tokens_taken": 2569,
+      "gold_spans": [
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 2484,
+          "end_char": 2549
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 2616,
+          "end_char": 2691
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 2298,
+      "gold_spans": [
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 6281,
+          "end_char": 6366
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-005-onyx-planner::f2",
+      "realised_k": 3,
+      "budget_tokens_taken": 2301,
+      "gold_spans": [
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 3403,
+          "end_char": 3469
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 3537,
+          "end_char": 3613
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-036-halcyon-cache::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 2289,
+      "gold_spans": [
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 6187,
+          "end_char": 6253
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-014-aster-router::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 1982,
+      "gold_spans": [
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 4011,
+          "end_char": 4083
+        },
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 4152,
+          "end_char": 4234
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-031-basalt-resolver::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2110,
+      "gold_spans": [
+        {
+          "doc_id": "A-031-basalt-resolver",
+          "start_char": 1173,
+          "end_char": 1244
+        },
+        {
+          "doc_id": "A-031-basalt-resolver",
+          "start_char": 1317,
+          "end_char": 1398
+        },
+        {
+          "doc_id": "A-031-basalt-resolver",
+          "start_char": 2466,
+          "end_char": 2542
+        },
+        {
+          "doc_id": "A-031-basalt-resolver",
+          "start_char": 3464,
+          "end_char": 3523
+        },
+        {
+          "doc_id": "A-031-basalt-resolver",
+          "start_char": 3586,
+          "end_char": 3655
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-009-zephyr-ledger::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2018,
+      "gold_spans": [
+        {
+          "doc_id": "A-009-zephyr-ledger",
+          "start_char": 1122,
+          "end_char": 1199
+        },
+        {
+          "doc_id": "A-009-zephyr-ledger",
+          "start_char": 1274,
+          "end_char": 1361
+        },
+        {
+          "doc_id": "A-009-zephyr-ledger",
+          "start_char": 2380,
+          "end_char": 2441
+        },
+        {
+          "doc_id": "A-009-zephyr-ledger",
+          "start_char": 2511,
+          "end_char": 2582
+        },
+        {
+          "doc_id": "A-009-zephyr-ledger",
+          "start_char": 3591,
+          "end_char": 3656
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-012-ridge-indexer::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2292,
+      "gold_spans": [
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 901,
+          "end_char": 960
+        },
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 1890,
+          "end_char": 1965
+        },
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 2980,
+          "end_char": 3041
+        },
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 3120,
+          "end_char": 3191
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-035-onyx-indexer::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 2578,
+      "gold_spans": [
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 2452,
+          "end_char": 2510
+        },
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 2576,
+          "end_char": 2644
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-001-basalt-cache::f7",
+      "realised_k": 3,
+      "budget_tokens_taken": 2109,
+      "gold_spans": [
+        {
+          "doc_id": "A-001-basalt-cache",
+          "start_char": 8604,
+          "end_char": 8685
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2294,
+      "gold_spans": [
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 7648,
+          "end_char": 7709
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-039-zephyr-gateway::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2286,
+      "gold_spans": [
+        {
+          "doc_id": "A-039-zephyr-gateway",
+          "start_char": 3473,
+          "end_char": 3522
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-025-juniper-cache::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2290,
+      "gold_spans": [
+        {
+          "doc_id": "A-025-juniper-cache",
+          "start_char": 7591,
+          "end_char": 7658
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-009-zephyr-ledger::f6",
+      "realised_k": 3,
+      "budget_tokens_taken": 2023,
+      "gold_spans": [
+        {
+          "doc_id": "A-009-zephyr-ledger",
+          "start_char": 7422,
+          "end_char": 7487
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 1968,
+      "gold_spans": [
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 5318,
+          "end_char": 5375
+        },
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 5451,
+          "end_char": 5518
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-029-nyx-planner::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2587,
+      "gold_spans": [
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 1250,
+          "end_char": 1302
+        },
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 2149,
+          "end_char": 2229
+        },
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 2301,
+          "end_char": 2391
+        },
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 3396,
+          "end_char": 3459
+        },
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 3546,
+          "end_char": 3619
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-006-halcyon-compactor::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2658,
+      "gold_spans": [
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 1137,
+          "end_char": 1206
+        },
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 2311,
+          "end_char": 2368
+        },
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 2451,
+          "end_char": 2518
+        },
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 3521,
+          "end_char": 3580
+        },
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 3650,
+          "end_char": 3719
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2293,
+      "gold_spans": [
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 5678,
+          "end_char": 5743
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 5821,
+          "end_char": 5896
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2052,
+      "gold_spans": [
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 4332,
+          "end_char": 4400
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 4469,
+          "end_char": 4547
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-014-aster-router::f1",
+      "realised_k": 4,
+      "budget_tokens_taken": 2486,
+      "gold_spans": [
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 1973,
+          "end_char": 2040
+        },
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 2110,
+          "end_char": 2187
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2052,
+      "gold_spans": [
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 835,
+          "end_char": 899
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 980,
+          "end_char": 1054
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 1834,
+          "end_char": 1900
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 1974,
+          "end_char": 2050
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 2984,
+          "end_char": 3061
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 3141,
+          "end_char": 3228
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-006-halcyon-compactor::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 2657,
+      "gold_spans": [
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 3521,
+          "end_char": 3580
+        },
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 3650,
+          "end_char": 3719
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-033-ember-collator::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2285,
+      "gold_spans": [
+        {
+          "doc_id": "A-033-ember-collator",
+          "start_char": 5956,
+          "end_char": 6022
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 2131,
+      "gold_spans": [
+        {
+          "doc_id": "A-038-quartz-scheduler",
+          "start_char": 1836,
+          "end_char": 1906
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f6",
+      "realised_k": 3,
+      "budget_tokens_taken": 2292,
+      "gold_spans": [
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 7272,
+          "end_char": 7341
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-019-crag-broker::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2293,
+      "gold_spans": [
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 7623,
+          "end_char": 7690
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-014-aster-router::f2",
+      "realised_k": 3,
+      "budget_tokens_taken": 1987,
+      "gold_spans": [
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 3055,
+          "end_char": 3112
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-037-vega-router::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2389,
+      "gold_spans": [
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 967,
+          "end_char": 1036
+        },
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 2018,
+          "end_char": 2084
+        },
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 3107,
+          "end_char": 3163
+        },
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 3239,
+          "end_char": 3305
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2094,
+      "gold_spans": [
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 835,
+          "end_char": 901
+        },
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 975,
+          "end_char": 1051
+        },
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 2042,
+          "end_char": 2104
+        },
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 2169,
+          "end_char": 2241
+        },
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 3281,
+          "end_char": 3352
+        },
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 3429,
+          "end_char": 3510
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-009-zephyr-ledger::mh",
+      "realised_k": 4,
+      "budget_tokens_taken": 2598,
+      "gold_spans": [
+        {
+          "doc_id": "A-009-zephyr-ledger",
+          "start_char": 1122,
+          "end_char": 1199
+        },
+        {
+          "doc_id": "A-009-zephyr-ledger",
+          "start_char": 1274,
+          "end_char": 1361
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-012-ridge-indexer::mh",
+      "realised_k": 4,
+      "budget_tokens_taken": 2611,
+      "gold_spans": [
+        {
+          "doc_id": "A-012-ridge-indexer",
+          "start_char": 901,
+          "end_char": 960
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-036-halcyon-cache::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2188,
+      "gold_spans": [
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 834,
+          "end_char": 900
+        },
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 971,
+          "end_char": 1047
+        },
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 2183,
+          "end_char": 2242
+        },
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 3018,
+          "end_char": 3075
+        },
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 3152,
+          "end_char": 3219
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-004-cirrus-gateway::f4",
+      "realised_k": 4,
+      "budget_tokens_taken": 2564,
+      "gold_spans": [
+        {
+          "doc_id": "A-004-cirrus-gateway",
+          "start_char": 6152,
+          "end_char": 6227
+        },
+        {
+          "doc_id": "A-004-cirrus-gateway",
+          "start_char": 6294,
+          "end_char": 6379
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-003-ember-scheduler::f4",
+      "realised_k": 4,
+      "budget_tokens_taken": 2200,
+      "gold_spans": [
+        {
+          "doc_id": "A-003-ember-scheduler",
+          "start_char": 6243,
+          "end_char": 6310
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-029-nyx-planner::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2293,
+      "gold_spans": [
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 3396,
+          "end_char": 3459
+        },
+        {
+          "doc_id": "A-029-nyx-planner",
+          "start_char": 3546,
+          "end_char": 3619
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-021-fable-ledger::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 1924,
+      "gold_spans": [
+        {
+          "doc_id": "A-021-fable-ledger",
+          "start_char": 1079,
+          "end_char": 1136
+        },
+        {
+          "doc_id": "A-021-fable-ledger",
+          "start_char": 2261,
+          "end_char": 2313
+        },
+        {
+          "doc_id": "A-021-fable-ledger",
+          "start_char": 2395,
+          "end_char": 2457
+        },
+        {
+          "doc_id": "A-021-fable-ledger",
+          "start_char": 3261,
+          "end_char": 3330
+        },
+        {
+          "doc_id": "A-021-fable-ledger",
+          "start_char": 3411,
+          "end_char": 3490
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-003-ember-scheduler::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2283,
+      "gold_spans": [
+        {
+          "doc_id": "A-003-ember-scheduler",
+          "start_char": 2572,
+          "end_char": 2641
+        },
+        {
+          "doc_id": "A-003-ember-scheduler",
+          "start_char": 2716,
+          "end_char": 2795
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-016-nimbus-gateway::f2",
+      "realised_k": 3,
+      "budget_tokens_taken": 1969,
+      "gold_spans": [
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 3010,
+          "end_char": 3078
+        },
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 3150,
+          "end_char": 3228
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-036-halcyon-cache::f1",
+      "realised_k": 4,
+      "budget_tokens_taken": 2652,
+      "gold_spans": [
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 2183,
+          "end_char": 2242
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-020-drift-resolver::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2280,
+      "gold_spans": [
+        {
+          "doc_id": "A-020-drift-resolver",
+          "start_char": 1115,
+          "end_char": 1188
+        },
+        {
+          "doc_id": "A-020-drift-resolver",
+          "start_char": 2057,
+          "end_char": 2119
+        },
+        {
+          "doc_id": "A-020-drift-resolver",
+          "start_char": 3106,
+          "end_char": 3156
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-015-beacon-scheduler::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 2131,
+      "gold_spans": [
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 3362,
+          "end_char": 3428
+        },
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 3504,
+          "end_char": 3580
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-019-crag-broker::f4",
+      "realised_k": 4,
+      "budget_tokens_taken": 2255,
+      "gold_spans": [
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 5257,
+          "end_char": 5310
+        },
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 5382,
+          "end_char": 5445
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-017-talon-planner::f0",
+      "realised_k": 3,
+      "budget_tokens_taken": 2294,
+      "gold_spans": [
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 957,
+          "end_char": 1026
+        },
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 1097,
+          "end_char": 1176
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-014-aster-router::f4",
+      "realised_k": 4,
+      "budget_tokens_taken": 2603,
+      "gold_spans": [
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 5269,
+          "end_char": 5338
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-035-onyx-indexer::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2578,
+      "gold_spans": [
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 893,
+          "end_char": 951
+        },
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 1665,
+          "end_char": 1745
+        },
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 2452,
+          "end_char": 2510
+        },
+        {
+          "doc_id": "A-035-onyx-indexer",
+          "start_char": 2576,
+          "end_char": 2644
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-017-talon-planner::f3",
+      "realised_k": 4,
+      "budget_tokens_taken": 2584,
+      "gold_spans": [
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 4006,
+          "end_char": 4078
+        },
+        {
+          "doc_id": "A-017-talon-planner",
+          "start_char": 4144,
+          "end_char": 4226
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2294,
+      "gold_spans": [
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 5678,
+          "end_char": 5743
+        },
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 5821,
+          "end_char": 5896
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f0",
+      "realised_k": 3,
+      "budget_tokens_taken": 2283,
+      "gold_spans": [
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 1068,
+          "end_char": 1125
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-010-marlin-collator::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2287,
+      "gold_spans": [
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 4154,
+          "end_char": 4228
+        },
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 4301,
+          "end_char": 4385
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-010-marlin-collator::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2145,
+      "gold_spans": [
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 1114,
+          "end_char": 1191
+        },
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 1269,
+          "end_char": 1356
+        },
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 2067,
+          "end_char": 2148
+        },
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 2221,
+          "end_char": 2312
+        },
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 3245,
+          "end_char": 3307
+        },
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 3391,
+          "end_char": 3463
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 2301,
+      "gold_spans": [
+        {
+          "doc_id": "A-005-onyx-planner",
+          "start_char": 6683,
+          "end_char": 6759
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-015-beacon-scheduler::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2282,
+      "gold_spans": [
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 1182,
+          "end_char": 1235
+        },
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 1308,
+          "end_char": 1371
+        },
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 2436,
+          "end_char": 2504
+        },
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 2574,
+          "end_char": 2652
+        },
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 3362,
+          "end_char": 3428
+        },
+        {
+          "doc_id": "A-015-beacon-scheduler",
+          "start_char": 3504,
+          "end_char": 3580
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::f7",
+      "realised_k": 3,
+      "budget_tokens_taken": 2184,
+      "gold_spans": [
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 9021,
+          "end_char": 9079
+        },
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 9144,
+          "end_char": 9212
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2278,
+      "gold_spans": [
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 7868,
+          "end_char": 7940
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2284,
+      "gold_spans": [
+        {
+          "doc_id": "A-000-kestrel-indexer",
+          "start_char": 963,
+          "end_char": 1037
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-010-marlin-collator::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2188,
+      "gold_spans": [
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 6425,
+          "end_char": 6499
+        },
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 6576,
+          "end_char": 6660
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2297,
+      "gold_spans": [
+        {
+          "doc_id": "A-000-kestrel-indexer",
+          "start_char": 4248,
+          "end_char": 4317
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-034-cirrus-sharder::mh",
+      "realised_k": 4,
+      "budget_tokens_taken": 2600,
+      "gold_spans": [
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 6909,
+          "end_char": 6985
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-040-marlin-planner::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 2292,
+      "gold_spans": [
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 2258,
+          "end_char": 2334
+        },
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 2406,
+          "end_char": 2492
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::f7",
+      "realised_k": 3,
+      "budget_tokens_taken": 2094,
+      "gold_spans": [
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 8556,
+          "end_char": 8635
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-004-cirrus-gateway::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2293,
+      "gold_spans": [
+        {
+          "doc_id": "A-004-cirrus-gateway",
+          "start_char": 2380,
+          "end_char": 2452
+        },
+        {
+          "doc_id": "A-004-cirrus-gateway",
+          "start_char": 2528,
+          "end_char": 2610
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-041-falcon-compactor::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 1926,
+      "gold_spans": [
+        {
+          "doc_id": "A-041-falcon-compactor",
+          "start_char": 1256,
+          "end_char": 1327
+        },
+        {
+          "doc_id": "A-041-falcon-compactor",
+          "start_char": 2249,
+          "end_char": 2322
+        },
+        {
+          "doc_id": "A-041-falcon-compactor",
+          "start_char": 2395,
+          "end_char": 2478
+        },
+        {
+          "doc_id": "A-041-falcon-compactor",
+          "start_char": 3560,
+          "end_char": 3628
+        },
+        {
+          "doc_id": "A-041-falcon-compactor",
+          "start_char": 3699,
+          "end_char": 3777
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-028-mica-gateway::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2262,
+      "gold_spans": [
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 1235,
+          "end_char": 1293
+        },
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 1375,
+          "end_char": 1443
+        },
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 2328,
+          "end_char": 2382
+        },
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 2455,
+          "end_char": 2519
+        },
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 3319,
+          "end_char": 3372
+        },
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 3447,
+          "end_char": 3510
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-034-cirrus-sharder::f1",
+      "realised_k": 4,
+      "budget_tokens_taken": 2095,
+      "gold_spans": [
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 2520,
+          "end_char": 2589
+        },
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 2664,
+          "end_char": 2743
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-044-aster-ledger::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 1987,
+      "gold_spans": [
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 4545,
+          "end_char": 4604
+        },
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 4676,
+          "end_char": 4745
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-034-cirrus-sharder::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2095,
+      "gold_spans": [
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 1264,
+          "end_char": 1339
+        },
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 1414,
+          "end_char": 1499
+        },
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 2520,
+          "end_char": 2589
+        },
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 2664,
+          "end_char": 2743
+        },
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 3478,
+          "end_char": 3547
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-040-marlin-planner::f0",
+      "realised_k": 3,
+      "budget_tokens_taken": 2151,
+      "gold_spans": [
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 956,
+          "end_char": 1025
+        },
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 1095,
+          "end_char": 1174
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-021-fable-ledger::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 1924,
+      "gold_spans": [
+        {
+          "doc_id": "A-021-fable-ledger",
+          "start_char": 2261,
+          "end_char": 2313
+        },
+        {
+          "doc_id": "A-021-fable-ledger",
+          "start_char": 2395,
+          "end_char": 2457
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-028-mica-gateway::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 1967,
+      "gold_spans": [
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 5983,
+          "end_char": 6049
+        },
+        {
+          "doc_id": "A-028-mica-gateway",
+          "start_char": 6113,
+          "end_char": 6189
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2052,
+      "gold_spans": [
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 5324,
+          "end_char": 5397
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 5465,
+          "end_char": 5548
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-039-zephyr-gateway::f1",
+      "realised_k": 4,
+      "budget_tokens_taken": 2313,
+      "gold_spans": [
+        {
+          "doc_id": "A-039-zephyr-gateway",
+          "start_char": 2297,
+          "end_char": 2357
+        },
+        {
+          "doc_id": "A-039-zephyr-gateway",
+          "start_char": 2430,
+          "end_char": 2500
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-040-marlin-planner::f2",
+      "realised_k": 3,
+      "budget_tokens_taken": 2145,
+      "gold_spans": [
+        {
+          "doc_id": "A-040-marlin-planner",
+          "start_char": 3431,
+          "end_char": 3500
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f7",
+      "realised_k": 3,
+      "budget_tokens_taken": 2285,
+      "gold_spans": [
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 9110,
+          "end_char": 9168
+        },
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 9241,
+          "end_char": 9309
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-020-drift-resolver::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 2280,
+      "gold_spans": [
+        {
+          "doc_id": "A-020-drift-resolver",
+          "start_char": 4914,
+          "end_char": 4999
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-016-nimbus-gateway::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2293,
+      "gold_spans": [
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 4139,
+          "end_char": 4211
+        },
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 4276,
+          "end_char": 4358
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 2289,
+      "gold_spans": [
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 1834,
+          "end_char": 1900
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 1974,
+          "end_char": 2050
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2290,
+      "gold_spans": [
+        {
+          "doc_id": "A-038-quartz-scheduler",
+          "start_char": 6578,
+          "end_char": 6639
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-002-cobalt-router::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2184,
+      "gold_spans": [
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 4512,
+          "end_char": 4564
+        },
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 4631,
+          "end_char": 4693
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f6",
+      "realised_k": 3,
+      "budget_tokens_taken": 2052,
+      "gold_spans": [
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 7648,
+          "end_char": 7709
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 2184,
+      "gold_spans": [
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 2389,
+          "end_char": 2459
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-032-cobalt-ledger::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 2185,
+      "gold_spans": [
+        {
+          "doc_id": "A-032-cobalt-ledger",
+          "start_char": 6482,
+          "end_char": 6549
+        },
+        {
+          "doc_id": "A-032-cobalt-ledger",
+          "start_char": 6618,
+          "end_char": 6695
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-026-krait-router::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2467,
+      "gold_spans": [
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 1104,
+          "end_char": 1180
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 1257,
+          "end_char": 1343
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 2484,
+          "end_char": 2549
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 2616,
+          "end_char": 2691
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 3719,
+          "end_char": 3771
+        },
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 3850,
+          "end_char": 3912
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-019-crag-broker::f3",
+      "realised_k": 4,
+      "budget_tokens_taken": 2607,
+      "gold_spans": [
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 4367,
+          "end_char": 4437
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-016-nimbus-gateway::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 2300,
+      "gold_spans": [
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 4139,
+          "end_char": 4211
+        },
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 4276,
+          "end_char": 4358
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-039-zephyr-gateway::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 2313,
+      "gold_spans": [
+        {
+          "doc_id": "A-039-zephyr-gateway",
+          "start_char": 3473,
+          "end_char": 3522
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-016-nimbus-gateway::syn",
+      "realised_k": 5,
+      "budget_tokens_taken": 2443,
+      "gold_spans": [
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 897,
+          "end_char": 959
+        },
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 1802,
+          "end_char": 1888
+        },
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 1967,
+          "end_char": 2063
+        },
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 3010,
+          "end_char": 3078
+        },
+        {
+          "doc_id": "A-016-nimbus-gateway",
+          "start_char": 3150,
+          "end_char": 3228
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::f4",
+      "realised_k": 3,
+      "budget_tokens_taken": 1968,
+      "gold_spans": [
+        {
+          "doc_id": "A-038-quartz-scheduler",
+          "start_char": 4510,
+          "end_char": 4578
+        },
+        {
+          "doc_id": "A-038-quartz-scheduler",
+          "start_char": 4655,
+          "end_char": 4733
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-034-cirrus-sharder::f3",
+      "realised_k": 4,
+      "budget_tokens_taken": 2586,
+      "gold_spans": [
+        {
+          "doc_id": "A-034-cirrus-sharder",
+          "start_char": 4546,
+          "end_char": 4614
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-032-cobalt-ledger::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2182,
+      "gold_spans": [
+        {
+          "doc_id": "A-032-cobalt-ledger",
+          "start_char": 6482,
+          "end_char": 6549
+        },
+        {
+          "doc_id": "A-032-cobalt-ledger",
+          "start_char": 6618,
+          "end_char": 6695
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-013-solstice-cache::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2432,
+      "gold_spans": [
+        {
+          "doc_id": "A-013-solstice-cache",
+          "start_char": 1068,
+          "end_char": 1136
+        },
+        {
+          "doc_id": "A-013-solstice-cache",
+          "start_char": 1197,
+          "end_char": 1275
+        },
+        {
+          "doc_id": "A-013-solstice-cache",
+          "start_char": 2375,
+          "end_char": 2430
+        },
+        {
+          "doc_id": "A-013-solstice-cache",
+          "start_char": 3114,
+          "end_char": 3183
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-041-falcon-compactor::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2295,
+      "gold_spans": [
+        {
+          "doc_id": "A-041-falcon-compactor",
+          "start_char": 3560,
+          "end_char": 3628
+        },
+        {
+          "doc_id": "A-041-falcon-compactor",
+          "start_char": 3699,
+          "end_char": 3777
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-037-vega-router::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 2389,
+      "gold_spans": [
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 3107,
+          "end_char": 3163
+        },
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 3239,
+          "end_char": 3305
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-037-vega-router::f3",
+      "realised_k": 4,
+      "budget_tokens_taken": 2389,
+      "gold_spans": [
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 4371,
+          "end_char": 4434
+        },
+        {
+          "doc_id": "A-037-vega-router",
+          "start_char": 4496,
+          "end_char": 4569
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-022-glint-collator::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2187,
+      "gold_spans": [
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 1118,
+          "end_char": 1187
+        },
+        {
+          "doc_id": "A-022-glint-collator",
+          "start_char": 1270,
+          "end_char": 1349
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-006-halcyon-compactor::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2293,
+      "gold_spans": [
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 2311,
+          "end_char": 2368
+        },
+        {
+          "doc_id": "A-006-halcyon-compactor",
+          "start_char": 2451,
+          "end_char": 2518
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-007-vega-broker::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2295,
+      "gold_spans": [
+        {
+          "doc_id": "A-007-vega-broker",
+          "start_char": 2042,
+          "end_char": 2096
+        },
+        {
+          "doc_id": "A-007-vega-broker",
+          "start_char": 2172,
+          "end_char": 2236
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-007-vega-broker::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 2081,
+      "gold_spans": [
+        {
+          "doc_id": "A-007-vega-broker",
+          "start_char": 2042,
+          "end_char": 2096
+        },
+        {
+          "doc_id": "A-007-vega-broker",
+          "start_char": 2172,
+          "end_char": 2236
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-019-crag-broker::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2298,
+      "gold_spans": [
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 979,
+          "end_char": 1042
+        },
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 2119,
+          "end_char": 2191
+        },
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 2266,
+          "end_char": 2348
+        },
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 3435,
+          "end_char": 3506
+        },
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 3573,
+          "end_char": 3654
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::f1",
+      "realised_k": 3,
+      "budget_tokens_taken": 2094,
+      "gold_spans": [
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 2042,
+          "end_char": 2104
+        },
+        {
+          "doc_id": "A-043-solstice-resolver",
+          "start_char": 2169,
+          "end_char": 2241
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-013-solstice-cache::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 2620,
+      "gold_spans": [
+        {
+          "doc_id": "A-013-solstice-cache",
+          "start_char": 3114,
+          "end_char": 3183
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-026-krait-router::f3",
+      "realised_k": 4,
+      "budget_tokens_taken": 2569,
+      "gold_spans": [
+        {
+          "doc_id": "A-026-krait-router",
+          "start_char": 4764,
+          "end_char": 4828
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::syn",
+      "realised_k": 4,
+      "budget_tokens_taken": 2309,
+      "gold_spans": [
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 850,
+          "end_char": 926
+        },
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 1000,
+          "end_char": 1086
+        },
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 1926,
+          "end_char": 1996
+        },
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 2067,
+          "end_char": 2147
+        },
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 3093,
+          "end_char": 3163
+        },
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 3244,
+          "end_char": 3324
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 1968,
+      "gold_spans": [
+        {
+          "doc_id": "A-038-quartz-scheduler",
+          "start_char": 5725,
+          "end_char": 5800
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::f3",
+      "realised_k": 3,
+      "budget_tokens_taken": 1945,
+      "gold_spans": [
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 4354,
+          "end_char": 4424
+        },
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 4494,
+          "end_char": 4574
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-010-marlin-collator::f6",
+      "realised_k": 3,
+      "budget_tokens_taken": 2289,
+      "gold_spans": [
+        {
+          "doc_id": "A-010-marlin-collator",
+          "start_char": 7388,
+          "end_char": 7447
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-020-drift-resolver::f0",
+      "realised_k": 3,
+      "budget_tokens_taken": 2280,
+      "gold_spans": [
+        {
+          "doc_id": "A-020-drift-resolver",
+          "start_char": 1115,
+          "end_char": 1188
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2188,
+      "gold_spans": [
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 1068,
+          "end_char": 1125
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-019-crag-broker::f5",
+      "realised_k": 4,
+      "budget_tokens_taken": 2599,
+      "gold_spans": [
+        {
+          "doc_id": "A-019-crag-broker",
+          "start_char": 6562,
+          "end_char": 6643
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-001-basalt-cache::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2110,
+      "gold_spans": [
+        {
+          "doc_id": "A-001-basalt-cache",
+          "start_char": 1242,
+          "end_char": 1307
+        },
+        {
+          "doc_id": "A-001-basalt-cache",
+          "start_char": 1379,
+          "end_char": 1454
+        },
+        {
+          "doc_id": "A-001-basalt-cache",
+          "start_char": 2451,
+          "end_char": 2519
+        },
+        {
+          "doc_id": "A-001-basalt-cache",
+          "start_char": 2592,
+          "end_char": 2670
+        },
+        {
+          "doc_id": "A-001-basalt-cache",
+          "start_char": 3404,
+          "end_char": 3474
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-014-aster-router::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2294,
+      "gold_spans": [
+        {
+          "doc_id": "A-014-aster-router",
+          "start_char": 7609,
+          "end_char": 7670
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::f7",
+      "realised_k": 3,
+      "budget_tokens_taken": 1968,
+      "gold_spans": [
+        {
+          "doc_id": "A-038-quartz-scheduler",
+          "start_char": 7411,
+          "end_char": 7469
+        },
+        {
+          "doc_id": "A-038-quartz-scheduler",
+          "start_char": 7539,
+          "end_char": 7607
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::f0",
+      "realised_k": 3,
+      "budget_tokens_taken": 2184,
+      "gold_spans": [
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 1031,
+          "end_char": 1092
+        },
+        {
+          "doc_id": "A-002-cobalt-router",
+          "start_char": 1170,
+          "end_char": 1241
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::syn",
+      "realised_k": 3,
+      "budget_tokens_taken": 2295,
+      "gold_spans": [
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 961,
+          "end_char": 1024
+        },
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 1095,
+          "end_char": 1168
+        },
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 2335,
+          "end_char": 2405
+        },
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 3200,
+          "end_char": 3258
+        },
+        {
+          "doc_id": "A-024-ion-indexer",
+          "start_char": 3329,
+          "end_char": 3397
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-042-ridge-broker::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 2295,
+      "gold_spans": [
+        {
+          "doc_id": "A-042-ridge-broker",
+          "start_char": 6487,
+          "end_char": 6562
+        },
+        {
+          "doc_id": "A-042-ridge-broker",
+          "start_char": 6632,
+          "end_char": 6717
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f2",
+      "realised_k": 4,
+      "budget_tokens_taken": 2604,
+      "gold_spans": [
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 2984,
+          "end_char": 3061
+        },
+        {
+          "doc_id": "A-030-kestrel-broker",
+          "start_char": 3141,
+          "end_char": 3228
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 2131,
+      "gold_spans": [
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 6541,
+          "end_char": 6610
+        },
+        {
+          "doc_id": "A-008-quartz-resolver",
+          "start_char": 6682,
+          "end_char": 6761
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-044-aster-ledger::f5",
+      "realised_k": 3,
+      "budget_tokens_taken": 1982,
+      "gold_spans": [
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 7125,
+          "end_char": 7189
+        },
+        {
+          "doc_id": "A-044-aster-ledger",
+          "start_char": 7262,
+          "end_char": 7336
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-020-drift-resolver::f2",
+      "realised_k": 3,
+      "budget_tokens_taken": 2280,
+      "gold_spans": [
+        {
+          "doc_id": "A-020-drift-resolver",
+          "start_char": 3106,
+          "end_char": 3156
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::mh",
+      "realised_k": 3,
+      "budget_tokens_taken": 2283,
+      "gold_spans": [
+        {
+          "doc_id": "A-018-verde-compactor",
+          "start_char": 5426,
+          "end_char": 5493
+        }
+      ],
+      "integrity_single_S2": 0,
+      "integrity_full_S2": 0,
+      "recall@budget_S2": 0,
+      "integrity_single_S3": 0,
+      "integrity_full_S3": 0,
+      "recall@budget_S3": 0
+    },
+    {
+      "query_id": "A-036-halcyon-cache::f6",
+      "realised_k": 4,
+      "budget_tokens_taken": 2188,
+      "gold_spans": [
+        {
+          "doc_id": "A-036-halcyon-cache",
+          "start_char": 7065,
+          "end_char": 7124
+        }
+      ],
+      "integrity_single_S2": 1,
+      "integrity_full_S2": 1,
+      "recall@budget_S2": 1,
+      "integrity_single_S3": 1,
+      "integrity_full_S3": 1,
+      "recall@budget_S3": 1
+    }
+  ]
+}

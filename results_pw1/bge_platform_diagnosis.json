@@ -1,0 +1,27 @@
+{
+  "analysis": "PW-1 bge platform fault \u2014 DIAGNOSED",
+  "diagnosed_utc": "2026-07-30T18:54:56Z",
+  "root_cause": "MEMORY EXHAUSTION. Not hardware, not a version regression, not silent corruption.",
+  "evidence": {
+    "resource_exhaustion_events": "40 Microsoft-Windows-Resource-Exhaustion-Detector (event 2004, 'low virtual memory') since 2026-07-23, escalating: 1 on 07-26, 1 on 07-27, 10 on 07-28, 7 on 07-29, and 16 TODAY (07-30) \u2014 the day of the failures.",
+    "most_recent_event": "2026-07-30 20:23:42 \u2014 'vmmemWSL consumed 3,977,756,672 bytes, firefox.exe 1,934,340,096 bytes, python.exe 1,171,828,736 bytes'.",
+    "memory": "TotalVisible 7,739 MB; Free 393 MB at time of check. vmmemWSL alone holds ~4 GB.",
+    "uptime": "6 days 7 hours (last boot 2026-07-24 13:09), so pressure has accumulated since before the bge published run.",
+    "no_hardware_signature": "NO WHEA and NO machine-check entries in Application or System since 2026-07-23. The hardware hypothesis is ruled out, not merely unlikely."
+  },
+  "explains_every_observation": {
+    "model_size_dependence": "bge-base is ~110M params (~440 MB fp32) against MiniLM's ~22M. Only the larger model exceeds what is free.",
+    "batch_size_dependence": "batch 8 succeeded 4/4 with zero crashes; batch 64 failed 8/8. Peak activation memory scales with batch size.",
+    "intermittency": "free memory fluctuates with other processes, so the same operation succeeds or fails depending on the moment.",
+    "escalating_failure_rate": "16 low-memory events today; my own repeated runs added to the pressure they were failing against.",
+    "why_2026_07_26_worked": "one low-memory event that day against sixteen today.",
+    "fail_stop_behaviour": "an allocation failure is fail-stop by construction, which is exactly what the section-1 probe measured: 4/4 successes bit-identical."
+  },
+  "blast_radius": {
+    "bounded": "Memory exhaustion cannot silently corrupt a completed computation \u2014 it prevents one. Combined with the fail-stop probe, no computed number on this machine is in question on account of this fault.",
+    "positive_control": "family-1 MiniLM re-runs reproduced 0.5682 / 0.7216 and Track B's levels EXACTLY today, on this machine, under this pressure.",
+    "published_bge": "run-20260726-191447 ran on a day with ONE low-memory event. Unverified at the encoding step, but there is no mechanism by which this fault would have perturbed it rather than crashed it."
+  },
+  "remedy": "Free memory. vmmemWSL holds ~4 GB and firefox ~1.9 GB; releasing either would very likely make bge encodable immediately. Cheaper and less disruptive than a reboot, but both are the operator's call \u2014 shutting down WSL would terminate the user's sessions.",
+  "progress": "checkpoint/resume is live and 4 batches are already banked permanently; each needs to succeed once, ever."
+}

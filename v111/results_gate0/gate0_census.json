@@ -1,0 +1,71 @@
+{
+  "experiment": "v1.11",
+  "generation_calls_made": 0,
+  "EA_same_doc": {
+    "packages_checked": 346,
+    "gold_overlaps": 0,
+    "construction_gaps": [
+      [
+        "A-036-halcyon-cache::f4",
+        "U768"
+      ],
+      [
+        "A-012-ridge-indexer::f4",
+        "U768"
+      ],
+      [
+        "A-000-kestrel-indexer::f4",
+        "U768"
+      ],
+      [
+        "A-023-harbor-sharder::f4",
+        "U768"
+      ],
+      [
+        "A-008-quartz-resolver::f4",
+        "U768"
+      ],
+      [
+        "A-019-crag-broker::f4",
+        "U768"
+      ]
+    ],
+    "n_gaps": 6,
+    "token_min": 272,
+    "token_median": 523,
+    "token_max": 768,
+    "examples": []
+  },
+  "EB_packages": {
+    "v19_persisted_package_text": false,
+    "decision": "REBUILD by the frozen v1.9 procedure",
+    "reason": "v1.9 persisted b2/tokens/shortfalls and answers but NOT package text; there is nothing to hash for reuse"
+  },
+  "EE_base_matches_U768": true,
+  "EE_units": {
+    "C768": 90,
+    "U768": 90
+  },
+  "custom_id_census": {
+    "total": 2112,
+    "unique": 2112,
+    "all_parse": true,
+    "max_len": 27,
+    "sample": "v111-ea-f768-q000-xdoc-r0"
+  },
+  "call_table": {
+    "E-A": 704,
+    "E-B": 352,
+    "E-C": 704,
+    "E-E": 352,
+    "E-D": 0,
+    "total": 2112,
+    "ceiling": 4000
+  },
+  "prompts": {
+    "frozen": "e708031e847a3f9c",
+    "v1": "c3ff7b8ee15e5f67",
+    "v2": "3182e7337bfe466e"
+  },
+  "prompts_retain_token": true
+}

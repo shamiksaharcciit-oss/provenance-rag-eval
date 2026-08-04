@@ -1,0 +1,538 @@
+{
+  "experiment": "v1.7-E1-integrity",
+  "preregistration": "Plan_v17_ReadingValue_2026-08-01.md",
+  "freeze_commit": "e19dd353a3b1e5eeba8b523168744c9cedd69330",
+  "freeze_utc": "2026-08-01T11:40:20Z",
+  "pre_freeze_amendments": [
+    "PF-1 S1->S3",
+    "PF-2 B2(q)",
+    "PF-3 prompt canonical"
+  ],
+  "track": "B",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_queries": 150,
+  "budget_tokens": 1920,
+  "retrieval_depth": 50,
+  "primary_rung": "S2",
+  "reported_rung": "S3",
+  "sharded_encode": false,
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.13.0+cpu",
+    "sentence_transformers": "5.6.1",
+    "transformers": "5.14.1",
+    "tokenizers": "0.22.2",
+    "numpy": "2.2.6",
+    "faiss": "1.14.3",
+    "rank_bm25": "unknown",
+    "scipy": "1.18.0",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.24.0",
+    "env:OMP_NUM_THREADS": "1",
+    "env:MKL_NUM_THREADS": "<unset>",
+    "env:KMP_DUPLICATE_LIB_OK": "TRUE",
+    "env:OMP_STACKSIZE": "<unset>",
+    "env:TOKENIZERS_PARALLELISM": "false",
+    "device": "cpu",
+    "torch_num_threads": 1
+  },
+  "arms": {
+    "U256": {
+      "empty_segments": 0,
+      "index_units": 1072,
+      "units_per_doc": 17.8667,
+      "token_mean": 249.78,
+      "realised_k": {
+        "mean": 8.2,
+        "max": 10,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 283.1,
+      "llm_cache_hits_delta": 0,
+      "integrity_single_S2": {
+        "numerator": 21,
+        "denominator": 150,
+        "rate": 0.14
+      },
+      "integrity_full_S2": {
+        "numerator": 23,
+        "denominator": 150,
+        "rate": 0.153333
+      },
+      "recall@budget_S2": {
+        "numerator": 65,
+        "denominator": 150,
+        "rate": 0.433333
+      },
+      "feasible_single_S2": {
+        "numerator": 48,
+        "denominator": 150
+      },
+      "infeasible_single_S2": 102,
+      "integrity_single_S3": {
+        "numerator": 21,
+        "denominator": 150,
+        "rate": 0.14
+      },
+      "integrity_full_S3": {
+        "numerator": 23,
+        "denominator": 150,
+        "rate": 0.153333
+      },
+      "recall@budget_S3": {
+        "numerator": 65,
+        "denominator": 150,
+        "rate": 0.433333
+      },
+      "feasible_single_S3": {
+        "numerator": 48,
+        "denominator": 150
+      },
+      "infeasible_single_S3": 102,
+      "reproduces_v16_recall_at_budget": true
+    },
+    "U768": {
+      "empty_segments": 0,
+      "index_units": 378,
+      "units_per_doc": 6.3,
+      "token_mean": 708.38,
+      "realised_k": {
+        "mean": 3.08,
+        "max": 4,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 124.0,
+      "llm_cache_hits_delta": 0,
+      "integrity_single_S2": {
+        "numerator": 27,
+        "denominator": 150,
+        "rate": 0.18
+      },
+      "integrity_full_S2": {
+        "numerator": 30,
+        "denominator": 150,
+        "rate": 0.2
+      },
+      "recall@budget_S2": {
+        "numerator": 50,
+        "denominator": 150,
+        "rate": 0.333333
+      },
+      "feasible_single_S2": {
+        "numerator": 89,
+        "denominator": 150
+      },
+      "infeasible_single_S2": 61,
+      "integrity_single_S3": {
+        "numerator": 27,
+        "denominator": 150,
+        "rate": 0.18
+      },
+      "integrity_full_S3": {
+        "numerator": 30,
+        "denominator": 150,
+        "rate": 0.2
+      },
+      "recall@budget_S3": {
+        "numerator": 50,
+        "denominator": 150,
+        "rate": 0.333333
+      },
+      "feasible_single_S3": {
+        "numerator": 89,
+        "denominator": 150
+      },
+      "infeasible_single_S3": 61,
+      "reproduces_v16_recall_at_budget": true
+    },
+    "U768-ws": {
+      "empty_segments": 0,
+      "index_units": 378,
+      "units_per_doc": 6.3,
+      "token_mean": 708.38,
+      "realised_k": {
+        "mean": 3.08,
+        "max": 4,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 170.8,
+      "llm_cache_hits_delta": 0,
+      "integrity_single_S2": {
+        "numerator": 27,
+        "denominator": 150,
+        "rate": 0.18
+      },
+      "integrity_full_S2": {
+        "numerator": 30,
+        "denominator": 150,
+        "rate": 0.2
+      },
+      "recall@budget_S2": {
+        "numerator": 50,
+        "denominator": 150,
+        "rate": 0.333333
+      },
+      "feasible_single_S2": {
+        "numerator": 89,
+        "denominator": 150
+      },
+      "infeasible_single_S2": 61,
+      "integrity_single_S3": {
+        "numerator": 27,
+        "denominator": 150,
+        "rate": 0.18
+      },
+      "integrity_full_S3": {
+        "numerator": 30,
+        "denominator": 150,
+        "rate": 0.2
+      },
+      "recall@budget_S3": {
+        "numerator": 50,
+        "denominator": 150,
+        "rate": 0.333333
+      },
+      "feasible_single_S3": {
+        "numerator": 89,
+        "denominator": 150
+      },
+      "infeasible_single_S3": 61,
+      "reproduces_v16_recall_at_budget": true
+    },
+    "S768": {
+      "empty_segments": 0,
+      "index_units": 381,
+      "units_per_doc": 6.35,
+      "token_mean": 702.8,
+      "realised_k": {
+        "mean": 3.1,
+        "max": 4,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 148.9,
+      "llm_cache_hits_delta": 0,
+      "integrity_single_S2": {
+        "numerator": 1,
+        "denominator": 150,
+        "rate": 0.006667
+      },
+      "integrity_full_S2": {
+        "numerator": 1,
+        "denominator": 150,
+        "rate": 0.006667
+      },
+      "recall@budget_S2": {
+        "numerator": 51,
+        "denominator": 150,
+        "rate": 0.34
+      },
+      "feasible_single_S2": {
+        "numerator": 3,
+        "denominator": 150
+      },
+      "infeasible_single_S2": 147,
+      "integrity_single_S3": {
+        "numerator": 1,
+        "denominator": 150,
+        "rate": 0.006667
+      },
+      "integrity_full_S3": {
+        "numerator": 1,
+        "denominator": 150,
+        "rate": 0.006667
+      },
+      "recall@budget_S3": {
+        "numerator": 51,
+        "denominator": 150,
+        "rate": 0.34
+      },
+      "feasible_single_S3": {
+        "numerator": 3,
+        "denominator": 150
+      },
+      "infeasible_single_S3": 147,
+      "reproduces_v16_recall_at_budget": true
+    },
+    "F768": {
+      "empty_segments": 0,
+      "index_units": 381,
+      "units_per_doc": 6.35,
+      "token_mean": 702.69,
+      "realised_k": {
+        "mean": 3.147,
+        "max": 4,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 114.5,
+      "llm_cache_hits_delta": 60,
+      "integrity_single_S2": {
+        "numerator": 1,
+        "denominator": 150,
+        "rate": 0.006667
+      },
+      "integrity_full_S2": {
+        "numerator": 1,
+        "denominator": 150,
+        "rate": 0.006667
+      },
+      "recall@budget_S2": {
+        "numerator": 49,
+        "denominator": 150,
+        "rate": 0.326667
+      },
+      "feasible_single_S2": {
+        "numerator": 3,
+        "denominator": 150
+      },
+      "infeasible_single_S2": 147,
+      "integrity_single_S3": {
+        "numerator": 1,
+        "denominator": 150,
+        "rate": 0.006667
+      },
+      "integrity_full_S3": {
+        "numerator": 1,
+        "denominator": 150,
+        "rate": 0.006667
+      },
+      "recall@budget_S3": {
+        "numerator": 49,
+        "denominator": 150,
+        "rate": 0.326667
+      },
+      "feasible_single_S3": {
+        "numerator": 3,
+        "denominator": 150
+      },
+      "infeasible_single_S3": 147,
+      "reproduces_v16_recall_at_budget": true
+    }
+  },
+  "PROC-1_encoder_restores": {},
+  "memory_margin_mb": {
+    "U256": {
+      "free_after_arm": 700,
+      "known_failure_point": 393,
+      "_note": "PW-1 bge memory-exhaustion segfault"
+    },
+    "U768": {
+      "free_after_arm": 862,
+      "known_failure_point": 393,
+      "_note": "PW-1 bge memory-exhaustion segfault"
+    },
+    "U768-ws": {
+      "free_after_arm": 735,
+      "known_failure_point": 393,
+      "_note": "PW-1 bge memory-exhaustion segfault"
+    },
+    "S768": {
+      "free_after_arm": 804,
+      "known_failure_point": 393,
+      "_note": "PW-1 bge memory-exhaustion segfault"
+    },
+    "F768": {
+      "free_after_arm": 516,
+      "known_failure_point": 393,
+      "_note": "PW-1 bge memory-exhaustion segfault"
+    }
+  },
+  "family_F_INT": {
+    "members": [
+      "D_int_seam",
+      "D_int_edit"
+    ],
+    "metric": "integrity_single",
+    "p_raw": {
+      "D_int_seam": 0.0001,
+      "D_int_edit": 1.0
+    },
+    "p_holm": {
+      "D_int_seam": 0.0002,
+      "D_int_edit": 1.0
+    },
+    "_note": "decision-bearing only in the primary cell; see the results document for which cell that is"
+  },
+  "decomposition": {
+    "integrity_single": {
+      "D_int_size": {
+        "numerator": 6,
+        "denominator": 150,
+        "delta": 0.04,
+        "delta_exact": "6/150",
+        "ci95": [
+          -0.033333,
+          0.113333
+        ],
+        "p_permutation": 0.362564,
+        "discordant": {
+          "n01": 18,
+          "n10": 12,
+          "informative": 30,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_ws": {
+        "numerator": 0,
+        "denominator": 150,
+        "delta": 0.0,
+        "delta_exact": "0/150",
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_permutation": 1.0,
+        "discordant": {
+          "n01": 0,
+          "n10": 0,
+          "informative": 0,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_seam": {
+        "numerator": -26,
+        "denominator": 150,
+        "delta": -0.173333,
+        "delta_exact": "-26/150",
+        "ci95": [
+          -0.24,
+          -0.113333
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 1,
+          "n10": 27,
+          "informative": 28,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_edit": {
+        "numerator": 0,
+        "denominator": 150,
+        "delta": 0.0,
+        "delta_exact": "0/150",
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_permutation": 1.0,
+        "discordant": {
+          "n01": 0,
+          "n10": 0,
+          "informative": 0,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_total": {
+        "numerator": -20,
+        "denominator": 150,
+        "delta": -0.133333,
+        "delta_exact": "-20/150",
+        "ci95": [
+          -0.186667,
+          -0.08
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 0,
+          "n10": 20,
+          "informative": 20,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      }
+    },
+    "integrity_full": {
+      "D_int_size": {
+        "numerator": 7,
+        "denominator": 150,
+        "delta": 0.046667,
+        "delta_exact": "7/150",
+        "ci95": [
+          -0.026667,
+          0.12
+        ],
+        "p_permutation": 0.29787,
+        "discordant": {
+          "n01": 20,
+          "n10": 13,
+          "informative": 33,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_ws": {
+        "numerator": 0,
+        "denominator": 150,
+        "delta": 0.0,
+        "delta_exact": "0/150",
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_permutation": 1.0,
+        "discordant": {
+          "n01": 0,
+          "n10": 0,
+          "informative": 0,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_seam": {
+        "numerator": -29,
+        "denominator": 150,
+        "delta": -0.193333,
+        "delta_exact": "-29/150",
+        "ci95": [
+          -0.26,
+          -0.126667
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 1,
+          "n10": 30,
+          "informative": 31,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_edit": {
+        "numerator": 0,
+        "denominator": 150,
+        "delta": 0.0,
+        "delta_exact": "0/150",
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_permutation": 1.0,
+        "discordant": {
+          "n01": 0,
+          "n10": 0,
+          "informative": 0,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_total": {
+        "numerator": -22,
+        "denominator": 150,
+        "delta": -0.146667,
+        "delta_exact": "-22/150",
+        "ci95": [
+          -0.206667,
+          -0.093333
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 0,
+          "n10": 22,
+          "informative": 22,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      }
+    }
+  },
+  "completed_utc": "2026-08-01T12:22:37Z"
+}

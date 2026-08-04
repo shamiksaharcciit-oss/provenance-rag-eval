@@ -1,0 +1,286 @@
+{
+  "experiment": "v1.10-context-budget",
+  "freeze_commit": "e52a9a88299de7efd00435e0c63be349e64e041f",
+  "freeze_utc": "2026-08-01T20:24:16Z",
+  "pre_freeze_amendments": [
+    "PF-G1"
+  ],
+  "track": "A",
+  "n_queries": 176,
+  "budget_tokens": 1920,
+  "retrieval_depth": 50,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "sharded_encode": true,
+  "fresh_llm_calls": 0,
+  "provenance_sha256": "33a567c367b56754413a5e38c2e99df8322054affa6166646d6ff9d4951fa2fb",
+  "prepended": {
+    "C": {
+      "arm": "C",
+      "n_units": 90,
+      "prepended_tokens_min": 29,
+      "prepended_tokens_median": 48,
+      "prepended_tokens_max": 77,
+      "prepended_tokens_total": 4506
+    },
+    "P": {
+      "arm": "P",
+      "n_units": 90,
+      "prepended_tokens_min": 29,
+      "prepended_tokens_median": 48,
+      "prepended_tokens_max": 77,
+      "prepended_tokens_total": 4506
+    }
+  },
+  "memory_margin_mb": {
+    "U": {
+      "free_after_arm": 432,
+      "known_failure_point": 393
+    },
+    "P": {
+      "free_after_arm": 363,
+      "known_failure_point": 393
+    },
+    "C": {
+      "free_after_arm": 553,
+      "known_failure_point": 393
+    }
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.13.0+cpu",
+    "sentence_transformers": "5.6.1",
+    "transformers": "5.14.1",
+    "tokenizers": "0.22.2",
+    "numpy": "2.2.6",
+    "faiss": "1.14.3",
+    "rank_bm25": "unknown",
+    "scipy": "1.18.0",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.24.0",
+    "env:OMP_NUM_THREADS": "1",
+    "env:MKL_NUM_THREADS": "<unset>",
+    "env:KMP_DUPLICATE_LIB_OK": "TRUE",
+    "env:OMP_STACKSIZE": "<unset>",
+    "env:TOKENIZERS_PARALLELISM": "false",
+    "device": "cpu",
+    "torch_num_threads": 1
+  },
+  "arms": {
+    "U": {
+      "index_units": 90,
+      "token_mean": 609.84,
+      "realised_k": {
+        "mean": 3.222,
+        "max": 4,
+        "depth": 50,
+        "tokens_charged_mean": 2257.6
+      },
+      "seconds": 289.9,
+      "recall@budget": {
+        "numerator": 132,
+        "denominator": 176,
+        "rate": 0.75
+      },
+      "recall@5": {
+        "numerator": 138,
+        "denominator": 176,
+        "rate": 0.784091
+      }
+    },
+    "P": {
+      "index_units": 90,
+      "token_mean": 659.91,
+      "realised_k": {
+        "mean": 3.074,
+        "max": 4,
+        "depth": 50,
+        "tokens_charged_mean": 2298.6
+      },
+      "seconds": 324.8,
+      "recall@budget": {
+        "numerator": 123,
+        "denominator": 176,
+        "rate": 0.698864
+      },
+      "recall@5": {
+        "numerator": 130,
+        "denominator": 176,
+        "rate": 0.738636
+      }
+    },
+    "C": {
+      "index_units": 90,
+      "token_mean": 659.91,
+      "realised_k": {
+        "mean": 3.256,
+        "max": 4,
+        "depth": 50,
+        "tokens_charged_mean": 2228.1
+      },
+      "seconds": 263.3,
+      "recall@budget": {
+        "numerator": 143,
+        "denominator": 176,
+        "rate": 0.8125
+      },
+      "recall@5": {
+        "numerator": 150,
+        "denominator": 176,
+        "rate": 0.852273
+      }
+    }
+  },
+  "published_recall_at_5": {
+    "C0": 0.7841,
+    "C1": 0.5398,
+    "C2": 0.8523,
+    "C3": 0.8182,
+    "C4": 0.8409,
+    "C5": 0.8523,
+    "C3-noref": 0.7784,
+    "C3-nosize": 0.6989,
+    "C3-nodedup": 0.8295,
+    "C3-markeronly": 0.7955
+  },
+  "PC1_reproduction": {
+    "U": {
+      "condition": "C0",
+      "v110_numerator": 138,
+      "published_rate": 0.7841,
+      "published_numerator": 138,
+      "reproduces": true
+    },
+    "C": {
+      "condition": "C2",
+      "v110_numerator": 150,
+      "published_rate": 0.8523,
+      "published_numerator": 150,
+      "reproduces": true
+    }
+  },
+  "family_F_CTX": {
+    "members": [
+      "D_info",
+      "D_total"
+    ],
+    "metric": "recall@budget",
+    "p_raw": {
+      "D_info": 0.0001,
+      "D_total": 0.024998
+    },
+    "p_holm": {
+      "D_info": 0.0002,
+      "D_total": 0.024998
+    }
+  },
+  "decomposition": {
+    "recall@budget": {
+      "D_pad": {
+        "numerator": -9,
+        "denominator": 176,
+        "delta": -0.051136,
+        "delta_exact": "-9/176",
+        "ci95": [
+          -0.096591,
+          -0.005682
+        ],
+        "p_permutation": 0.051195,
+        "discordant": {
+          "n01": 4,
+          "n10": 13,
+          "informative": 17,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_info": {
+        "numerator": 20,
+        "denominator": 176,
+        "delta": 0.113636,
+        "delta_exact": "20/176",
+        "ci95": [
+          0.068182,
+          0.164773
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 20,
+          "n10": 0,
+          "informative": 20,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_total": {
+        "numerator": 11,
+        "denominator": 176,
+        "delta": 0.0625,
+        "delta_exact": "11/176",
+        "ci95": [
+          0.011364,
+          0.113636
+        ],
+        "p_permutation": 0.024998,
+        "discordant": {
+          "n01": 16,
+          "n10": 5,
+          "informative": 21,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      }
+    },
+    "recall@5": {
+      "D_pad": {
+        "numerator": -8,
+        "denominator": 176,
+        "delta": -0.045455,
+        "delta_exact": "-8/176",
+        "ci95": [
+          -0.090909,
+          0.0
+        ],
+        "p_permutation": 0.09819,
+        "discordant": {
+          "n01": 5,
+          "n10": 13,
+          "informative": 18,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_info": {
+        "numerator": 20,
+        "denominator": 176,
+        "delta": 0.113636,
+        "delta_exact": "20/176",
+        "ci95": [
+          0.068182,
+          0.164773
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 21,
+          "n10": 1,
+          "informative": 22,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_total": {
+        "numerator": 12,
+        "denominator": 176,
+        "delta": 0.068182,
+        "delta_exact": "12/176",
+        "ci95": [
+          0.017045,
+          0.119318
+        ],
+        "p_permutation": 0.010699,
+        "discordant": {
+          "n01": 16,
+          "n10": 4,
+          "informative": 20,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      }
+    }
+  },
+  "completed_utc": "2026-08-01T20:43:04Z"
+}

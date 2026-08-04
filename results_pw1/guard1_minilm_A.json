@@ -1,0 +1,45 @@
+{
+  "guard": "guard_1",
+  "cell_group": "MiniLM / Track A",
+  "published_run": "run-20260724-135411",
+  "method": "re-score of persisted ranked lists",
+  "family_2": {
+    "levels": {
+      "C0": 0.7841,
+      "C4": 0.8409
+    },
+    "targets": {
+      "C0": 0.7841,
+      "C4": 0.8409
+    },
+    "delta": 0.0568,
+    "delta_full_frozen": 0.0568,
+    "reproduced": true,
+    "guard_4": {
+      "C0": "147/147",
+      "C4": "160/160",
+      "note": "top_hit_provenance is populated for hits within k=10; the check scans the FULL retrieved list. A first version scanned only the top 5 and reported 138/147 and 148/160 -- a bug in the checker, not a rebuild discrepancy."
+    }
+  },
+  "family_1": {
+    "method": "re-run under seed 1337 / candidate_pool 50 / k_rrf 60 (no persisted per-query vectors exist for the size-matched control)",
+    "levels": {
+      "orig256": 0.5682,
+      "fmt256": 0.7216
+    },
+    "targets": {
+      "orig256": 0.5682,
+      "fmt256": 0.7216
+    },
+    "delta": 0.1534,
+    "ci95": [
+      0.0795,
+      0.2273
+    ],
+    "p_value": 0.0002,
+    "delta_full_frozen": 0.1534,
+    "reproduced": true
+  },
+  "verdict": "GUARD 1 PASSED on MiniLM / Track A -- every published level reproduces exactly",
+  "completed_utc": "2026-07-30T14:30:02Z"
+}

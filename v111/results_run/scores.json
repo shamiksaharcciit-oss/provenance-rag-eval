@@ -1,0 +1,231 @@
+{
+  "integrity": {
+    "requests": 2106,
+    "packages_persisted": 2106,
+    "outputs_persisted": 2106
+  },
+  "construction_gaps": [
+    {
+      "query_id": "A-036-halcyon-cache::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-023-harbor-sharder::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-019-crag-broker::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    }
+  ],
+  "EA": {
+    "sdoc": {
+      "n_paired": 170,
+      "rate": {
+        "F768": {
+          "numerator": 38,
+          "denominator": 176
+        },
+        "U768": {
+          "numerator": 50,
+          "denominator": 170
+        }
+      },
+      "contrast": {
+        "numerator": -12,
+        "denominator": 170,
+        "delta": -0.070588,
+        "delta_exact": "-12/170",
+        "ci95": [
+          -0.141176,
+          0.0
+        ],
+        "p_permutation": 0.062394,
+        "discordant": {
+          "n01": 12,
+          "n10": 24,
+          "informative": 36,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      }
+    },
+    "unpaired_F768": [
+      {
+        "query_id": "A-036-halcyon-cache::f4",
+        "false_answer": 0,
+        "answer": "NOT FOUND"
+      },
+      {
+        "query_id": "A-012-ridge-indexer::f4",
+        "false_answer": 0,
+        "answer": "NOT FOUND"
+      },
+      {
+        "query_id": "A-000-kestrel-indexer::f4",
+        "false_answer": 0,
+        "answer": "NOT FOUND"
+      },
+      {
+        "query_id": "A-023-harbor-sharder::f4",
+        "false_answer": 0,
+        "answer": "NOT FOUND"
+      },
+      {
+        "query_id": "A-008-quartz-resolver::f4",
+        "false_answer": 0,
+        "answer": "NOT FOUND"
+      },
+      {
+        "query_id": "A-019-crag-broker::f4",
+        "false_answer": 0,
+        "answer": "NOT FOUND"
+      }
+    ],
+    "xdoc": {
+      "n_paired": 176,
+      "rate": {
+        "F768": {
+          "numerator": 28,
+          "denominator": 176
+        },
+        "U768": {
+          "numerator": 35,
+          "denominator": 176
+        }
+      },
+      "contrast": {
+        "numerator": -7,
+        "denominator": 176,
+        "delta": -0.039773,
+        "delta_exact": "-7/176",
+        "ci95": [
+          -0.107955,
+          0.028409
+        ],
+        "p_permutation": 0.333167,
+        "discordant": {
+          "n01": 15,
+          "n10": 22,
+          "informative": 37,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      }
+    }
+  },
+  "EB": {
+    "arms": {
+      "F768": {
+        "mean_f1": 0.641835,
+        "not_found": 0,
+        "n": 176
+      },
+      "U768": {
+        "mean_f1": 0.659723,
+        "not_found": 0,
+        "n": 176
+      }
+    },
+    "n": 176,
+    "mean_diff": -0.017888,
+    "direction_counts": {
+      "F768_higher": 38,
+      "U768_higher": 68,
+      "tied": 70
+    }
+  },
+  "EC": {
+    "v1": {
+      "arms": {
+        "F768": {
+          "mean_f1": 0.620152,
+          "not_found": 0,
+          "n": 176
+        },
+        "U768": {
+          "mean_f1": 0.564923,
+          "not_found": 2,
+          "n": 176
+        }
+      },
+      "n": 176,
+      "mean_diff": 0.055229,
+      "direction_counts": {
+        "F768_higher": 58,
+        "U768_higher": 35,
+        "tied": 83
+      }
+    },
+    "v2": {
+      "arms": {
+        "F768": {
+          "mean_f1": 0.620745,
+          "not_found": 1,
+          "n": 176
+        },
+        "U768": {
+          "mean_f1": 0.61227,
+          "not_found": 3,
+          "n": 176
+        }
+      },
+      "n": 176,
+      "mean_diff": 0.008475,
+      "direction_counts": {
+        "F768_higher": 40,
+        "U768_higher": 37,
+        "tied": 99
+      }
+    }
+  },
+  "EE": {
+    "arms": {
+      "C768": {
+        "mean_f1": 0.576631,
+        "not_found": 6,
+        "n": 176
+      },
+      "U768": {
+        "mean_f1": 0.462573,
+        "not_found": 17,
+        "n": 176
+      }
+    },
+    "n": 176,
+    "mean_diff": 0.114059,
+    "direction_counts": {
+      "C768_higher": 76,
+      "U768_higher": 44,
+      "tied": 56
+    }
+  },
+  "ED": {
+    "F768": {
+      "vs_original_gold": 30,
+      "vs_package_text": 104,
+      "n": 176
+    },
+    "U768": {
+      "vs_original_gold": 34,
+      "vs_package_text": 96,
+      "n": 176
+    }
+  }
+}

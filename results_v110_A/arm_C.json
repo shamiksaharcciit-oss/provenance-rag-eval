@@ -1,0 +1,906 @@
+{
+  "arm": "C",
+  "row": {
+    "index_units": 90,
+    "token_mean": 659.91,
+    "realised_k": {
+      "mean": 3.256,
+      "max": 4,
+      "depth": 50,
+      "tokens_charged_mean": 2228.1
+    },
+    "seconds": 263.3,
+    "recall@budget": {
+      "numerator": 143,
+      "denominator": 176,
+      "rate": 0.8125
+    },
+    "recall@5": {
+      "numerator": 150,
+      "denominator": 176,
+      "rate": 0.852273
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "A-040-marlin-planner::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-022-glint-collator::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-001-basalt-cache::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-044-aster-ledger::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-022-glint-collator::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::mh",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-026-krait-router::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-021-fable-ledger::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-042-ridge-broker::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-027-lattice-scheduler::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-017-talon-planner::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-035-onyx-indexer::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-011-falcon-sharder::mh",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-036-halcyon-cache::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-020-drift-resolver::mh",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-044-aster-ledger::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-029-nyx-planner::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-014-aster-router::f7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-035-onyx-indexer::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-015-beacon-scheduler::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-007-vega-broker::f7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-017-talon-planner::mh",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::f0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f6",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-007-vega-broker::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-027-lattice-scheduler::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-028-mica-gateway::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-019-crag-broker::f6",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-026-krait-router::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-037-vega-router::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-026-krait-router::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-022-glint-collator::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-023-harbor-sharder::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-022-glint-collator::f0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-023-harbor-sharder::mh",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-014-aster-router::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-025-juniper-cache::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-011-falcon-sharder::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-023-harbor-sharder::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::f0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-028-mica-gateway::f7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-026-krait-router::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-036-halcyon-cache::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-014-aster-router::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-031-basalt-resolver::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-009-zephyr-ledger::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-012-ridge-indexer::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-035-onyx-indexer::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-001-basalt-cache::f7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-039-zephyr-gateway::mh",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-025-juniper-cache::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-009-zephyr-ledger::f6",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-029-nyx-planner::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-006-halcyon-compactor::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-014-aster-router::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-006-halcyon-compactor::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-033-ember-collator::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f6",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-019-crag-broker::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-014-aster-router::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-037-vega-router::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-009-zephyr-ledger::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-012-ridge-indexer::mh",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-036-halcyon-cache::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-004-cirrus-gateway::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-003-ember-scheduler::f4",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-029-nyx-planner::mh",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-021-fable-ledger::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-003-ember-scheduler::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-016-nimbus-gateway::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-036-halcyon-cache::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-020-drift-resolver::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-015-beacon-scheduler::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-019-crag-broker::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-017-talon-planner::f0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-014-aster-router::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-035-onyx-indexer::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-017-talon-planner::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-010-marlin-collator::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-010-marlin-collator::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-005-onyx-planner::f5",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-015-beacon-scheduler::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::f7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::mh",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::mh",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-010-marlin-collator::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-034-cirrus-sharder::mh",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-040-marlin-planner::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::f7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-004-cirrus-gateway::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-041-falcon-compactor::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-028-mica-gateway::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-034-cirrus-sharder::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-044-aster-ledger::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-034-cirrus-sharder::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-040-marlin-planner::f0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-021-fable-ledger::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-028-mica-gateway::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-039-zephyr-gateway::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-040-marlin-planner::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-020-drift-resolver::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-016-nimbus-gateway::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-002-cobalt-router::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f6",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-032-cobalt-ledger::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-026-krait-router::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-019-crag-broker::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-016-nimbus-gateway::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-039-zephyr-gateway::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-016-nimbus-gateway::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::f4",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-034-cirrus-sharder::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-032-cobalt-ledger::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-013-solstice-cache::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-041-falcon-compactor::mh",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-037-vega-router::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-037-vega-router::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-022-glint-collator::mh",
+      "recall@budget": 0,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-006-halcyon-compactor::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-007-vega-broker::mh",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-007-vega-broker::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-019-crag-broker::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-043-solstice-resolver::f1",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-013-solstice-cache::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-026-krait-router::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::f3",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-010-marlin-collator::f6",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-020-drift-resolver::f0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-019-crag-broker::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-001-basalt-cache::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-014-aster-router::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-038-quartz-scheduler::f7",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-002-cobalt-router::f0",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-024-ion-indexer::syn",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-042-ridge-broker::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-030-kestrel-broker::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-044-aster-ledger::f5",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-020-drift-resolver::f2",
+      "recall@budget": 1,
+      "recall@5": 1
+    },
+    {
+      "query_id": "A-018-verde-compactor::mh",
+      "recall@budget": 0,
+      "recall@5": 0
+    },
+    {
+      "query_id": "A-036-halcyon-cache::f6",
+      "recall@budget": 1,
+      "recall@5": 1
+    }
+  ]
+}

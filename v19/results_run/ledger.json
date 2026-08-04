@@ -1,0 +1,44 @@
+{
+  "experiment": "v1.9",
+  "ceiling": 5000,
+  "entries": [
+    {
+      "stage": "generator probe (VOID, wrong model)",
+      "calls": 60,
+      "est_usd": 0.7533
+    },
+    {
+      "stage": "generator probe (valid)",
+      "calls": 60,
+      "est_usd": 0.7767
+    },
+    {
+      "stage": "judge probe",
+      "calls": 60,
+      "est_usd": 0.1701
+    },
+    {
+      "stage": "PR-0 control, both tracks",
+      "calls": 120,
+      "est_usd": 1.5147
+    },
+    {
+      "stage": "main, Track A",
+      "calls": 1232,
+      "est_usd": 15.4811
+    },
+    {
+      "stage": "main, Track B",
+      "calls": 450,
+      "est_usd": 6.222
+    },
+    {
+      "stage": "PR-3 supplement (regen 1056 + judge 528)",
+      "calls": 1584,
+      "est_usd": 14.357
+    }
+  ],
+  "total_calls": 3566,
+  "total_est_usd": 39.2749,
+  "_note": "append-only; est_usd from the guard's own accumulator"
+}

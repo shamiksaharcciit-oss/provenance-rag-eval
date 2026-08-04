@@ -1,0 +1,46 @@
+{
+  "stage": "j1",
+  "batches": [
+    {
+      "batch_id": "msgbatch_01ECiDmfqYPnUiQNok9VWMJc",
+      "raw_path": "<repo-root>\\v18\\results_run\\batches\\j1-part0_msgbatch_01ECiDmfqYPnUiQNok9VWMJc.jsonl",
+      "raw_sha256": "1106e178954139790da16c85af131f11a1bf0a587ba95ec379f4600a7ced5e4d",
+      "n_succeeded": 10000,
+      "n_failed": 0,
+      "input_tokens": 8640251,
+      "output_tokens": 274492,
+      "stage": "j1-part0",
+      "failed_rows": []
+    },
+    {
+      "batch_id": "msgbatch_01MzRUXHmUpuvThHNAuVz2wJ",
+      "raw_path": "<repo-root>\\v18\\results_run\\batches\\j1-part1_msgbatch_01MzRUXHmUpuvThHNAuVz2wJ.jsonl",
+      "raw_sha256": "8a6bd94a0e28f906d004db0bdd4fbdbb79d82c877c2accacbe64b6dc44d7a2ad",
+      "n_succeeded": 4278,
+      "n_failed": 0,
+      "input_tokens": 5859021,
+      "output_tokens": 78712,
+      "stage": "j1-part1",
+      "failed_rows": []
+    }
+  ],
+  "n_requests": 14278,
+  "n_answers": 14278,
+  "resubmission_rounds_used": 0,
+  "pin": {
+    "requested_model": "claude-sonnet-5",
+    "served_models": [
+      "claude-sonnet-5"
+    ],
+    "served_model_constant": true,
+    "n_calls_observed": 14278,
+    "run_window_utc": [
+      "2026-08-01T20:45:59Z",
+      "2026-08-01T21:01:15Z"
+    ],
+    "sampling_parameters": {
+      "sent": [],
+      "_note": "PF-9: the pinned model accepts no temperature; no parameter-based determinism claim exists anywhere in v1.8"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "run_id": "run-20260728-215929",
+  "created_utc": "2026-07-28T22:08:56Z",
+  "git_commit": "6c2b85775594d0178e3b71ba3f37aaeec05629d9",
+  "experiment": "v1.5-small-to-big",
+  "preregistration": "preregistration_v15.json",
+  "environment": {
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "embedding_revision": "main",
+    "seed": 1337,
+    "candidate_pool": 50,
+    "k_rrf": 60
+  },
+  "holm_family": "all six tests (3 conditions x 2 child sizes) as ONE family",
+  "partial": true,
+  "results": [
+    {
+      "condition": "C0",
+      "child_tokens": 128,
+      "n_queries": 150,
+      "baseline": {
+        "1": 0.16,
+        "3": 0.3133,
+        "5": 0.3533,
+        "10": 0.4733
+      },
+      "s2b": {
+        "1": 0.2267,
+        "3": 0.4333,
+        "5": 0.5133,
+        "10": 0.5733
+      },
+      "diagnostics": {
+        "n_parents": 378,
+        "n_children": 2508,
+        "child_token_distribution": {
+          "n": 2508,
+          "mean": 106.77,
+          "median": 113,
+          "p10": 79,
+          "p90": 126,
+          "max": 128
+        },
+        "blurb_to_child_ratio": 0.0,
+        "children_per_parent": {
+          "mean": 6.63,
+          "median": 7,
+          "min": 1,
+          "max": 9
+        },
+        "children_without_provenance": 0
+      },
+      "track": "B"
+    },
+    {
+      "condition": "C2",
+      "child_tokens": 128,
+      "n_queries": 150,
+      "baseline": {
+        "1": 0.18,
+        "3": 0.34,
+        "5": 0.3867,
+        "10": 0.4733
+      },
+      "s2b": {
+        "1": 0.2,
+        "3": 0.3733,
+        "5": 0.4467,
+        "10": 0.5667
+      },
+      "diagnostics": {
+        "n_parents": 378,
+        "n_children": 2508,
+        "child_token_distribution": {
+          "n": 2508,
+          "mean": 106.77,
+          "median": 113,
+          "p10": 79,
+          "p90": 126,
+          "max": 128
+        },
+        "blurb_to_child_ratio": 0.5609,
+        "children_per_parent": {
+          "mean": 6.63,
+          "median": 7,
+          "min": 1,
+          "max": 9
+        },
+        "children_without_provenance": 0
+      },
+      "track": "B"
+    }
+  ]
+}

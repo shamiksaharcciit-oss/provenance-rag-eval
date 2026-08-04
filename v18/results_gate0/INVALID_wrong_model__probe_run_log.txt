@@ -1,0 +1,55 @@
+v1.8 determinism probe · Track A dev only · planned 698 calls (bound 1000)
+
+  Track A dev: using 20 of 20% split; no test query is touched
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 103/103 [00:00<00:00, 2411.47it/s]
+  U256   dev contexts built (238 units)
+  U768   dev contexts built (90 units)
+  F768   dev contexts built (90 units)
+
+  generation probe: 60 prompts x 3 repeats
+    byte_identical=False fresh=180 divergent=35/60
+  answers for the judge probe: 14 calls
+
+  judge probe: 168 prompts x 3 repeats (budget remaining 806)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<repo-root>\v18\run_probe.py", line 236, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "<repo-root>\v18\run_probe.py", line 201, in main
+    judge = run_probe(jp, judge_client, PROBE_REPEATS)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo-root>\v18\probe.py", line 128, in run_probe
+    seen = [client.complete(prompt, system) for _ in range(repeats)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo-root>\v18\probe.py", line 90, in complete
+    text = self.client.complete(prompt, system)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo-root>\src\llm\client.py", line 117, in complete
+    text, in_tok, out_tok = self._call_provider(prompt, system)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo-root>\src\llm\client.py", line 131, in _call_provider
+    return self._call_anthropic(prompt, system)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo-root>\src\llm\client.py", line 165, in _call_anthropic
+    msg = _create()
+          ^^^^^^^^^
+  File "<repo-root>\src\llm\client.py", line 162, in _create
+    return self._client.messages.create(**kwargs)  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\polo2\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\polo2\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\resources\messages\messages.py", line 1050, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\polo2\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_base_client.py", line 1536, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\polo2\AppData\Local\Programs\Python\Python312\Lib\site-packages\anthropic\_base_client.py", line 1195, in request
+    raise self._make_status_error_from_response(response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdcHQKeEoPZYXWEK74vyn'}

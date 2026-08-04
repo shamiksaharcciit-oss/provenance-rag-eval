@@ -1,0 +1,821 @@
+{
+  "experiment": "v1.5-small-to-big",
+  "preregistration": "preregistration_v15.json",
+  "holm_family": "all six tests (3 conditions x 2 child sizes) as ONE family, per track",
+  "p_value_method": "exact sign-flip enumeration over the 2**K assignments of the K discordant pairs (== McNemar exact) \u2014 the pre-registered permutation null computed without sampling error",
+  "note": "Track B conditions ran in isolated processes after repeated segfaults; the per-invocation Holm values in those artifacts are single-test artifacts and are superseded by the values here.",
+  "tracks": {
+    "A": {
+      "cells": [
+        {
+          "condition": "C0",
+          "child_tokens": 128,
+          "n_queries": 176,
+          "baseline": {
+            "1": 0.5625,
+            "3": 0.7273,
+            "5": 0.7898,
+            "10": 0.8466
+          },
+          "s2b": {
+            "1": 0.4886,
+            "3": 0.6307,
+            "5": 0.6932,
+            "10": 0.7841
+          },
+          "diagnostics": {
+            "n_parents": 90,
+            "n_children": 497,
+            "child_token_distribution": {
+              "n": 497,
+              "mean": 110.43,
+              "median": 122,
+              "p10": 39,
+              "p90": 127,
+              "max": 128
+            },
+            "blurb_to_child_ratio": 0.0,
+            "children_per_parent": {
+              "mean": 5.52,
+              "median": 7,
+              "min": 3,
+              "max": 7
+            },
+            "children_without_provenance": 0
+          },
+          "track": "A",
+          "_source": "results_v15_A"
+        },
+        {
+          "condition": "C2",
+          "child_tokens": 128,
+          "n_queries": 176,
+          "baseline": {
+            "1": 0.4602,
+            "3": 0.8182,
+            "5": 0.8523,
+            "10": 0.8807
+          },
+          "s2b": {
+            "1": 0.5568,
+            "3": 0.7898,
+            "5": 0.8182,
+            "10": 0.8807
+          },
+          "diagnostics": {
+            "n_parents": 90,
+            "n_children": 497,
+            "child_token_distribution": {
+              "n": 497,
+              "mean": 110.43,
+              "median": 122,
+              "p10": 39,
+              "p90": 127,
+              "max": 128
+            },
+            "blurb_to_child_ratio": 0.5669,
+            "children_per_parent": {
+              "mean": 5.52,
+              "median": 7,
+              "min": 3,
+              "max": 7
+            },
+            "children_without_provenance": 0
+          },
+          "track": "A",
+          "_source": "results_v15_A"
+        },
+        {
+          "condition": "C4",
+          "child_tokens": 128,
+          "n_queries": 176,
+          "baseline": {
+            "1": 0.7443,
+            "3": 0.8068,
+            "5": 0.8352,
+            "10": 0.875
+          },
+          "s2b": {
+            "1": 0.5795,
+            "3": 0.75,
+            "5": 0.7955,
+            "10": 0.8409
+          },
+          "diagnostics": {
+            "n_parents": 90,
+            "n_children": 485,
+            "child_token_distribution": {
+              "n": 485,
+              "mean": 108.28,
+              "median": 123,
+              "p10": 34,
+              "p90": 127,
+              "max": 128
+            },
+            "blurb_to_child_ratio": 0.0,
+            "children_per_parent": {
+              "mean": 5.39,
+              "median": 7,
+              "min": 3,
+              "max": 7
+            },
+            "children_without_provenance": 485
+          },
+          "track": "A",
+          "_source": "results_v15_A"
+        },
+        {
+          "condition": "C0",
+          "child_tokens": 256,
+          "n_queries": 176,
+          "baseline": {
+            "1": 0.5625,
+            "3": 0.7273,
+            "5": 0.7898,
+            "10": 0.8466
+          },
+          "s2b": {
+            "1": 0.5227,
+            "3": 0.6705,
+            "5": 0.75,
+            "10": 0.8295
+          },
+          "diagnostics": {
+            "n_parents": 90,
+            "n_children": 284,
+            "child_token_distribution": {
+              "n": 284,
+              "mean": 193.26,
+              "median": 249,
+              "p10": 14,
+              "p90": 255,
+              "max": 256
+            },
+            "blurb_to_child_ratio": 0.0,
+            "children_per_parent": {
+              "mean": 3.16,
+              "median": 3,
+              "min": 2,
+              "max": 4
+            },
+            "children_without_provenance": 0
+          },
+          "track": "A",
+          "_source": "results_v15_A"
+        },
+        {
+          "condition": "C2",
+          "child_tokens": 256,
+          "n_queries": 176,
+          "baseline": {
+            "1": 0.4602,
+            "3": 0.8182,
+            "5": 0.8523,
+            "10": 0.8807
+          },
+          "s2b": {
+            "1": 0.5568,
+            "3": 0.7955,
+            "5": 0.8125,
+            "10": 0.8693
+          },
+          "diagnostics": {
+            "n_parents": 90,
+            "n_children": 284,
+            "child_token_distribution": {
+              "n": 284,
+              "mean": 193.26,
+              "median": 249,
+              "p10": 14,
+              "p90": 255,
+              "max": 256
+            },
+            "blurb_to_child_ratio": 0.9711,
+            "children_per_parent": {
+              "mean": 3.16,
+              "median": 3,
+              "min": 2,
+              "max": 4
+            },
+            "children_without_provenance": 0
+          },
+          "track": "A",
+          "_source": "results_v15_A"
+        },
+        {
+          "condition": "C4",
+          "child_tokens": 256,
+          "n_queries": 176,
+          "baseline": {
+            "1": 0.7443,
+            "3": 0.8068,
+            "5": 0.8352,
+            "10": 0.875
+          },
+          "s2b": {
+            "1": 0.6932,
+            "3": 0.8011,
+            "5": 0.8352,
+            "10": 0.8523
+          },
+          "diagnostics": {
+            "n_parents": 90,
+            "n_children": 279,
+            "child_token_distribution": {
+              "n": 279,
+              "mean": 188.23,
+              "median": 250,
+              "p10": 16,
+              "p90": 255,
+              "max": 256
+            },
+            "blurb_to_child_ratio": 0.0,
+            "children_per_parent": {
+              "mean": 3.1,
+              "median": 3,
+              "min": 2,
+              "max": 4
+            },
+            "children_without_provenance": 279
+          },
+          "track": "A",
+          "_source": "results_v15_A"
+        }
+      ],
+      "h7": [
+        {
+          "track": "A",
+          "condition": "C0",
+          "child_tokens": 128,
+          "n_queries": 176,
+          "baseline": 0.7898,
+          "s2b": 0.6932,
+          "mean_diff": -0.0966,
+          "ci95": [
+            -0.1648,
+            -0.0341
+          ],
+          "ci_bonferroni_99_17": [
+            -0.1875,
+            -0.0114
+          ],
+          "p_exact": 0.00598812,
+          "p_mc_10k": 0.0064,
+          "k_discordant": 35,
+          "n_gains": 9,
+          "n_losses": 26,
+          "significant_ci": true,
+          "significant_ci_bonferroni": true,
+          "p_holm": 0.0359287,
+          "significant_holm": true
+        },
+        {
+          "track": "A",
+          "condition": "C2",
+          "child_tokens": 128,
+          "n_queries": 176,
+          "baseline": 0.8523,
+          "s2b": 0.8182,
+          "mean_diff": -0.0341,
+          "ci95": [
+            -0.0739,
+            0.0057
+          ],
+          "ci_bonferroni_99_17": [
+            -0.0909,
+            0.017
+          ],
+          "p_exact": 0.145996,
+          "p_mc_10k": 0.14789,
+          "k_discordant": 12,
+          "n_gains": 3,
+          "n_losses": 9,
+          "significant_ci": false,
+          "significant_ci_bonferroni": false,
+          "p_holm": 0.717316,
+          "significant_holm": false
+        },
+        {
+          "track": "A",
+          "condition": "C4",
+          "child_tokens": 128,
+          "n_queries": 176,
+          "baseline": 0.8352,
+          "s2b": 0.7955,
+          "mean_diff": -0.0398,
+          "ci95": [
+            -0.0852,
+            0.0057
+          ],
+          "ci_bonferroni_99_17": [
+            -0.1023,
+            0.017
+          ],
+          "p_exact": 0.143463,
+          "p_mc_10k": 0.13839,
+          "k_discordant": 17,
+          "n_gains": 5,
+          "n_losses": 12,
+          "significant_ci": false,
+          "significant_ci_bonferroni": false,
+          "p_holm": 0.717316,
+          "significant_holm": false
+        },
+        {
+          "track": "A",
+          "condition": "C0",
+          "child_tokens": 256,
+          "n_queries": 176,
+          "baseline": 0.7898,
+          "s2b": 0.75,
+          "mean_diff": -0.0398,
+          "ci95": [
+            -0.0909,
+            0.0114
+          ],
+          "ci_bonferroni_99_17": [
+            -0.108,
+            0.0284
+          ],
+          "p_exact": 0.189247,
+          "p_mc_10k": 0.19378,
+          "k_discordant": 21,
+          "n_gains": 7,
+          "n_losses": 14,
+          "significant_ci": false,
+          "significant_ci_bonferroni": false,
+          "p_holm": 0.717316,
+          "significant_holm": false
+        },
+        {
+          "track": "A",
+          "condition": "C2",
+          "child_tokens": 256,
+          "n_queries": 176,
+          "baseline": 0.8523,
+          "s2b": 0.8125,
+          "mean_diff": -0.0398,
+          "ci95": [
+            -0.0852,
+            0.0057
+          ],
+          "ci_bonferroni_99_17": [
+            -0.1023,
+            0.017
+          ],
+          "p_exact": 0.143463,
+          "p_mc_10k": 0.14599,
+          "k_discordant": 17,
+          "n_gains": 5,
+          "n_losses": 12,
+          "significant_ci": false,
+          "significant_ci_bonferroni": false,
+          "p_holm": 0.717316,
+          "significant_holm": false
+        },
+        {
+          "track": "A",
+          "condition": "C4",
+          "child_tokens": 256,
+          "n_queries": 176,
+          "baseline": 0.8352,
+          "s2b": 0.8352,
+          "mean_diff": 0.0,
+          "ci95": [
+            -0.0341,
+            0.0341
+          ],
+          "ci_bonferroni_99_17": [
+            -0.0455,
+            0.0455
+          ],
+          "p_exact": 1.0,
+          "p_mc_10k": 1.0,
+          "k_discordant": 8,
+          "n_gains": 4,
+          "n_losses": 4,
+          "significant_ci": false,
+          "significant_ci_bonferroni": false,
+          "p_holm": 1.0,
+          "significant_holm": false
+        }
+      ]
+    },
+    "B": {
+      "cells": [
+        {
+          "condition": "C0",
+          "child_tokens": 128,
+          "n_queries": 150,
+          "baseline": {
+            "1": 0.16,
+            "3": 0.3133,
+            "5": 0.3533,
+            "10": 0.4733
+          },
+          "s2b": {
+            "1": 0.2267,
+            "3": 0.4333,
+            "5": 0.5133,
+            "10": 0.5733
+          },
+          "diagnostics": {
+            "n_parents": 378,
+            "n_children": 2508,
+            "child_token_distribution": {
+              "n": 2508,
+              "mean": 106.77,
+              "median": 113,
+              "p10": 79,
+              "p90": 126,
+              "max": 128
+            },
+            "blurb_to_child_ratio": 0.0,
+            "children_per_parent": {
+              "mean": 6.63,
+              "median": 7,
+              "min": 1,
+              "max": 9
+            },
+            "children_without_provenance": 0
+          },
+          "track": "B",
+          "_source": "results_v15_B"
+        },
+        {
+          "condition": "C2",
+          "child_tokens": 128,
+          "n_queries": 150,
+          "baseline": {
+            "1": 0.18,
+            "3": 0.34,
+            "5": 0.3867,
+            "10": 0.4733
+          },
+          "s2b": {
+            "1": 0.2,
+            "3": 0.3733,
+            "5": 0.4467,
+            "10": 0.5667
+          },
+          "diagnostics": {
+            "n_parents": 378,
+            "n_children": 2508,
+            "child_token_distribution": {
+              "n": 2508,
+              "mean": 106.77,
+              "median": 113,
+              "p10": 79,
+              "p90": 126,
+              "max": 128
+            },
+            "blurb_to_child_ratio": 0.5609,
+            "children_per_parent": {
+              "mean": 6.63,
+              "median": 7,
+              "min": 1,
+              "max": 9
+            },
+            "children_without_provenance": 0
+          },
+          "track": "B",
+          "_source": "results_v15_B"
+        },
+        {
+          "condition": "C4",
+          "child_tokens": 128,
+          "n_queries": 150,
+          "baseline": {
+            "1": 0.1667,
+            "3": 0.34,
+            "5": 0.4,
+            "10": 0.5067
+          },
+          "s2b": {
+            "1": 0.26,
+            "3": 0.4667,
+            "5": 0.52,
+            "10": 0.6067
+          },
+          "diagnostics": {
+            "n_parents": 379,
+            "n_children": 2528,
+            "child_token_distribution": {
+              "n": 2528,
+              "mean": 105.9,
+              "median": 113,
+              "p10": 77,
+              "p90": 126,
+              "max": 128
+            },
+            "blurb_to_child_ratio": 0.0,
+            "children_per_parent": {
+              "mean": 6.67,
+              "median": 7,
+              "min": 1,
+              "max": 9
+            },
+            "children_without_provenance": 2528
+          },
+          "track": "B",
+          "_source": "results_v15_B_C4_128"
+        },
+        {
+          "condition": "C0",
+          "child_tokens": 256,
+          "n_queries": 150,
+          "baseline": {
+            "1": 0.16,
+            "3": 0.3133,
+            "5": 0.3533,
+            "10": 0.4733
+          },
+          "s2b": {
+            "1": 0.2333,
+            "3": 0.3867,
+            "5": 0.4533,
+            "10": 0.5333
+          },
+          "diagnostics": {
+            "n_parents": 378,
+            "n_children": 1392,
+            "child_token_distribution": {
+              "n": 1392,
+              "mean": 192.36,
+              "median": 237,
+              "p10": 40,
+              "p90": 253,
+              "max": 256
+            },
+            "blurb_to_child_ratio": 0.0,
+            "children_per_parent": {
+              "mean": 3.68,
+              "median": 4,
+              "min": 1,
+              "max": 4
+            },
+            "children_without_provenance": 0
+          },
+          "track": "B",
+          "_source": "results_v15_B_C0_256"
+        },
+        {
+          "condition": "C2",
+          "child_tokens": 256,
+          "n_queries": 150,
+          "baseline": {
+            "1": 0.18,
+            "3": 0.34,
+            "5": 0.3867,
+            "10": 0.4733
+          },
+          "s2b": {
+            "1": 0.2267,
+            "3": 0.36,
+            "5": 0.46,
+            "10": 0.5333
+          },
+          "diagnostics": {
+            "n_parents": 378,
+            "n_children": 1392,
+            "child_token_distribution": {
+              "n": 1392,
+              "mean": 192.36,
+              "median": 237,
+              "p10": 40,
+              "p90": 253,
+              "max": 256
+            },
+            "blurb_to_child_ratio": 0.5226,
+            "children_per_parent": {
+              "mean": 3.68,
+              "median": 4,
+              "min": 1,
+              "max": 4
+            },
+            "children_without_provenance": 0
+          },
+          "track": "B",
+          "_source": "results_v15_B_C2_256"
+        },
+        {
+          "condition": "C4",
+          "child_tokens": 256,
+          "n_queries": 150,
+          "baseline": {
+            "1": 0.1667,
+            "3": 0.34,
+            "5": 0.4,
+            "10": 0.5067
+          },
+          "s2b": {
+            "1": 0.2467,
+            "3": 0.44,
+            "5": 0.5,
+            "10": 0.56
+          },
+          "diagnostics": {
+            "n_parents": 379,
+            "n_children": 1398,
+            "child_token_distribution": {
+              "n": 1398,
+              "mean": 191.51,
+              "median": 236,
+              "p10": 42,
+              "p90": 253,
+              "max": 256
+            },
+            "blurb_to_child_ratio": 0.0,
+            "children_per_parent": {
+              "mean": 3.69,
+              "median": 4,
+              "min": 1,
+              "max": 5
+            },
+            "children_without_provenance": 1398
+          },
+          "track": "B",
+          "_source": "results_v15_B_C4_256"
+        }
+      ],
+      "h7": [
+        {
+          "track": "B",
+          "condition": "C0",
+          "child_tokens": 128,
+          "n_queries": 150,
+          "baseline": 0.3533,
+          "s2b": 0.5133,
+          "mean_diff": 0.16,
+          "ci95": [
+            0.1,
+            0.22
+          ],
+          "ci_bonferroni_99_17": [
+            0.08,
+            0.2467
+          ],
+          "p_exact": 8.04663e-07,
+          "p_mc_10k": 0.0001,
+          "k_discordant": 26,
+          "n_gains": 25,
+          "n_losses": 1,
+          "significant_ci": true,
+          "significant_ci_bonferroni": true,
+          "p_holm": 4.82798e-06,
+          "significant_holm": true
+        },
+        {
+          "track": "B",
+          "condition": "C2",
+          "child_tokens": 128,
+          "n_queries": 150,
+          "baseline": 0.3867,
+          "s2b": 0.4467,
+          "mean_diff": 0.06,
+          "ci95": [
+            0.0067,
+            0.1133
+          ],
+          "ci_bonferroni_99_17": [
+            -0.0133,
+            0.1333
+          ],
+          "p_exact": 0.0490417,
+          "p_mc_10k": 0.05239,
+          "k_discordant": 17,
+          "n_gains": 13,
+          "n_losses": 4,
+          "significant_ci": true,
+          "significant_ci_bonferroni": false,
+          "p_holm": 0.0490417,
+          "significant_holm": true
+        },
+        {
+          "track": "B",
+          "condition": "C4",
+          "child_tokens": 128,
+          "n_queries": 150,
+          "baseline": 0.4,
+          "s2b": 0.52,
+          "mean_diff": 0.12,
+          "ci95": [
+            0.06,
+            0.18
+          ],
+          "ci_bonferroni_99_17": [
+            0.0467,
+            0.2
+          ],
+          "p_exact": 0.000121117,
+          "p_mc_10k": 0.0002,
+          "k_discordant": 22,
+          "n_gains": 20,
+          "n_losses": 2,
+          "significant_ci": true,
+          "significant_ci_bonferroni": true,
+          "p_holm": 0.000605583,
+          "significant_holm": true
+        },
+        {
+          "track": "B",
+          "condition": "C0",
+          "child_tokens": 256,
+          "n_queries": 150,
+          "baseline": 0.3533,
+          "s2b": 0.4533,
+          "mean_diff": 0.1,
+          "ci95": [
+            0.04,
+            0.16
+          ],
+          "ci_bonferroni_99_17": [
+            0.02,
+            0.1867
+          ],
+          "p_exact": 0.00259948,
+          "p_mc_10k": 0.003,
+          "k_discordant": 23,
+          "n_gains": 19,
+          "n_losses": 4,
+          "significant_ci": true,
+          "significant_ci_bonferroni": true,
+          "p_holm": 0.00779843,
+          "significant_holm": true
+        },
+        {
+          "track": "B",
+          "condition": "C2",
+          "child_tokens": 256,
+          "n_queries": 150,
+          "baseline": 0.3867,
+          "s2b": 0.46,
+          "mean_diff": 0.0733,
+          "ci95": [
+            0.02,
+            0.1333
+          ],
+          "ci_bonferroni_99_17": [
+            0.0,
+            0.1467
+          ],
+          "p_exact": 0.0192108,
+          "p_mc_10k": 0.0192,
+          "k_discordant": 19,
+          "n_gains": 15,
+          "n_losses": 4,
+          "significant_ci": true,
+          "significant_ci_bonferroni": false,
+          "p_holm": 0.0384216,
+          "significant_holm": true
+        },
+        {
+          "track": "B",
+          "condition": "C4",
+          "child_tokens": 256,
+          "n_queries": 150,
+          "baseline": 0.4,
+          "s2b": 0.5,
+          "mean_diff": 0.1,
+          "ci95": [
+            0.0467,
+            0.1533
+          ],
+          "ci_bonferroni_99_17": [
+            0.0267,
+            0.18
+          ],
+          "p_exact": 0.000728607,
+          "p_mc_10k": 0.0005,
+          "k_discordant": 19,
+          "n_gains": 17,
+          "n_losses": 2,
+          "significant_ci": true,
+          "significant_ci_bonferroni": true,
+          "p_holm": 0.00291443,
+          "significant_holm": true
+        }
+      ]
+    }
+  },
+  "verdict": {
+    "verdict": "REJECT_HARM",
+    "significant_harms": [
+      "A C0@128 -0.0966 (p_holm=0.03593, K=35)"
+    ],
+    "significant_gains": [
+      "B C0@128 +0.1600 (p_holm=4.828e-06, K=26)",
+      "B C2@128 +0.0600 (p_holm=0.04904, K=17)",
+      "B C4@128 +0.1200 (p_holm=0.0006056, K=22)",
+      "B C0@256 +0.1000 (p_holm=0.007798, K=23)",
+      "B C2@256 +0.0733 (p_holm=0.03842, K=19)",
+      "B C4@256 +0.1000 (p_holm=0.002914, K=19)"
+    ],
+    "criteria_disagreements": [
+      "B C2@128: CI95 excludes 0 = True, p_holm<0.05 = True (p_holm=0.0490417), Bonferroni-99.17% CI excludes 0 = False [-0.0133, 0.1333]",
+      "B C2@256: CI95 excludes 0 = True, p_holm<0.05 = True (p_holm=0.0384216), Bonferroni-99.17% CI excludes 0 = False [0.0, 0.1467]"
+    ],
+    "criteria_note": "The frozen significant_definition \u2014 'paired CI excludes 0 after Holm' \u2014 names two procedures that can disagree. Where they do, the Holm-corrected p governs and the disagreement is listed above. The next amendment must define significance by exactly ONE procedure.",
+    "rule": "REJECT_HARM: significant negative on any primary condition on EITHER track. Takes precedence over every other branch, including a full ADOPT sweep; a harm finding is reported as harm, never offset by gains elsewhere."
+  }
+}

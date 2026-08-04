@@ -1,0 +1,336 @@
+{
+  "experiment": "v1.11",
+  "freeze_commit": "be74c69ef65a6a8174ee04c05715ca0888ab2c08",
+  "batch_client": "v18.batch, imported read-only (identity asserted)",
+  "models": {
+    "ea": "claude-sonnet-5",
+    "eb": "claude-haiku-4-5-20251001",
+    "ec-v1": "claude-sonnet-5",
+    "ec-v2": "claude-sonnet-5",
+    "ee": "claude-sonnet-5"
+  },
+  "stages": {
+    "ea": {
+      "model": "claude-sonnet-5",
+      "n_requests": 698,
+      "n_answers": 698,
+      "resubmission_rounds_used": 0,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01WMNv1yBwQcXHkYe9WQNPHa",
+          "raw_path": "<repo-root>\\v111\\results_run\\ea_msgbatch_01WMNv1yBwQcXHkYe9WQNPHa.jsonl",
+          "raw_sha256": "e4426c936b2658336f9bfa790f6bd7500cf8dba8b37620ac3bb881e84e4653ee",
+          "n_succeeded": 698,
+          "n_failed": 0,
+          "input_tokens": 1221173,
+          "output_tokens": 9833,
+          "stage": "ea"
+        }
+      ],
+      "failed_rows": [],
+      "pin": {
+        "requested_model": "claude-sonnet-5",
+        "served_models": [
+          "claude-sonnet-5"
+        ],
+        "served_model_constant": true,
+        "n_calls_observed": 698,
+        "run_window_utc": [
+          "2026-08-02T12:30:46Z",
+          "2026-08-02T12:31:11Z"
+        ],
+        "sampling_parameters": {
+          "sent": [],
+          "_note": "PF-9: the pinned model accepts no temperature; no parameter-based determinism claim exists anywhere in v1.8"
+        }
+      },
+      "response_model_distinct": [
+        "claude-sonnet-5"
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "llm_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_hits": 0,
+        "est_usd": 0.0
+      },
+      "seconds": 24.5
+    },
+    "eb": {
+      "model": "claude-haiku-4-5-20251001",
+      "n_requests": 352,
+      "n_answers": 352,
+      "resubmission_rounds_used": 0,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01UuvTth5neS9S8r4KeZ286y",
+          "raw_path": "<repo-root>\\v111\\results_run\\eb_msgbatch_01UuvTth5neS9S8r4KeZ286y.jsonl",
+          "raw_sha256": "b7fb2e7c3c6944d50d09bafc319010d7fd0c35bfc4975d8133bb9388312ff692",
+          "n_succeeded": 352,
+          "n_failed": 0,
+          "input_tokens": 488973,
+          "output_tokens": 14673,
+          "stage": "eb"
+        }
+      ],
+      "failed_rows": [],
+      "pin": {
+        "requested_model": "claude-haiku-4-5-20251001",
+        "served_models": [
+          "claude-haiku-4-5-20251001"
+        ],
+        "served_model_constant": true,
+        "n_calls_observed": 352,
+        "run_window_utc": [
+          "2026-08-02T12:31:11Z",
+          "2026-08-02T12:35:02Z"
+        ],
+        "sampling_parameters": {
+          "sent": [],
+          "_note": "PF-9: the pinned model accepts no temperature; no parameter-based determinism claim exists anywhere in v1.8"
+        }
+      },
+      "response_model_distinct": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "llm_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_hits": 0,
+        "est_usd": 0.0
+      },
+      "seconds": 231.2
+    },
+    "ec-v1": {
+      "model": "claude-sonnet-5",
+      "n_requests": 352,
+      "n_answers": 352,
+      "resubmission_rounds_used": 0,
+      "batches": [
+        {
+          "batch_id": "msgbatch_016zhNmsTPnb626TaW7T4HvR",
+          "raw_path": "<repo-root>\\v111\\results_run\\ec-v1_msgbatch_016zhNmsTPnb626TaW7T4HvR.jsonl",
+          "raw_sha256": "114be16d272ffa8e8561535e304f8010b13883314cbcb0d9234a525046770cb5",
+          "n_succeeded": 352,
+          "n_failed": 0,
+          "input_tokens": 794714,
+          "output_tokens": 19072,
+          "stage": "ec-v1"
+        }
+      ],
+      "failed_rows": [],
+      "pin": {
+        "requested_model": "claude-sonnet-5",
+        "served_models": [
+          "claude-sonnet-5"
+        ],
+        "served_model_constant": true,
+        "n_calls_observed": 352,
+        "run_window_utc": [
+          "2026-08-02T12:35:02Z",
+          "2026-08-02T12:38:09Z"
+        ],
+        "sampling_parameters": {
+          "sent": [],
+          "_note": "PF-9: the pinned model accepts no temperature; no parameter-based determinism claim exists anywhere in v1.8"
+        }
+      },
+      "response_model_distinct": [
+        "claude-sonnet-5"
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "llm_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_hits": 0,
+        "est_usd": 0.0
+      },
+      "seconds": 186.7
+    },
+    "ec-v2": {
+      "model": "claude-sonnet-5",
+      "n_requests": 352,
+      "n_answers": 352,
+      "resubmission_rounds_used": 0,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01UKgZLihKcjtSErpju98sE5",
+          "raw_path": "<repo-root>\\v111\\results_run\\ec-v2_msgbatch_01UKgZLihKcjtSErpju98sE5.jsonl",
+          "raw_sha256": "962a85251348f0735c5a9ab7fdb3842d21113677736295df396cbaaac10cbd28",
+          "n_succeeded": 352,
+          "n_failed": 0,
+          "input_tokens": 792250,
+          "output_tokens": 22164,
+          "stage": "ec-v2"
+        }
+      ],
+      "failed_rows": [],
+      "pin": {
+        "requested_model": "claude-sonnet-5",
+        "served_models": [
+          "claude-sonnet-5"
+        ],
+        "served_model_constant": true,
+        "n_calls_observed": 352,
+        "run_window_utc": [
+          "2026-08-02T12:38:09Z",
+          "2026-08-02T12:41:18Z"
+        ],
+        "sampling_parameters": {
+          "sent": [],
+          "_note": "PF-9: the pinned model accepts no temperature; no parameter-based determinism claim exists anywhere in v1.8"
+        }
+      },
+      "response_model_distinct": [
+        "claude-sonnet-5"
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "llm_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_hits": 0,
+        "est_usd": 0.0
+      },
+      "seconds": 188.6
+    },
+    "ee": {
+      "model": "claude-sonnet-5",
+      "n_requests": 352,
+      "n_answers": 352,
+      "resubmission_rounds_used": 0,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01VysjPAqK1Fe9tPYdEE3YUp",
+          "raw_path": "<repo-root>\\v111\\results_run\\ee_msgbatch_01VysjPAqK1Fe9tPYdEE3YUp.jsonl",
+          "raw_sha256": "6be390c473033ff122013485a7e99e11fb2d3b76ca1d5d5337b76896b74ba35d",
+          "n_succeeded": 352,
+          "n_failed": 0,
+          "input_tokens": 807297,
+          "output_tokens": 15613,
+          "stage": "ee"
+        }
+      ],
+      "failed_rows": [],
+      "pin": {
+        "requested_model": "claude-sonnet-5",
+        "served_models": [
+          "claude-sonnet-5"
+        ],
+        "served_model_constant": true,
+        "n_calls_observed": 352,
+        "run_window_utc": [
+          "2026-08-02T12:41:18Z",
+          "2026-08-02T12:44:25Z"
+        ],
+        "sampling_parameters": {
+          "sent": [],
+          "_note": "PF-9: the pinned model accepts no temperature; no parameter-based determinism claim exists anywhere in v1.8"
+        }
+      },
+      "response_model_distinct": [
+        "claude-sonnet-5"
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "llm_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_hits": 0,
+        "est_usd": 0.0
+      },
+      "seconds": 186.2
+    }
+  },
+  "construction_gaps": [
+    {
+      "query_id": "A-036-halcyon-cache::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-012-ridge-indexer::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-000-kestrel-indexer::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-023-harbor-sharder::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-008-quartz-resolver::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    },
+    {
+      "query_id": "A-019-crag-broker::f4",
+      "arm": "U768",
+      "reason": "no non-gold unit in the gold document"
+    }
+  ],
+  "ledger": {
+    "experiment": "v1.11-reading-robustness",
+    "ceiling": 4000,
+    "frozen_projection": 2112,
+    "entries": [
+      {
+        "stage": "ea",
+        "calls": 698,
+        "input_tokens": 1221173,
+        "output_tokens": 9833,
+        "batch_id": "msgbatch_01WMNv1yBwQcXHkYe9WQNPHa",
+        "note": "raw rows sha256=e4426c936b265833",
+        "utc": "2026-08-02T12:31:11Z"
+      },
+      {
+        "stage": "eb",
+        "calls": 352,
+        "input_tokens": 488973,
+        "output_tokens": 14673,
+        "batch_id": "msgbatch_01UuvTth5neS9S8r4KeZ286y",
+        "note": "raw rows sha256=b7fb2e7c3c6944d5",
+        "utc": "2026-08-02T12:35:02Z"
+      },
+      {
+        "stage": "ec-v1",
+        "calls": 352,
+        "input_tokens": 794714,
+        "output_tokens": 19072,
+        "batch_id": "msgbatch_016zhNmsTPnb626TaW7T4HvR",
+        "note": "raw rows sha256=114be16d272ffa8e",
+        "utc": "2026-08-02T12:38:09Z"
+      },
+      {
+        "stage": "ec-v2",
+        "calls": 352,
+        "input_tokens": 792250,
+        "output_tokens": 22164,
+        "batch_id": "msgbatch_01UKgZLihKcjtSErpju98sE5",
+        "note": "raw rows sha256=962a85251348f073",
+        "utc": "2026-08-02T12:41:18Z"
+      },
+      {
+        "stage": "ee",
+        "calls": 352,
+        "input_tokens": 807297,
+        "output_tokens": 15613,
+        "batch_id": "msgbatch_01VysjPAqK1Fe9tPYdEE3YUp",
+        "note": "raw rows sha256=6be390c473033ff1",
+        "utc": "2026-08-02T12:44:25Z"
+      }
+    ],
+    "_note": "append-only; actuals from API usage rows, not estimates. Ceiling is v1.11's 4,000, not v1.8's 25,000."
+  },
+  "total_answers": 2106,
+  "completed_utc": "2026-08-02T12:44:25Z"
+}

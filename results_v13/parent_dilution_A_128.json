@@ -1,0 +1,22 @@
+[
+  {
+    "track": "A",
+    "condition": "C0",
+    "child_tokens": 128,
+    "n_children": 483,
+    "n_parents": 91,
+    "recall5_child_scored": 0.4886,
+    "recall5_parent_scored": 0.7557,
+    "inflation": 0.267
+  },
+  {
+    "track": "A",
+    "condition": "C2",
+    "child_tokens": 128,
+    "n_children": 519,
+    "n_parents": 90,
+    "recall5_child_scored": 0.4318,
+    "recall5_parent_scored": 0.733,
+    "inflation": 0.3011
+  }
+]

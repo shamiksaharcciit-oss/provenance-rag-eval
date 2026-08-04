@@ -1,0 +1,223 @@
+{
+  "composition": [
+    {
+      "family": "family_2",
+      "embedder": "all-MiniLM-L6-v2",
+      "track": "A",
+      "levels": {
+        "C0": 0.7841,
+        "C4": 0.8409
+      },
+      "levels_unrounded": {
+        "C0": 0.7840909090909091,
+        "C4": 0.8409090909090909
+      },
+      "targets": {
+        "C0": 0.7841,
+        "C4": 0.8409
+      },
+      "delta": 0.0568,
+      "delta_full_frozen": 0.0568,
+      "reproduced": true
+    },
+    {
+      "family": "family_2",
+      "embedder": "BAAI/bge-base-en-v1.5",
+      "track": "A",
+      "levels": {
+        "C0": 0.7898,
+        "C4": 0.8352
+      },
+      "levels_unrounded": {
+        "C0": 0.7897727272727273,
+        "C4": 0.8352272727272727
+      },
+      "targets": {
+        "C0": 0.7898,
+        "C4": 0.8352
+      },
+      "delta": 0.0455,
+      "delta_full_frozen": 0.0455,
+      "reproduced": true
+    },
+    {
+      "family": "secondary",
+      "embedder": "all-MiniLM-L6-v2",
+      "track": "B",
+      "levels": {
+        "C0": 0.3867,
+        "C4": 0.42
+      },
+      "levels_unrounded": {
+        "C0": 0.38666666666666666,
+        "C4": 0.42
+      },
+      "targets": {
+        "C0": 0.3867,
+        "C4": 0.42
+      },
+      "delta": 0.0333,
+      "delta_full_frozen": 0.0333,
+      "reproduced": true
+    },
+    {
+      "family": "secondary",
+      "embedder": "BAAI/bge-base-en-v1.5",
+      "track": "B",
+      "levels": {
+        "C0": 0.3533,
+        "C4": 0.4
+      },
+      "levels_unrounded": {
+        "C0": 0.35333333333333333,
+        "C4": 0.4
+      },
+      "targets": {
+        "C0": 0.3533,
+        "C4": 0.4
+      },
+      "delta": 0.0467,
+      "delta_full_frozen": 0.0467,
+      "reproduced": true
+    }
+  ],
+  "family_1": [
+    {
+      "embedder": "all-MiniLM-L6-v2",
+      "track": "A",
+      "levels": {
+        "orig256": 0.5682,
+        "fmt256": 0.7216,
+        "delta": 0.1534
+      },
+      "targets": {
+        "orig256": 0.5682,
+        "fmt256": 0.7216,
+        "delta": 0.1534
+      },
+      "reproduced": true,
+      "environment": {
+        "python": "3.12.10",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "torch": "2.13.0+cpu",
+        "sentence_transformers": "5.6.1",
+        "numpy": "2.2.6",
+        "faiss": "1.14.3",
+        "rank_bm25": "unknown",
+        "transformers": "5.14.1",
+        "scipy": "1.18.0",
+        "device": "cpu",
+        "torch_num_threads": 1
+      },
+      "vectors_persisted": true
+    },
+    {
+      "embedder": "all-MiniLM-L6-v2",
+      "track": "B",
+      "levels": {
+        "orig256": 0.3533,
+        "fmt256": 0.38,
+        "delta": 0.0267
+      },
+      "targets": {
+        "orig256": 0.3533,
+        "fmt256": 0.38,
+        "delta": 0.0267
+      },
+      "reproduced": true,
+      "environment": {
+        "python": "3.12.10",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "torch": "2.13.0+cpu",
+        "sentence_transformers": "5.6.1",
+        "numpy": "2.2.6",
+        "faiss": "1.14.3",
+        "rank_bm25": "unknown",
+        "transformers": "5.14.1",
+        "scipy": "1.18.0",
+        "device": "cpu",
+        "torch_num_threads": 1
+      },
+      "vectors_persisted": true
+    },
+    {
+      "embedder": "BAAI/bge-base-en-v1.5",
+      "track": "A",
+      "levels": {
+        "orig256": 0.608,
+        "fmt256": 0.7557,
+        "delta": 0.1477
+      },
+      "targets": {
+        "orig256": 0.608,
+        "fmt256": 0.7557,
+        "delta": 0.1477
+      },
+      "reproduced": true,
+      "environment": {
+        "python": "3.12.10",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "torch": "2.13.0+cpu",
+        "sentence_transformers": "5.6.1",
+        "transformers": "5.14.1",
+        "tokenizers": "0.22.2",
+        "numpy": "2.2.6",
+        "faiss": "1.14.3",
+        "rank_bm25": "unknown",
+        "scipy": "1.18.0",
+        "safetensors": "0.8.0",
+        "huggingface_hub": "1.24.0",
+        "device": "cpu",
+        "torch_num_threads": 1,
+        "env:OMP_NUM_THREADS": "1",
+        "env:MKL_NUM_THREADS": "<unset>",
+        "env:KMP_DUPLICATE_LIB_OK": "TRUE",
+        "env:OMP_STACKSIZE": "<unset>",
+        "env:OPENBLAS_NUM_THREADS": "<unset>",
+        "env:TOKENIZERS_PARALLELISM": "false",
+        "torch_parallel_info": "ATen/Parallel: | at::get_num_threads() : 1 | at::get_num_interop_threads() : 2 | OpenMP 2019 | omp_get_max_threads() : 1 | Intel(R) oneAPI Math Kernel Library Version 2026.1-Product Build 20260612 for Intel(R) 64 architecture applications | mkl_get_max_threads() : 1 | Intel(R) MKL-DNN v3.12.0 (Git Hash 80afa71049cd69a3df32adcccb623b12cd7baa22) | std::thread::hardware_concurrency() : 4 | Environment variables: | OMP_NUM_THREADS : 1 | MKL_NUM_THREADS : [not set] | ATen parallel backend: OpenMP"
+      },
+      "vectors_persisted": true
+    },
+    {
+      "embedder": "BAAI/bge-base-en-v1.5",
+      "track": "B",
+      "levels": {
+        "orig256": 0.36,
+        "fmt256": 0.4267,
+        "delta": 0.0667
+      },
+      "targets": {
+        "orig256": 0.36,
+        "fmt256": 0.4267,
+        "delta": 0.0667
+      },
+      "reproduced": true,
+      "environment": {
+        "python": "3.12.10",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "torch": "2.13.0+cpu",
+        "sentence_transformers": "5.6.1",
+        "transformers": "5.14.1",
+        "tokenizers": "0.22.2",
+        "numpy": "2.2.6",
+        "faiss": "1.14.3",
+        "rank_bm25": "unknown",
+        "scipy": "1.18.0",
+        "safetensors": "0.8.0",
+        "huggingface_hub": "1.24.0",
+        "device": "cpu",
+        "torch_num_threads": 1,
+        "env:OMP_NUM_THREADS": "1",
+        "env:MKL_NUM_THREADS": "<unset>",
+        "env:KMP_DUPLICATE_LIB_OK": "TRUE",
+        "env:OMP_STACKSIZE": "<unset>",
+        "env:OPENBLAS_NUM_THREADS": "<unset>",
+        "env:TOKENIZERS_PARALLELISM": "false",
+        "torch_parallel_info": "ATen/Parallel: | at::get_num_threads() : 1 | at::get_num_interop_threads() : 2 | OpenMP 2019 | omp_get_max_threads() : 1 | Intel(R) oneAPI Math Kernel Library Version 2026.1-Product Build 20260612 for Intel(R) 64 architecture applications | mkl_get_max_threads() : 1 | Intel(R) MKL-DNN v3.12.0 (Git Hash 80afa71049cd69a3df32adcccb623b12cd7baa22) | std::thread::hardware_concurrency() : 4 | Environment variables: | OMP_NUM_THREADS : 1 | MKL_NUM_THREADS : [not set] | ATen parallel backend: OpenMP"
+      },
+      "vectors_persisted": true
+    }
+  ],
+  "verdict": "GUARD 1 PASSED on all cells"
+}

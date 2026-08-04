@@ -1,0 +1,18 @@
+[
+  {
+    "track": "B",
+    "condition": "C0",
+    "child_tokens": 256,
+    "metric": "recall@5",
+    "baseline": 0.3533,
+    "s2b": 0.4533,
+    "mean_diff": 0.1,
+    "ci95": [
+      0.04,
+      0.16
+    ],
+    "p_value": 0.003,
+    "significant": true,
+    "p_holm": 0.003
+  }
+]

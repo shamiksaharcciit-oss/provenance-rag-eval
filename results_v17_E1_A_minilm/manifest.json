@@ -1,0 +1,509 @@
+{
+  "experiment": "v1.7-E1-integrity",
+  "preregistration": "Plan_v17_ReadingValue_2026-08-01.md",
+  "freeze_commit": "e19dd353a3b1e5eeba8b523168744c9cedd69330",
+  "freeze_utc": "2026-08-01T11:40:20Z",
+  "pre_freeze_amendments": [
+    "PF-1 S1->S3",
+    "PF-2 B2(q)",
+    "PF-3 prompt canonical"
+  ],
+  "track": "A",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_queries": 176,
+  "budget_tokens": 1920,
+  "retrieval_depth": 50,
+  "primary_rung": "S2",
+  "reported_rung": "S3",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.13.0+cpu",
+    "sentence_transformers": "5.6.1",
+    "transformers": "5.14.1",
+    "tokenizers": "0.22.2",
+    "numpy": "2.2.6",
+    "faiss": "1.14.3",
+    "rank_bm25": "unknown",
+    "scipy": "1.18.0",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.24.0",
+    "env:OMP_NUM_THREADS": "1",
+    "env:MKL_NUM_THREADS": "<unset>",
+    "env:KMP_DUPLICATE_LIB_OK": "TRUE",
+    "env:OMP_STACKSIZE": "<unset>",
+    "env:TOKENIZERS_PARALLELISM": "false",
+    "device": "cpu",
+    "torch_num_threads": 1
+  },
+  "arms": {
+    "U256": {
+      "empty_segments": 0,
+      "index_units": 238,
+      "units_per_doc": 5.2889,
+      "token_mean": 230.61,
+      "realised_k": {
+        "mean": 8.074,
+        "max": 9,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 116.1,
+      "llm_cache_hits_delta": 0,
+      "integrity_single_S2": {
+        "numerator": 61,
+        "denominator": 176,
+        "rate": 0.346591
+      },
+      "integrity_full_S2": {
+        "numerator": 78,
+        "denominator": 176,
+        "rate": 0.443182
+      },
+      "recall@budget_S2": {
+        "numerator": 109,
+        "denominator": 176,
+        "rate": 0.619318
+      },
+      "feasible_single_S2": {
+        "numerator": 123,
+        "denominator": 176
+      },
+      "infeasible_single_S2": 53,
+      "integrity_single_S3": {
+        "numerator": 61,
+        "denominator": 176,
+        "rate": 0.346591
+      },
+      "integrity_full_S3": {
+        "numerator": 78,
+        "denominator": 176,
+        "rate": 0.443182
+      },
+      "recall@budget_S3": {
+        "numerator": 109,
+        "denominator": 176,
+        "rate": 0.619318
+      },
+      "feasible_single_S3": {
+        "numerator": 123,
+        "denominator": 176
+      },
+      "infeasible_single_S3": 53,
+      "reproduces_v16_recall_at_budget": true
+    },
+    "U768": {
+      "empty_segments": 0,
+      "index_units": 90,
+      "units_per_doc": 2.0,
+      "token_mean": 609.84,
+      "realised_k": {
+        "mean": 3.222,
+        "max": 4,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 30.7,
+      "llm_cache_hits_delta": 0,
+      "integrity_single_S2": {
+        "numerator": 126,
+        "denominator": 176,
+        "rate": 0.715909
+      },
+      "integrity_full_S2": {
+        "numerator": 128,
+        "denominator": 176,
+        "rate": 0.727273
+      },
+      "recall@budget_S2": {
+        "numerator": 132,
+        "denominator": 176,
+        "rate": 0.75
+      },
+      "feasible_single_S2": {
+        "numerator": 170,
+        "denominator": 176
+      },
+      "infeasible_single_S2": 6,
+      "integrity_single_S3": {
+        "numerator": 126,
+        "denominator": 176,
+        "rate": 0.715909
+      },
+      "integrity_full_S3": {
+        "numerator": 128,
+        "denominator": 176,
+        "rate": 0.727273
+      },
+      "recall@budget_S3": {
+        "numerator": 132,
+        "denominator": 176,
+        "rate": 0.75
+      },
+      "feasible_single_S3": {
+        "numerator": 170,
+        "denominator": 176
+      },
+      "infeasible_single_S3": 6,
+      "reproduces_v16_recall_at_budget": true
+    },
+    "U768-ws": {
+      "empty_segments": 0,
+      "index_units": 90,
+      "units_per_doc": 2.0,
+      "token_mean": 609.84,
+      "realised_k": {
+        "mean": 3.222,
+        "max": 4,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 123.0,
+      "llm_cache_hits_delta": 0,
+      "integrity_single_S2": {
+        "numerator": 126,
+        "denominator": 176,
+        "rate": 0.715909
+      },
+      "integrity_full_S2": {
+        "numerator": 128,
+        "denominator": 176,
+        "rate": 0.727273
+      },
+      "recall@budget_S2": {
+        "numerator": 132,
+        "denominator": 176,
+        "rate": 0.75
+      },
+      "feasible_single_S2": {
+        "numerator": 170,
+        "denominator": 176
+      },
+      "infeasible_single_S2": 6,
+      "integrity_single_S3": {
+        "numerator": 126,
+        "denominator": 176,
+        "rate": 0.715909
+      },
+      "integrity_full_S3": {
+        "numerator": 128,
+        "denominator": 176,
+        "rate": 0.727273
+      },
+      "recall@budget_S3": {
+        "numerator": 132,
+        "denominator": 176,
+        "rate": 0.75
+      },
+      "feasible_single_S3": {
+        "numerator": 170,
+        "denominator": 176
+      },
+      "infeasible_single_S3": 6,
+      "reproduces_v16_recall_at_budget": true
+    },
+    "S768": {
+      "empty_segments": 0,
+      "index_units": 90,
+      "units_per_doc": 2.0,
+      "token_mean": 609.84,
+      "realised_k": {
+        "mean": 3.33,
+        "max": 4,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 45.6,
+      "llm_cache_hits_delta": 0,
+      "integrity_single_S2": {
+        "numerator": 129,
+        "denominator": 176,
+        "rate": 0.732955
+      },
+      "integrity_full_S2": {
+        "numerator": 132,
+        "denominator": 176,
+        "rate": 0.75
+      },
+      "recall@budget_S2": {
+        "numerator": 133,
+        "denominator": 176,
+        "rate": 0.755682
+      },
+      "feasible_single_S2": {
+        "numerator": 172,
+        "denominator": 176
+      },
+      "infeasible_single_S2": 4,
+      "integrity_single_S3": {
+        "numerator": 129,
+        "denominator": 176,
+        "rate": 0.732955
+      },
+      "integrity_full_S3": {
+        "numerator": 132,
+        "denominator": 176,
+        "rate": 0.75
+      },
+      "recall@budget_S3": {
+        "numerator": 133,
+        "denominator": 176,
+        "rate": 0.755682
+      },
+      "feasible_single_S3": {
+        "numerator": 172,
+        "denominator": 176
+      },
+      "infeasible_single_S3": 4,
+      "reproduces_v16_recall_at_budget": true
+    },
+    "F768": {
+      "empty_segments": 0,
+      "index_units": 90,
+      "units_per_doc": 2.0,
+      "token_mean": 583.52,
+      "realised_k": {
+        "mean": 3.216,
+        "max": 4,
+        "depth": 50
+      },
+      "degenerate_gold_spans": 0,
+      "seconds": 49.6,
+      "llm_cache_hits_delta": 45,
+      "integrity_single_S2": {
+        "numerator": 133,
+        "denominator": 176,
+        "rate": 0.755682
+      },
+      "integrity_full_S2": {
+        "numerator": 133,
+        "denominator": 176,
+        "rate": 0.755682
+      },
+      "recall@budget_S2": {
+        "numerator": 133,
+        "denominator": 176,
+        "rate": 0.755682
+      },
+      "feasible_single_S2": {
+        "numerator": 176,
+        "denominator": 176
+      },
+      "infeasible_single_S2": 0,
+      "integrity_single_S3": {
+        "numerator": 41,
+        "denominator": 176,
+        "rate": 0.232955
+      },
+      "integrity_full_S3": {
+        "numerator": 41,
+        "denominator": 176,
+        "rate": 0.232955
+      },
+      "recall@budget_S3": {
+        "numerator": 133,
+        "denominator": 176,
+        "rate": 0.755682
+      },
+      "feasible_single_S3": {
+        "numerator": 64,
+        "denominator": 176
+      },
+      "infeasible_single_S3": 112,
+      "reproduces_v16_recall_at_budget": true
+    }
+  },
+  "family_F_INT": {
+    "members": [
+      "D_int_seam",
+      "D_int_edit"
+    ],
+    "metric": "integrity_single",
+    "p_raw": {
+      "D_int_seam": 0.447355,
+      "D_int_edit": 0.50105
+    },
+    "p_holm": {
+      "D_int_seam": 0.89471,
+      "D_int_edit": 0.89471
+    },
+    "_note": "decision-bearing only in the primary cell; see the results document for which cell that is"
+  },
+  "decomposition": {
+    "integrity_single": {
+      "D_int_size": {
+        "numerator": 65,
+        "denominator": 176,
+        "delta": 0.369318,
+        "delta_exact": "65/176",
+        "ci95": [
+          0.284091,
+          0.454545
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 73,
+          "n10": 8,
+          "informative": 81,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_ws": {
+        "numerator": 0,
+        "denominator": 176,
+        "delta": 0.0,
+        "delta_exact": "0/176",
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_permutation": 1.0,
+        "discordant": {
+          "n01": 0,
+          "n10": 0,
+          "informative": 0,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_seam": {
+        "numerator": 3,
+        "denominator": 176,
+        "delta": 0.017045,
+        "delta_exact": "3/176",
+        "ci95": [
+          -0.011364,
+          0.045455
+        ],
+        "p_permutation": 0.447355,
+        "discordant": {
+          "n01": 5,
+          "n10": 2,
+          "informative": 7,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_edit": {
+        "numerator": 4,
+        "denominator": 176,
+        "delta": 0.022727,
+        "delta_exact": "4/176",
+        "ci95": [
+          -0.028409,
+          0.073864
+        ],
+        "p_permutation": 0.50105,
+        "discordant": {
+          "n01": 12,
+          "n10": 8,
+          "informative": 20,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_total": {
+        "numerator": 72,
+        "denominator": 176,
+        "delta": 0.409091,
+        "delta_exact": "72/176",
+        "ci95": [
+          0.318182,
+          0.5
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 84,
+          "n10": 12,
+          "informative": 96,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      }
+    },
+    "integrity_full": {
+      "D_int_size": {
+        "numerator": 50,
+        "denominator": 176,
+        "delta": 0.284091,
+        "delta_exact": "50/176",
+        "ci95": [
+          0.204545,
+          0.369318
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 60,
+          "n10": 10,
+          "informative": 70,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_ws": {
+        "numerator": 0,
+        "denominator": 176,
+        "delta": 0.0,
+        "delta_exact": "0/176",
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_permutation": 1.0,
+        "discordant": {
+          "n01": 0,
+          "n10": 0,
+          "informative": 0,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_seam": {
+        "numerator": 4,
+        "denominator": 176,
+        "delta": 0.022727,
+        "delta_exact": "4/176",
+        "ci95": [
+          -0.005682,
+          0.056818
+        ],
+        "p_permutation": 0.287371,
+        "discordant": {
+          "n01": 6,
+          "n10": 2,
+          "informative": 8,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_edit": {
+        "numerator": 1,
+        "denominator": 176,
+        "delta": 0.005682,
+        "delta_exact": "1/176",
+        "ci95": [
+          -0.039773,
+          0.051136
+        ],
+        "p_permutation": 1.0,
+        "discordant": {
+          "n01": 9,
+          "n10": 8,
+          "informative": 17,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      },
+      "D_int_total": {
+        "numerator": 55,
+        "denominator": 176,
+        "delta": 0.3125,
+        "delta_exact": "55/176",
+        "ci95": [
+          0.227273,
+          0.397727
+        ],
+        "p_permutation": 0.0001,
+        "discordant": {
+          "n01": 67,
+          "n10": 12,
+          "informative": 79,
+          "_note": "descriptive only; no test is computed from these (A5b)"
+        }
+      }
+    }
+  },
+  "completed_utc": "2026-08-01T11:56:55Z"
+}

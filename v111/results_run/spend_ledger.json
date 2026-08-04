@@ -1,0 +1,53 @@
+{
+  "experiment": "v1.11-reading-robustness",
+  "ceiling": 4000,
+  "frozen_projection": 2112,
+  "entries": [
+    {
+      "stage": "ea",
+      "calls": 698,
+      "input_tokens": 1221173,
+      "output_tokens": 9833,
+      "batch_id": "msgbatch_01WMNv1yBwQcXHkYe9WQNPHa",
+      "note": "raw rows sha256=e4426c936b265833",
+      "utc": "2026-08-02T12:31:11Z"
+    },
+    {
+      "stage": "eb",
+      "calls": 352,
+      "input_tokens": 488973,
+      "output_tokens": 14673,
+      "batch_id": "msgbatch_01UuvTth5neS9S8r4KeZ286y",
+      "note": "raw rows sha256=b7fb2e7c3c6944d5",
+      "utc": "2026-08-02T12:35:02Z"
+    },
+    {
+      "stage": "ec-v1",
+      "calls": 352,
+      "input_tokens": 794714,
+      "output_tokens": 19072,
+      "batch_id": "msgbatch_016zhNmsTPnb626TaW7T4HvR",
+      "note": "raw rows sha256=114be16d272ffa8e",
+      "utc": "2026-08-02T12:38:09Z"
+    },
+    {
+      "stage": "ec-v2",
+      "calls": 352,
+      "input_tokens": 792250,
+      "output_tokens": 22164,
+      "batch_id": "msgbatch_01UKgZLihKcjtSErpju98sE5",
+      "note": "raw rows sha256=962a85251348f073",
+      "utc": "2026-08-02T12:41:18Z"
+    },
+    {
+      "stage": "ee",
+      "calls": 352,
+      "input_tokens": 807297,
+      "output_tokens": 15613,
+      "batch_id": "msgbatch_01VysjPAqK1Fe9tPYdEE3YUp",
+      "note": "raw rows sha256=6be390c473033ff1",
+      "utc": "2026-08-02T12:44:25Z"
+    }
+  ],
+  "_note": "append-only; actuals from API usage rows, not estimates. Ceiling is v1.11's 4,000, not v1.8's 25,000."
+}

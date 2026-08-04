@@ -1,0 +1,32 @@
+[
+  {
+    "query_id": "A-036-halcyon-cache::f4",
+    "arm": "U768",
+    "reason": "no non-gold unit in the gold document"
+  },
+  {
+    "query_id": "A-012-ridge-indexer::f4",
+    "arm": "U768",
+    "reason": "no non-gold unit in the gold document"
+  },
+  {
+    "query_id": "A-000-kestrel-indexer::f4",
+    "arm": "U768",
+    "reason": "no non-gold unit in the gold document"
+  },
+  {
+    "query_id": "A-023-harbor-sharder::f4",
+    "arm": "U768",
+    "reason": "no non-gold unit in the gold document"
+  },
+  {
+    "query_id": "A-008-quartz-resolver::f4",
+    "arm": "U768",
+    "reason": "no non-gold unit in the gold document"
+  },
+  {
+    "query_id": "A-019-crag-broker::f4",
+    "arm": "U768",
+    "reason": "no non-gold unit in the gold document"
+  }
+]

@@ -1,0 +1,458 @@
+{
+  "document": "Results_v18_InstrumentDivergence.md",
+  "n_checks": 75,
+  "n_absent_from_text": 0,
+  "absent": [],
+  "checks": [
+    {
+      "claim": "total calls",
+      "value": "17,642",
+      "procedure": "sum of ledger determinate entries",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "frozen projection",
+      "value": "17,642",
+      "procedure": "ledger.frozen_projection",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "ceiling",
+      "value": "25,000",
+      "procedure": "ledger.ceiling",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "input tokens",
+      "value": "35,754,935",
+      "procedure": "sum of ledger input_tokens",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "output tokens",
+      "value": "467,831",
+      "procedure": "sum of ledger output_tokens",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "probe spend range low",
+      "value": "334",
+      "procedure": "ledger indeterminate entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "probe spend range high",
+      "value": "1,018",
+      "procedure": "ledger indeterminate entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "gen calls",
+      "value": "1,682",
+      "procedure": "ledger entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "gen batch id",
+      "value": "msgbatch_018qmUr9PEUmhJer7FpjULiZ",
+      "procedure": "ledger entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j1-part0 calls",
+      "value": "10,000",
+      "procedure": "ledger entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j1-part0 batch id",
+      "value": "msgbatch_01ECiDmfqYPnUiQNok9VWMJc",
+      "procedure": "ledger entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j1-part1 calls",
+      "value": "4,278",
+      "procedure": "ledger entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j1-part1 batch id",
+      "value": "msgbatch_01MzRUXHmUpuvThHNAuVz2wJ",
+      "procedure": "ledger entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j2 calls",
+      "value": "1,682",
+      "procedure": "ledger entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j2 batch id",
+      "value": "msgbatch_01Qb3ELmtjVYMjxeMqgYfpiF",
+      "procedure": "ledger entry",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "gen rows sha256 prefix",
+      "value": "d51ee286",
+      "procedure": "sha256 of the persisted raw rows file",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j1-part0 rows sha256 prefix",
+      "value": "1106e178",
+      "procedure": "sha256 of the persisted raw rows file",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j1-part1 rows sha256 prefix",
+      "value": "8a6bd94a",
+      "procedure": "sha256 of the persisted raw rows file",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "j2 rows sha256 prefix",
+      "value": "9a6c61c7",
+      "procedure": "sha256 of the persisted raw rows file",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "total rows across batches",
+      "value": "17,642",
+      "procedure": "sum of n_answers over the three batch files",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "cells scored",
+      "value": "978",
+      "procedure": "len(per_cell) in score_run",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "context total mean, track A",
+      "value": "+0.28392",
+      "procedure": "contrasts.context_contrast_table -> descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "context size mean, track A",
+      "value": "+0.28932",
+      "procedure": "contrasts.context_contrast_table -> descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "context residual mean, track A",
+      "value": "-0.00540",
+      "procedure": "contrasts.context_contrast_table -> descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "pd2_direction_holds track A",
+      "value": "True",
+      "procedure": "context_contrast_table.pd2_direction_holds",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "answer_contrasts F768_minus_U256 mean, track A",
+      "value": "+0.26947",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "answer_contrasts U768_minus_U256 mean, track A",
+      "value": "+0.15104",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "answer_contrasts F768_minus_U768 mean, track A",
+      "value": "+0.11843",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "i2_contrasts F768_minus_U768 mean, track A",
+      "value": "+0.13460",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "i2_contrasts F768_minus_U256 mean, track A",
+      "value": "+0.29840",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "i2_contrasts U768_minus_U256 mean, track A",
+      "value": "+0.16380",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 mean track A",
+      "value": "+0.142045",
+      "procedure": "tested_contrast on b1_for_query values",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 p track A",
+      "value": "0.011699",
+      "procedure": "paired_permutation_p, iters=10000, seed=1337",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 n track A",
+      "value": "176",
+      "procedure": "len of the per-query B1 vector",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 favour_positive track A",
+      "value": "24",
+      "procedure": "tested_contrast.discordant",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 favour_negative track A",
+      "value": "11",
+      "procedure": "tested_contrast.discordant",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 ties track A",
+      "value": "141",
+      "procedure": "tested_contrast.discordant",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "context total mean, track B",
+      "value": "+0.04870",
+      "procedure": "contrasts.context_contrast_table -> descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "context size mean, track B",
+      "value": "+0.03805",
+      "procedure": "contrasts.context_contrast_table -> descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "context residual mean, track B",
+      "value": "+0.01065",
+      "procedure": "contrasts.context_contrast_table -> descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "pd2_direction_holds track B",
+      "value": "True",
+      "procedure": "context_contrast_table.pd2_direction_holds",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "answer_contrasts F768_minus_U256 mean, track B",
+      "value": "+0.08774",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "answer_contrasts U768_minus_U256 mean, track B",
+      "value": "-0.01776",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "answer_contrasts F768_minus_U768 mean, track B",
+      "value": "+0.10549",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "i2_contrasts F768_minus_U768 mean, track B",
+      "value": "+0.00915",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "i2_contrasts F768_minus_U256 mean, track B",
+      "value": "+0.00399",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "i2_contrasts U768_minus_U256 mean, track B",
+      "value": "-0.00517",
+      "procedure": "descriptive_contrast.mean_diff",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 mean track B",
+      "value": "+0.260000",
+      "procedure": "tested_contrast on b1_for_query values",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 p track B",
+      "value": "0.001",
+      "procedure": "paired_permutation_p, iters=10000, seed=1337",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 n track B",
+      "value": "150",
+      "procedure": "len of the per-query B1 vector",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 favour_positive track B",
+      "value": "75",
+      "procedure": "tested_contrast.discordant",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 favour_negative track B",
+      "value": "33",
+      "procedure": "tested_contrast.discordant",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "B1 ties track B",
+      "value": "42",
+      "procedure": "tested_contrast.discordant",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "F_BIAS p_holm",
+      "value": "0.011699",
+      "procedure": "holm_family over the one declared member",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged replies",
+      "value": "101",
+      "procedure": "hedging.classify over all j1+j2 replies",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "total judge replies",
+      "value": "15,960",
+      "procedure": "len(j1) + len(j2)",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged context_recall",
+      "value": "64",
+      "procedure": "hedging.build by_metric",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged context_precision",
+      "value": "30",
+      "procedure": "hedging.build by_metric",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged faithfulness",
+      "value": "6",
+      "procedure": "hedging.build by_metric",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged answer_correctness",
+      "value": "1",
+      "procedure": "hedging.build by_metric",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged track A",
+      "value": "99",
+      "procedure": "hedging.build by_track",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged track B",
+      "value": "2",
+      "procedure": "hedging.build by_track",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged A/F768",
+      "value": "40",
+      "procedure": "hedging.build by_track_arm",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged A/U256",
+      "value": "21",
+      "procedure": "hedging.build by_track_arm",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged A/U768",
+      "value": "38",
+      "procedure": "hedging.build by_track_arm",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged B/F768",
+      "value": "1",
+      "procedure": "hedging.build by_track_arm",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "hedged B/U256",
+      "value": "1",
+      "procedure": "hedging.build by_track_arm",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "INVALID artifact INVALID_wrong_model__probe_results.json sha prefix",
+      "value": "b4af4a60",
+      "procedure": "sha256 of the retained artifact",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "INVALID artifact INVALID_wrong_model__probe_judge.json sha prefix",
+      "value": "eefac253",
+      "procedure": "sha256 of the retained artifact",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "INVALID artifact INVALID_wrong_model__probe_run_log.txt sha prefix",
+      "value": "c9681703",
+      "procedure": "sha256 of the retained artifact",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "codebook A sha prefix",
+      "value": "c192ddd0",
+      "procedure": "sha256 of the frozen codebook",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "codebook B sha prefix",
+      "value": "1397610b",
+      "procedure": "sha256 of the frozen codebook",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "rows identical old vs amended parser",
+      "value": "15,859",
+      "procedure": "legacy parser vs parse_json_object",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "rows differing",
+      "value": "0",
+      "procedure": "legacy parser vs parse_json_object",
+      "present_in_final_text": true
+    },
+    {
+      "claim": "rows only the amendment parses",
+      "value": "101",
+      "procedure": "legacy parser raises, amended parses",
+      "present_in_final_text": true
+    }
+  ]
+}

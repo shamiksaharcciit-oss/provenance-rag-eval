@@ -1,0 +1,38 @@
+{
+  "repeats": 3,
+  "n_prompts": 20,
+  "fresh_calls": 60,
+  "all_identical": false,
+  "n_prompts_identical": 15,
+  "verdict": "NONDETERMINISTIC",
+  "_note": "Track A dev only; verdict extends to Track B as a declared sampler-property assumption (G6), not as a measurement there.",
+  "seconds": 144.0,
+  "pin": {
+    "requested_model": "claude-sonnet-5",
+    "response_model_distinct": [
+      "claude-sonnet-5"
+    ],
+    "n_calls_observed": 60,
+    "run_started_utc": "2026-08-01T22:51:56Z",
+    "run_ended_utc": "2026-08-01T22:54:20Z",
+    "_note": "G5: the strongest pin the surface offers. A dated snapshot id does not exist to be pinned."
+  },
+  "anomalies": {
+    "finish_reasons": {
+      "end_turn": 60
+    },
+    "output_length_min": 1,
+    "output_length_max": 2287,
+    "n": 60
+  },
+  "cost": {
+    "llm_calls": 60,
+    "llm_tokens": 16437,
+    "input_tokens": 12042,
+    "output_tokens": 4395,
+    "cache_hits": 0,
+    "est_usd": 0.1701
+  },
+  "stage": "judge_probe",
+  "freeze": "5bc4aebea635fdc10d83c349d2a37486d1f337bf"
+}

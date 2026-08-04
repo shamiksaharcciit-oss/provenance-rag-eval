@@ -1,0 +1,6153 @@
+{
+  "tracks": [
+    {
+      "track": "A",
+      "n_queries": 176,
+      "n_scored": 176,
+      "failures": [],
+      "b2_min": 1024,
+      "b2_median": 1024,
+      "b2_max": 1444,
+      "n_escalated": 6,
+      "escalation_attribution": {
+        "U768": 6
+      },
+      "cap_8192_hits": 0,
+      "n_unequal_across_arms": 6,
+      "unequal_examples": [
+        {
+          "query_id": "A-036-halcyon-cache::f4",
+          "b2": 1111,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 762,
+            "U768": 1111,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1058,
+            "U768": 1111,
+            "U256": 1111
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-012-ridge-indexer::f4",
+          "b2": 1152,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 768,
+            "U768": 1152,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1124,
+            "U768": 1152,
+            "U256": 1152
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-000-kestrel-indexer::f4",
+          "b2": 1105,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 763,
+            "U768": 1105,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1058,
+            "U768": 1105,
+            "U256": 1105
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-023-harbor-sharder::f4",
+          "b2": 1346,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 763,
+            "U768": 1346,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1300,
+            "U768": 1346,
+            "U256": 1346
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-008-quartz-resolver::f4",
+          "b2": 1444,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 762,
+            "U768": 1444,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1368,
+            "U768": 1444,
+            "U256": 1444
+          },
+          "equal_across_arms": false
+        }
+      ],
+      "control_sample": [
+        "A-000-kestrel-indexer::mh",
+        "A-003-ember-scheduler::mh",
+        "A-006-halcyon-compactor::syn",
+        "A-007-vega-broker::f7",
+        "A-010-marlin-collator::f3",
+        "A-010-marlin-collator::f6",
+        "A-012-ridge-indexer::mh",
+        "A-015-beacon-scheduler::f2",
+        "A-018-verde-compactor::syn",
+        "A-019-crag-broker::f3",
+        "A-019-crag-broker::f4",
+        "A-020-drift-resolver::f0",
+        "A-020-drift-resolver::syn",
+        "A-021-fable-ledger::f1",
+        "A-021-fable-ledger::syn",
+        "A-022-glint-collator::f0",
+        "A-023-harbor-sharder::f4",
+        "A-023-harbor-sharder::syn",
+        "A-024-ion-indexer::f3",
+        "A-024-ion-indexer::f4",
+        "A-026-krait-router::f1",
+        "A-028-mica-gateway::f7",
+        "A-030-kestrel-broker::syn",
+        "A-034-cirrus-sharder::mh",
+        "A-036-halcyon-cache::syn",
+        "A-037-vega-router::f4",
+        "A-038-quartz-scheduler::mh",
+        "A-039-zephyr-gateway::mh",
+        "A-040-marlin-planner::syn",
+        "A-044-aster-ledger::f5"
+      ],
+      "control_pairs": [
+        {
+          "query_id": "A-000-kestrel-indexer::mh",
+          "mismatched_package_of": "A-003-ember-scheduler::mh"
+        },
+        {
+          "query_id": "A-003-ember-scheduler::mh",
+          "mismatched_package_of": "A-006-halcyon-compactor::syn"
+        },
+        {
+          "query_id": "A-006-halcyon-compactor::syn",
+          "mismatched_package_of": "A-007-vega-broker::f7"
+        },
+        {
+          "query_id": "A-007-vega-broker::f7",
+          "mismatched_package_of": "A-010-marlin-collator::f3"
+        },
+        {
+          "query_id": "A-010-marlin-collator::f3",
+          "mismatched_package_of": "A-010-marlin-collator::f6"
+        },
+        {
+          "query_id": "A-010-marlin-collator::f6",
+          "mismatched_package_of": "A-012-ridge-indexer::mh"
+        },
+        {
+          "query_id": "A-012-ridge-indexer::mh",
+          "mismatched_package_of": "A-015-beacon-scheduler::f2"
+        },
+        {
+          "query_id": "A-015-beacon-scheduler::f2",
+          "mismatched_package_of": "A-018-verde-compactor::syn"
+        },
+        {
+          "query_id": "A-018-verde-compactor::syn",
+          "mismatched_package_of": "A-019-crag-broker::f3"
+        },
+        {
+          "query_id": "A-019-crag-broker::f3",
+          "mismatched_package_of": "A-019-crag-broker::f4"
+        },
+        {
+          "query_id": "A-019-crag-broker::f4",
+          "mismatched_package_of": "A-020-drift-resolver::f0"
+        },
+        {
+          "query_id": "A-020-drift-resolver::f0",
+          "mismatched_package_of": "A-020-drift-resolver::syn"
+        },
+        {
+          "query_id": "A-020-drift-resolver::syn",
+          "mismatched_package_of": "A-021-fable-ledger::f1"
+        },
+        {
+          "query_id": "A-021-fable-ledger::f1",
+          "mismatched_package_of": "A-021-fable-ledger::syn"
+        },
+        {
+          "query_id": "A-021-fable-ledger::syn",
+          "mismatched_package_of": "A-022-glint-collator::f0"
+        },
+        {
+          "query_id": "A-022-glint-collator::f0",
+          "mismatched_package_of": "A-023-harbor-sharder::f4"
+        },
+        {
+          "query_id": "A-023-harbor-sharder::f4",
+          "mismatched_package_of": "A-023-harbor-sharder::syn"
+        },
+        {
+          "query_id": "A-023-harbor-sharder::syn",
+          "mismatched_package_of": "A-024-ion-indexer::f3"
+        },
+        {
+          "query_id": "A-024-ion-indexer::f3",
+          "mismatched_package_of": "A-024-ion-indexer::f4"
+        },
+        {
+          "query_id": "A-024-ion-indexer::f4",
+          "mismatched_package_of": "A-026-krait-router::f1"
+        },
+        {
+          "query_id": "A-026-krait-router::f1",
+          "mismatched_package_of": "A-028-mica-gateway::f7"
+        },
+        {
+          "query_id": "A-028-mica-gateway::f7",
+          "mismatched_package_of": "A-030-kestrel-broker::syn"
+        },
+        {
+          "query_id": "A-030-kestrel-broker::syn",
+          "mismatched_package_of": "A-034-cirrus-sharder::mh"
+        },
+        {
+          "query_id": "A-034-cirrus-sharder::mh",
+          "mismatched_package_of": "A-036-halcyon-cache::syn"
+        },
+        {
+          "query_id": "A-036-halcyon-cache::syn",
+          "mismatched_package_of": "A-037-vega-router::f4"
+        },
+        {
+          "query_id": "A-037-vega-router::f4",
+          "mismatched_package_of": "A-038-quartz-scheduler::mh"
+        },
+        {
+          "query_id": "A-038-quartz-scheduler::mh",
+          "mismatched_package_of": "A-039-zephyr-gateway::mh"
+        },
+        {
+          "query_id": "A-039-zephyr-gateway::mh",
+          "mismatched_package_of": "A-040-marlin-planner::syn"
+        },
+        {
+          "query_id": "A-040-marlin-planner::syn",
+          "mismatched_package_of": "A-044-aster-ledger::f5"
+        },
+        {
+          "query_id": "A-044-aster-ledger::f5",
+          "mismatched_package_of": "A-000-kestrel-indexer::mh"
+        }
+      ],
+      "inventory_sizes": {
+        "F768": 90,
+        "U768": 90,
+        "U256": 238
+      },
+      "rows": [
+        {
+          "query_id": "A-040-marlin-planner::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-022-glint-collator::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-001-basalt-cache::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 588,
+            "U768": 625,
+            "U256": 369
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-044-aster-ledger::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 454,
+            "U768": 530,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-022-glint-collator::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-002-cobalt-router::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-043-solstice-resolver::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 574,
+            "U768": 610,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-024-ion-indexer::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 335,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-026-krait-router::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-021-fable-ledger::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-042-ridge-broker::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 460,
+            "U768": 511,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-027-lattice-scheduler::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 467,
+            "U768": 501,
+            "U256": 245
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-017-talon-planner::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-035-onyx-indexer::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 276,
+            "U768": 340,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-011-falcon-sharder::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-036-halcyon-cache::f4",
+          "b2": 1111,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 762,
+            "U768": 1111,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1058,
+            "U768": 1111,
+            "U256": 1111
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-020-drift-resolver::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 758,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-044-aster-ledger::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-029-nyx-planner::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-014-aster-router::f7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 504,
+            "U768": 544,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-035-onyx-indexer::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-012-ridge-indexer::f4",
+          "b2": 1152,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 768,
+            "U768": 1152,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1124,
+            "U768": 1152,
+            "U256": 1152
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-043-solstice-resolver::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-015-beacon-scheduler::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-007-vega-broker::f7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 552,
+            "U768": 643,
+            "U256": 387
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-017-talon-planner::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-008-quartz-resolver::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-024-ion-indexer::f0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-005-onyx-planner::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-008-quartz-resolver::f6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 606,
+            "U768": 676,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-007-vega-broker::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 552,
+            "U768": 643,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-000-kestrel-indexer::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-027-lattice-scheduler::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 467,
+            "U768": 501,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-028-mica-gateway::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-019-crag-broker::f6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 435,
+            "U768": 479,
+            "U256": 223
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-026-krait-router::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-012-ridge-indexer::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-037-vega-router::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 308,
+            "U768": 347,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-026-krait-router::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 277,
+            "U768": 332,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-024-ion-indexer::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-022-glint-collator::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-023-harbor-sharder::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-000-kestrel-indexer::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-022-glint-collator::f0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-023-harbor-sharder::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-018-verde-compactor::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 765,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-014-aster-router::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-024-ion-indexer::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 335,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-025-juniper-cache::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 759,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-011-falcon-sharder::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-000-kestrel-indexer::f4",
+          "b2": 1105,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 763,
+            "U768": 1105,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1058,
+            "U768": 1105,
+            "U256": 1105
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-012-ridge-indexer::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-002-cobalt-router::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-023-harbor-sharder::f4",
+          "b2": 1346,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 763,
+            "U768": 1346,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1300,
+            "U768": 1346,
+            "U256": 1346
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-005-onyx-planner::f0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-028-mica-gateway::f7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 437,
+            "U768": 494,
+            "U256": 238
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-026-krait-router::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-018-verde-compactor::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 414,
+            "U768": 486,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-005-onyx-planner::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-036-halcyon-cache::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 296,
+            "U768": 343,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-014-aster-router::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-031-basalt-resolver::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-009-zephyr-ledger::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 761,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-012-ridge-indexer::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-035-onyx-indexer::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-001-basalt-cache::f7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 588,
+            "U768": 625,
+            "U256": 369
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-030-kestrel-broker::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 523,
+            "U768": 593,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-039-zephyr-gateway::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-025-juniper-cache::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 546,
+            "U768": 599,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-009-zephyr-ledger::f6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 495,
+            "U768": 533,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-008-quartz-resolver::f4",
+          "b2": 1444,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 762,
+            "U768": 1444,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1368,
+            "U768": 1444,
+            "U256": 1444
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-029-nyx-planner::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-006-halcyon-compactor::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-005-onyx-planner::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 277,
+            "U768": 337,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-030-kestrel-broker::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-014-aster-router::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-030-kestrel-broker::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-006-halcyon-compactor::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-033-ember-collator::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 381,
+            "U768": 401,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-038-quartz-scheduler::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-012-ridge-indexer::f6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 356,
+            "U768": 384,
+            "U256": 128
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-019-crag-broker::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 435,
+            "U768": 479,
+            "U256": 223
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-014-aster-router::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-037-vega-router::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-043-solstice-resolver::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-009-zephyr-ledger::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 761,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-012-ridge-indexer::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-036-halcyon-cache::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-004-cirrus-gateway::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 272,
+            "U768": 339,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-003-ember-scheduler::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 297,
+            "U768": 336,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-029-nyx-planner::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-021-fable-ledger::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-003-ember-scheduler::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-016-nimbus-gateway::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-036-halcyon-cache::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-020-drift-resolver::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 758,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-015-beacon-scheduler::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-019-crag-broker::f4",
+          "b2": 1247,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 764,
+            "U768": 1247,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1199,
+            "U768": 1247,
+            "U256": 1247
+          },
+          "equal_across_arms": false
+        },
+        {
+          "query_id": "A-017-talon-planner::f0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-014-aster-router::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 544,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-035-onyx-indexer::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-017-talon-planner::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-005-onyx-planner::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 277,
+            "U768": 337,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-008-quartz-resolver::f0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-010-marlin-collator::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 761,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-010-marlin-collator::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 761,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-005-onyx-planner::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 277,
+            "U768": 337,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-015-beacon-scheduler::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-002-cobalt-router::f7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 660,
+            "U768": 729,
+            "U256": 217
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-002-cobalt-router::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 660,
+            "U768": 729,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-000-kestrel-indexer::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-010-marlin-collator::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 372,
+            "U768": 447,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-000-kestrel-indexer::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-034-cirrus-sharder::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 295,
+            "U768": 335,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-040-marlin-planner::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-043-solstice-resolver::f7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 574,
+            "U768": 610,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-004-cirrus-gateway::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-041-falcon-compactor::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-028-mica-gateway::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-034-cirrus-sharder::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-044-aster-ledger::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-034-cirrus-sharder::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-040-marlin-planner::f0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-021-fable-ledger::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-028-mica-gateway::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 437,
+            "U768": 494,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-030-kestrel-broker::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 593,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-039-zephyr-gateway::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-040-marlin-planner::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-008-quartz-resolver::f7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 606,
+            "U768": 676,
+            "U256": 164
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-020-drift-resolver::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 758,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-016-nimbus-gateway::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-030-kestrel-broker::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-038-quartz-scheduler::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 443,
+            "U768": 484,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-002-cobalt-router::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-030-kestrel-broker::f6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 523,
+            "U768": 593,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-002-cobalt-router::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-032-cobalt-ledger::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 313,
+            "U768": 353,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-026-krait-router::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-019-crag-broker::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-016-nimbus-gateway::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-039-zephyr-gateway::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-016-nimbus-gateway::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-038-quartz-scheduler::f4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-034-cirrus-sharder::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-032-cobalt-ledger::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 313,
+            "U768": 353,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-013-solstice-cache::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-041-falcon-compactor::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-037-vega-router::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-037-vega-router::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-022-glint-collator::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-006-halcyon-compactor::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-007-vega-broker::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-007-vega-broker::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-019-crag-broker::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-043-solstice-resolver::f1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-013-solstice-cache::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-026-krait-router::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-018-verde-compactor::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 765,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-038-quartz-scheduler::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 443,
+            "U768": 484,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-018-verde-compactor::f3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 765,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-010-marlin-collator::f6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 372,
+            "U768": 447,
+            "U256": 191
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-020-drift-resolver::f0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 758,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-008-quartz-resolver::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-019-crag-broker::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 435,
+            "U768": 479,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-001-basalt-cache::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-014-aster-router::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 504,
+            "U768": 544,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-038-quartz-scheduler::f7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 443,
+            "U768": 484,
+            "U256": 228
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-002-cobalt-router::f0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-024-ion-indexer::syn",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-042-ridge-broker::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 460,
+            "U768": 511,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-030-kestrel-broker::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-008-quartz-resolver::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 606,
+            "U768": 676,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-044-aster-ledger::f5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 454,
+            "U768": 530,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-020-drift-resolver::f2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 758,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-018-verde-compactor::mh",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 765,
+            "U768": 486,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "A-036-halcyon-cache::f6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 296,
+            "U768": 343,
+            "U256": 343
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        }
+      ]
+    },
+    {
+      "track": "B",
+      "n_queries": 150,
+      "n_scored": 150,
+      "failures": [],
+      "b2_min": 1024,
+      "b2_median": 1024,
+      "b2_max": 3840,
+      "n_escalated": 65,
+      "escalation_attribution": {
+        "U768": 54,
+        "F768": 11,
+        "U256": 2
+      },
+      "cap_8192_hits": 0,
+      "n_unequal_across_arms": 0,
+      "unequal_examples": [],
+      "control_sample": [
+        "1601.02403::q5",
+        "1612.08205::q3",
+        "1704.04452::q4",
+        "1707.05236::q0",
+        "1707.05236::q4",
+        "1709.07814::q1",
+        "1806.04511::q3",
+        "1806.05504::q0",
+        "1810.08699::q0",
+        "1811.00383::q1",
+        "1908.05828::q0",
+        "1908.05828::q10",
+        "1908.06267::q3",
+        "1908.10084::q2",
+        "1908.10084::q4",
+        "1909.00175::q2",
+        "1909.03405::q2",
+        "1909.06200::q3",
+        "1910.06592::q1",
+        "1910.06592::q10",
+        "1910.06592::q2",
+        "1910.06592::q4",
+        "1910.14076::q0",
+        "1910.14076::q1",
+        "1912.01214::q3",
+        "2002.01320::q1",
+        "2002.01320::q4",
+        "2002.02070::q1",
+        "2004.04721::q2",
+        "2004.04721::q4"
+      ],
+      "control_pairs": [
+        {
+          "query_id": "1601.02403::q5",
+          "mismatched_package_of": "1612.08205::q3"
+        },
+        {
+          "query_id": "1612.08205::q3",
+          "mismatched_package_of": "1704.04452::q4"
+        },
+        {
+          "query_id": "1704.04452::q4",
+          "mismatched_package_of": "1707.05236::q0"
+        },
+        {
+          "query_id": "1707.05236::q0",
+          "mismatched_package_of": "1707.05236::q4"
+        },
+        {
+          "query_id": "1707.05236::q4",
+          "mismatched_package_of": "1709.07814::q1"
+        },
+        {
+          "query_id": "1709.07814::q1",
+          "mismatched_package_of": "1806.04511::q3"
+        },
+        {
+          "query_id": "1806.04511::q3",
+          "mismatched_package_of": "1806.05504::q0"
+        },
+        {
+          "query_id": "1806.05504::q0",
+          "mismatched_package_of": "1810.08699::q0"
+        },
+        {
+          "query_id": "1810.08699::q0",
+          "mismatched_package_of": "1811.00383::q1"
+        },
+        {
+          "query_id": "1811.00383::q1",
+          "mismatched_package_of": "1908.05828::q0"
+        },
+        {
+          "query_id": "1908.05828::q0",
+          "mismatched_package_of": "1908.05828::q10"
+        },
+        {
+          "query_id": "1908.05828::q10",
+          "mismatched_package_of": "1908.06267::q3"
+        },
+        {
+          "query_id": "1908.06267::q3",
+          "mismatched_package_of": "1908.10084::q2"
+        },
+        {
+          "query_id": "1908.10084::q2",
+          "mismatched_package_of": "1908.10084::q4"
+        },
+        {
+          "query_id": "1908.10084::q4",
+          "mismatched_package_of": "1909.00175::q2"
+        },
+        {
+          "query_id": "1909.00175::q2",
+          "mismatched_package_of": "1909.03405::q2"
+        },
+        {
+          "query_id": "1909.03405::q2",
+          "mismatched_package_of": "1909.06200::q3"
+        },
+        {
+          "query_id": "1909.06200::q3",
+          "mismatched_package_of": "1910.06592::q1"
+        },
+        {
+          "query_id": "1910.06592::q1",
+          "mismatched_package_of": "1910.06592::q10"
+        },
+        {
+          "query_id": "1910.06592::q10",
+          "mismatched_package_of": "1910.06592::q2"
+        },
+        {
+          "query_id": "1910.06592::q2",
+          "mismatched_package_of": "1910.06592::q4"
+        },
+        {
+          "query_id": "1910.06592::q4",
+          "mismatched_package_of": "1910.14076::q0"
+        },
+        {
+          "query_id": "1910.14076::q0",
+          "mismatched_package_of": "1910.14076::q1"
+        },
+        {
+          "query_id": "1910.14076::q1",
+          "mismatched_package_of": "1912.01214::q3"
+        },
+        {
+          "query_id": "1912.01214::q3",
+          "mismatched_package_of": "2002.01320::q1"
+        },
+        {
+          "query_id": "2002.01320::q1",
+          "mismatched_package_of": "2002.01320::q4"
+        },
+        {
+          "query_id": "2002.01320::q4",
+          "mismatched_package_of": "2002.02070::q1"
+        },
+        {
+          "query_id": "2002.02070::q1",
+          "mismatched_package_of": "2004.04721::q2"
+        },
+        {
+          "query_id": "2004.04721::q2",
+          "mismatched_package_of": "2004.04721::q4"
+        },
+        {
+          "query_id": "2004.04721::q4",
+          "mismatched_package_of": "1601.02403::q5"
+        }
+      ],
+      "inventory_sizes": {
+        "F768": 381,
+        "U768": 378,
+        "U256": 1072
+      },
+      "rows": [
+        {
+          "query_id": "1911.07555::q5",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1519,
+            "U768": 1536,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05441::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 757,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1503.00841::q3",
+          "b2": 3840,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 3788,
+            "U768": 3840,
+            "U256": 3584
+          },
+          "package_tokens": {
+            "F768": 3840,
+            "U768": 3840,
+            "U256": 3840
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1906.00790::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 761,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2004.04721::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 666,
+            "U768": 559,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05828::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 737,
+            "U768": 709,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1902.09666::q6",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1517,
+            "U768": 1536,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1809.00530::q0",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 745,
+            "U768": 1536,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1904.10503::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 690,
+            "U768": 630,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1706.08198::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 749,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1808.10245::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1809.00530::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.08795::q2",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1511,
+            "U768": 1536,
+            "U256": 1280
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.02070::q2",
+          "b2": 1379,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1376,
+            "U768": 1379,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1379,
+            "U768": 1379,
+            "U256": 1379
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.06592::q6",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1519,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.06592::q2",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2283,
+            "U768": 2304,
+            "U256": 1536
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1911.07555::q6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 687,
+            "U768": 688,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1601.02403::q0",
+          "b2": 1413,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 1413,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1413,
+            "U768": 1413,
+            "U256": 1413
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1605.03481::q3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 757,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1810.04635::q0",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2269,
+            "U768": 2304,
+            "U256": 1280
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1909.06200::q0",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2289,
+            "U768": 2304,
+            "U256": 2048
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.06267::q1",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1518,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1902.09666::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 742,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2001.01269::q3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.06267::q3",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1507,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.02070::q5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 631,
+            "U768": 611,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.01320::q3",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1517,
+            "U768": 1536,
+            "U256": 1280
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1605.03481::q4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 752,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2004.01862::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 748,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1904.09535::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1704.04452::q5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 710,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1906.00790::q2",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2203,
+            "U768": 2304,
+            "U256": 1792
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1611.08661::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1610.09225::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 749,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1712.00991::q6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 756,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1811.00147::q1",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2257,
+            "U768": 2304,
+            "U256": 1536
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1909.03582::q2",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1519,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1906.07662::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 531,
+            "U768": 400,
+            "U256": 400
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.01320::q4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 749,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.06592::q8",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1529,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05828::q4",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2280,
+            "U768": 2304,
+            "U256": 1792
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.14537::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 743,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.14076::q0",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1475,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1707.05236::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1902.09666::q3",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1517,
+            "U768": 1536,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1912.01214::q3",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 767,
+            "U768": 1536,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1709.07814::q1",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2281,
+            "U768": 2304,
+            "U256": 1792
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2004.01862::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 748,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.04095::q0",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U256",
+            "U768"
+          ],
+          "costs": {
+            "F768": 1503,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1907.09369::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 759,
+            "U768": 768,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1911.02855::q0",
+          "b2": 2088,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 2088,
+            "U768": 1314,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 2088,
+            "U768": 2088,
+            "U256": 2088
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.10084::q0",
+          "b2": 3840,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 3820,
+            "U768": 3840,
+            "U256": 3328
+          },
+          "package_tokens": {
+            "F768": 3840,
+            "U768": 3840,
+            "U256": 3840
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.06592::q0",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1529,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1809.00530::q1",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1489,
+            "U768": 2304,
+            "U256": 1792
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.10084::q4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.02070::q1",
+          "b2": 1379,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1376,
+            "U768": 1379,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1379,
+            "U768": 1379,
+            "U256": 1379
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.02070::q4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 631,
+            "U768": 611,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1909.03405::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1704.04452::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 742,
+            "U768": 580,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1909.03582::q3",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2241,
+            "U768": 2304,
+            "U256": 2048
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1702.03342::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 765,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.01664::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 754,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1707.05236::q3",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1525,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1810.08699::q0",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 744,
+            "U768": 1536,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.14076::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2001.01269::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1911.02855::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.06592::q10",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2283,
+            "U768": 2304,
+            "U256": 1536
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1903.11283::q1",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1481,
+            "U768": 1536,
+            "U256": 1280
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05828::q8",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1704.04452::q4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 757,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1808.10245::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 744,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.10084::q1",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1529,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1909.00175::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1806.04511::q5",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 754,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1911.07555::q8",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 687,
+            "U768": 688,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.11910::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 754,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1811.00383::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 754,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.14537::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 768,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1806.04511::q3",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1504,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1806.04511::q1",
+          "b2": 1173,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 1173,
+            "U768": 1131,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1173,
+            "U768": 1173,
+            "U256": 1173
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05828::q6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.01320::q6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 749,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1601.02403::q5",
+          "b2": 1413,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 1413,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1413,
+            "U768": 1413,
+            "U256": 1413
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.06267::q4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 750,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1903.11283::q2",
+          "b2": 3072,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2994,
+            "U768": 3072,
+            "U256": 2560
+          },
+          "package_tokens": {
+            "F768": 3072,
+            "U768": 3072,
+            "U256": 3072
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.06592::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.12795::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 765,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05441::q0",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 761,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1703.07476::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 737,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1712.00991::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 765,
+            "U256": 509
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1603.08594::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 753,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05441::q3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1801.02073::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 760,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.10084::q5",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1507,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1906.07662::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 734,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.01320::q2",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1517,
+            "U768": 1536,
+            "U256": 1024
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2001.01269::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 765,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1705.01214::q1",
+          "b2": 1463,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 1463,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1463,
+            "U768": 1463,
+            "U256": 1463
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.14537::q2",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1476,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1705.01265::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 757,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1808.10245::q1",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1518,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.01320::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 758,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1712.00991::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 764,
+            "U768": 765,
+            "U256": 509
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1909.06200::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 755,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1707.05236::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1904.10503::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 690,
+            "U768": 630,
+            "U256": 374
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2004.04721::q3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1912.01772::q0",
+          "b2": 1459,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 1459,
+            "U768": 1353,
+            "U256": 1024
+          },
+          "package_tokens": {
+            "F768": 1459,
+            "U768": 1459,
+            "U256": 1459
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1809.00530::q3",
+          "b2": 3724,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 3020,
+            "U768": 3724,
+            "U256": 3072
+          },
+          "package_tokens": {
+            "F768": 3724,
+            "U768": 3724,
+            "U256": 3724
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1603.09631::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 761,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1605.03481::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 722,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1703.07476::q0",
+          "b2": 2803,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 2803,
+            "U768": 2753,
+            "U256": 2304
+          },
+          "package_tokens": {
+            "F768": 2803,
+            "U768": 2803,
+            "U256": 2803
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.01664::q0",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2268,
+            "U768": 2304,
+            "U256": 1536
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.06592::q4",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1519,
+            "U768": 1536,
+            "U256": 1024
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1911.02855::q3",
+          "b2": 3072,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2248,
+            "U768": 3072,
+            "U256": 2560
+          },
+          "package_tokens": {
+            "F768": 3072,
+            "U768": 3072,
+            "U256": 3072
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2002.08795::q1",
+          "b2": 2277,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 2277,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "package_tokens": {
+            "F768": 2277,
+            "U768": 2277,
+            "U256": 2277
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1802.08636::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 745,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2004.04721::q6",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 739,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1610.09225::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 748,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1912.08960::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1610.09225::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 748,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1906.00790::q3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 761,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1705.01265::q1",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2284,
+            "U768": 2304,
+            "U256": 1792
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1810.04635::q1",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1532,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1912.01772::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 751,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1503.00841::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 748,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.14076::q2",
+          "b2": 1491,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 744,
+            "U768": 1491,
+            "U256": 768
+          },
+          "package_tokens": {
+            "F768": 1491,
+            "U768": 1491,
+            "U256": 1491
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1707.05236::q4",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1525,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1612.08205::q3",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 762,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.14537::q3",
+          "b2": 1534,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 1534,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1534,
+            "U768": 1534,
+            "U256": 1534
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1811.00147::q0",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 767,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "2004.04721::q4",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 666,
+            "U768": 559,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1911.07555::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 759,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1810.08699::q1",
+          "b2": 2304,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 2261,
+            "U768": 2304,
+            "U256": 1280
+          },
+          "package_tokens": {
+            "F768": 2304,
+            "U768": 2304,
+            "U256": 2304
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05828::q10",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 737,
+            "U768": 709,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1605.03481::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 752,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1811.00383::q0",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 557,
+            "U768": 468,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1910.06592::q7",
+          "b2": 1222,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 1222,
+            "U768": 1205,
+            "U256": 693
+          },
+          "package_tokens": {
+            "F768": 1222,
+            "U768": 1222,
+            "U256": 1222
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1612.08205::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1806.04511::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 754,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1810.08699::q2",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1499,
+            "U768": 1536,
+            "U256": 1024
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1801.02073::q1",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 766,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1907.09369::q1",
+          "b2": 1473,
+          "escalated": true,
+          "set_by": [
+            "F768"
+          ],
+          "costs": {
+            "F768": 1473,
+            "U768": 1443,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1473,
+            "U768": 1473,
+            "U256": 1473
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1902.09666::q7",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 742,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.10084::q2",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 763,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1908.05828::q9",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 767,
+            "U768": 768,
+            "U256": 256
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1909.06200::q3",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U256",
+            "U768"
+          ],
+          "costs": {
+            "F768": 1496,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1503.00841::q2",
+          "b2": 1024,
+          "escalated": false,
+          "set_by": [],
+          "costs": {
+            "F768": 763,
+            "U768": 768,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1024,
+            "U768": 1024,
+            "U256": 1024
+          },
+          "equal_across_arms": true
+        },
+        {
+          "query_id": "1806.05504::q0",
+          "b2": 1536,
+          "escalated": true,
+          "set_by": [
+            "U768"
+          ],
+          "costs": {
+            "F768": 1510,
+            "U768": 1536,
+            "U256": 512
+          },
+          "package_tokens": {
+            "F768": 1536,
+            "U768": 1536,
+            "U256": 1536
+          },
+          "equal_across_arms": true
+        }
+      ]
+    }
+  ],
+  "costs": {
+    "generation_single_run": 978,
+    "control": 120,
+    "probe": 60,
+    "judge": 176,
+    "total_single_run_branch": 1334,
+    "total_worst_case_targeted_repeats": 2390,
+    "ceiling": 5000,
+    "over_ceiling": false,
+    "_note": "control counts BOTH the correct and mismatched generation per sampled query (\u00a72); probe is 20 Track A dev prompts x 3 (G2/G6)"
+  }
+}
