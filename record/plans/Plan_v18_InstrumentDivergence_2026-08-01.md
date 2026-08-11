@@ -416,7 +416,7 @@ The sequencing/packaging decision is deliberately open. Whatever is decided late
 2. No external statement may describe I1-favourable results as evidence the formatter
    improves retrieval. The pre-committed reading of §5 governs.
 3. Nothing in v1.8 changes the disclosure calculus: any external release remains gated on
-   the ASML IP ruling, which this plan does not touch.
+   the pending IP ruling, which this plan does not touch.
 
 These conditions freeze with the plan. A later decision can choose *whether* and *where* to
 publish; it cannot choose *less than this* about what an honest publication contains.

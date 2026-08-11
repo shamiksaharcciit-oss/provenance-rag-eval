@@ -139,7 +139,7 @@ in the paper regardless of which way the arms come out.
 **The disclosure route** — defensive publication, file first, or internal-only. This is the
 irreversible gate: Europe has no grace period, so external disclosure destroys novelty absolutely.
 Internal circulation for approval doesn't, which is why the current approval round is safe. This
-decision has to be made before anything leaves ASML, and it should be made *after* PW-1's outcome
+decision has to be made before anything is disclosed externally, and it should be made *after* PW-1's outcome
 is known, because the outcome changes what you'd be disclosing.
 
 **How to report family 1 if it ends up one-cell.** If B4 resolves to (b), family 1's aggregate

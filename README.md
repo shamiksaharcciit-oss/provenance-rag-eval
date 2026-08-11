@@ -79,6 +79,15 @@ directions: the apparatus demonstrably kills bad claims — including ours — a
 the process demonstrably catches its own execution errors rather than silently
 absorbing them.
 
+## Provenance of this repository
+
+This is independent personal work, designed, funded and executed by the author
+without employer resources. In the historical record (`record/`), a handful of
+references to the author's employer — process notes about internal approval and
+IP review — have been generalized ("the internal report", "the pending IP
+ruling") for this public copy; no content, figure or verdict was altered. The
+private record retains the originals verbatim.
+
 ## Status
 
 [Released alongside the preprint; license to be stated at release.]

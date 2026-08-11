@@ -136,9 +136,9 @@ This is also where C-2 pays for itself. You now capture `torch`, `transformers`,
 `parallel_info()` — which is enough to reconstruct the environment somewhere else and know that you
 did. Two days ago you could not have moved machines without introducing an unpinned variable.
 
-The obvious constraint is that this is ASML work and the corpus may not be movable to arbitrary
-compute. That is your call and I am not going to guess at the policy — but if there is an internal
-workstation or sanctioned compute available, it is worth an hour of asking.
+The obvious constraint would be confidentiality if an internal corpus were ever in scope: such
+data would not be movable to arbitrary compute. (None is — this project is personal work on
+synthetic and public data; the note is kept for the record of what was considered.)
 
 ---
 

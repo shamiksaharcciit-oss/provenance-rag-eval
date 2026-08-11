@@ -286,9 +286,9 @@ it. A reader must be able to see how often the budget escalated and which arm fo
 ## 4. E3 — dose-response skeleton (NOT AUTHORISED; recorded so the shape is fixed)
 
 Requires, in order, none of which starts now: a degradation scorer whose procedure and
-threshold are frozen before any outcome is seen; a real degraded corpus (ASML legacy
-documents — outside this repo, subject to ownership and confidentiality constraints that are
-Shamik's to resolve); hand-labelled gold spans on it; and a registered **interaction**
+threshold are frozen before any outcome is seen; a real degraded corpus (a genuinely degraded legacy
+document set — outside this repo; none exists in this project, and sourcing one would raise
+ownership and confidentiality constraints that are Shamik's to resolve); hand-labelled gold spans on it; and a registered **interaction**
 prediction — the formatter-vs-naive difference increases across degradation strata and
 approaches zero on the clean end, with Track B anchoring the clean end. A main effect without
 the interaction does not satisfy E3. Everything else about E3 is deliberately unspecified
@@ -325,7 +325,7 @@ recall@budget; run parameters; limitations. Then STOP for a ruling.
 discipline. Frozen consequence: if `F_READ`'s single member is null, the reading-value claim
 **dies at matched information and matched tokens**, and the formatter's remaining case is
 operational (hygiene, preservation, cost) plus the untested E3 interaction — and the internal
-ASML report must say so in those words. If it is positive, the claim earned is exactly:
+internal report must say so in those words. If it is positive, the claim earned is exactly:
 *formatter packaging improves extractive answer quality at equal token cost when the answer
 is present* — nothing about retrieval, nothing about v1.6, nothing about deployment.
 
@@ -356,5 +356,5 @@ with Shamik's authorisation.
 E3 beyond §4's skeleton. Any formatter code change. Any gate/scorer implementation. Any edit
 to closed artifacts, the white paper, or the brief. Any use of v1.7 numbers to revisit v1.6
 or PW-1. Any test on any quantity outside `F_INT` and `F_READ`. Any disclosure-related
-action — the ASML memo and the v3 consequence wording remain separate items on Shamik's
+action — the internal memo and the v3 consequence wording remain separate items on Shamik's
 queue, untouched by this plan.

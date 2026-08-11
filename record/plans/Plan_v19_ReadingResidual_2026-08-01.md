@@ -172,7 +172,7 @@ with a **mismatched package** (query *i* receives query *i*+1's package, wraparo
   ranking, or deployment; no revision to any closed verdict; the internal report may carry
   this sentence and no stronger one.
 - **PR-1 null:** the reading-value claim is dead at the last measurable layer, and the
-  frozen sentence for the internal ASML report is: *measured at retrieval, packaging, and
+  frozen sentence for the internal report is: *measured at retrieval, packaging, and
   reading, the formatter's value is operational — hygiene, preservation, and cost — plus
   one untested deployment hypothesis (dose-response on degraded corpora), which only its
   own pre-registered experiment can test.* E3 remains the sole surviving question, on its

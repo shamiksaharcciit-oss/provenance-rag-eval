@@ -100,7 +100,7 @@ not the same word.
 
 - **No freeze commit.** G2 changes §1.
 - **No generation call, no judge call, no encode, no spend.**
-- Nothing outside `v111/` and this document. `v17/`–`v110/` read-only and unmodified; the ASML
+- Nothing outside `v111/` and this document. `v17/`–`v110/` read-only and unmodified; the internal
   memo draft remains untracked and unopened.
 
 ## What happens on a ruling
