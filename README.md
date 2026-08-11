@@ -88,6 +88,17 @@ IP review — have been generalized ("the internal report", "the pending IP
 ruling") for this public copy; no content, figure or verdict was altered. The
 private record retains the originals verbatim.
 
+## Reproducing
+
+Verified on a clean checkout (fresh clone, fresh virtualenv, no caches):
+`pip install -r requirements.txt` then `make test` — 212 tests pass offline in
+seconds. `make smoke` runs the full pipeline end to end with zero paid LLM calls
+(rule-based formatter stub, `--provider none`) and re-derives retrieval metrics
+deterministically. One additional test module (`tests/test_pw1_safe_encode.py`)
+and any real embedding run require network access to Hugging Face to fetch the
+embedding model on first use; run `pytest --ignore=tests/test_pw1_safe_encode.py`
+in restricted environments.
+
 ## Status
 
 [Released alongside the preprint; license to be stated at release.]
