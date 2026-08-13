@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying paper."
+title: "provenance-rag-eval: judge-free, span-level grounding evaluation for RAG"
+authors:
+  - family-names: Saha
+    given-names: Shamik
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/shamiksaharcciit-oss/provenance-rag-eval"
+# --- fill in at release: ---
+# doi: 10.5281/zenodo.XXXXXXX
+# preferred-citation:
+#   type: article
+#   title: "When the Scoreboard Lies"
+#   authors:
+#     - family-names: Saha
+#       given-names: Shamik
+#   year: 2026
+#   url: "https://arxiv.org/abs/XXXX.XXXXX"
