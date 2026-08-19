@@ -47,8 +47,10 @@ Formal statement and the composition lemma: `docs/formal_properties.md`.
 Environment: Python 3.12; `pip install -r requirements.txt`. Corpora are
 **generated, not stored**: Track A is synthetic (built by
 `src/datasets/track_a_synthetic.py`, fixed seeds), Track B is constructed from
-public sources at build time by `src/datasets/track_b_public.py`. The repository
-therefore redistributes no third-party text.
+public sources at build time by `src/datasets/track_b_public.py` (QASPER,
+CC BY 4.0). One qualification: the frozen v1.8 experiment records embed
+retrieved QASPER passages, because the record of what the models were shown is
+part of the reproducibility claim -- see `DATA_LICENSES.md` for attribution.
 
 The token budget's meter is pinned *by this repository*: `count_tokens` in
 `src/textutil.py` — a deliberate regex approximation (word + punctuation units),
@@ -101,4 +103,5 @@ in restricted environments.
 
 ## Status
 
-[Released alongside the preprint; license to be stated at release.]
+Released alongside the preprint. Code and record: Apache-2.0 (see
+`LICENSE`). Embedded QASPER passages: CC BY 4.0 (see `DATA_LICENSES.md`).
