@@ -7,13 +7,14 @@ authors:
 type: software
 license: Apache-2.0
 repository-code: "https://github.com/shamiksaharcciit-oss/provenance-rag-eval"
-# --- fill in at release: ---
-# doi: 10.5281/zenodo.XXXXXXX
-# preferred-citation:
-#   type: article
-#   title: "When the Scoreboard Lies"
-#   authors:
-#     - family-names: Saha
-#       given-names: Shamik
-#   year: 2026
-#   url: "https://arxiv.org/abs/XXXX.XXXXX"
+doi: 10.5281/zenodo.22016705
+preferred-citation:
+  type: article
+  title: "When the Scoreboard Lies"
+  authors:
+    - family-names: Saha
+      given-names: Shamik
+  year: 2026
+  doi: 10.5281/zenodo.22016705
+  # arXiv id to be added once assigned:
+  # url: "https://arxiv.org/abs/XXXX.XXXXX"
