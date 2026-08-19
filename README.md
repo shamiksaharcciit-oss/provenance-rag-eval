@@ -1,7 +1,7 @@
 # provenance-rag-eval
 
 The evaluation apparatus and complete experimental record behind the paper
-**When the Scoreboard Lies** ([preprint link to be added at release]).
+**When the Scoreboard Lies** (doi:[10.5281/zenodo.22016705](https://doi.org/10.5281/zenodo.22016705)).
 
 We built a document-cleaning tool for RAG pipelines and watched it pass every
 standard test. The success turned out to be an illusion: of 38 queries the
@@ -105,3 +105,9 @@ in restricted environments.
 
 Released alongside the preprint. Code and record: Apache-2.0 (see
 `LICENSE`). Embedded QASPER passages: CC BY 4.0 (see `DATA_LICENSES.md`).
+
+## Citing
+
+Paper and record: **doi:10.5281/zenodo.22016705**
+(https://doi.org/10.5281/zenodo.22016705). Machine-readable citation in
+`CITATION.cff`; the arXiv identifier will be added once assigned.
